@@ -724,13 +724,13 @@
       <weaponmounts>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
@@ -768,25 +768,25 @@
       <weaponmounts>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Heavy</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Heavy</size>
           <visibility>External</visibility>
         </weaponmount>
@@ -825,13 +825,13 @@
       <weaponmounts>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
@@ -876,25 +876,25 @@
       <weaponmounts>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Standard</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Heavy</size>
           <visibility>External</visibility>
         </weaponmount>
         <weaponmount>
           <control>Remote</control>
-          <flexibility>Fixed</flexibility>
+          <flexibility>Flexible</flexibility>
           <size>Heavy</size>
           <visibility>External</visibility>
         </weaponmount>
