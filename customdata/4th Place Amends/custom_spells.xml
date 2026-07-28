@@ -18,6 +18,10 @@
     https://github.com/chummer5a/chummer5a
 -->
 <chummer>
+	<categories>
+	<category useskill="Alchemy">Compounds</category>
+	 </categories>
+
 	<spells>
 		<spell>
 			<id>ea4e1b82-4513-4b3c-9446-8f0d6ba63a1a</id>
@@ -563,5 +567,252 @@
 			<range>LOS (A)</range>
 			<type>P</type>
 		</spell>
+
+		<spell>
+			<id>e3a4157f-9df7-4a87-b0de-08ed0637c363</id>
+			<name>Aghexhex</name>
+			<page>219</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>5567a94d-d0b6-4a93-84bb-f69debddc236</id>
+			<name>BDNB</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>c11feba6-cf52-443d-b84c-3af88cfd6daf</id>
+			<name>Lot's Curse</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>6a801253-ba72-4b98-904e-80168b9f87e7</id>
+			<name>Sage</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>cabb4431-d1e2-4cac-b04e-dda18295cf24</id>
+			<name>Spirit Strength</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>a47a567d-1ca0-400f-92dd-ab3ac1be35e7</id>
+			<name>Witch's Moss</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>a47a567d-1ca0-400f-92dd-ab3ac1be35e7</id>
+			<name>Witch's Moss</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>8706c62a-6143-455f-8fb7-50540aa52f30</id>
+			<name>Alchemical Duct Tape</name>
+			<page>194</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor>Spell</descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>b992b232-42df-46b9-8fa0-95d8d7812e14</id>
+			<name>Astral Increase</name>
+			<page>194</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>c1517223-2a40-4a99-880e-f2eba3e2ec5f</id>
+			<name>Astral Bond</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>fa2ee1a9-ef5b-40b7-b3e5-e11ce9a8eb91</id>
+			<name>Baobhan's Tears</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>7a8fabe3-cd83-4e85-a591-0de8d726996e</id>
+			<name>Dulled Edges</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+				<spell>
+			<id>ca4d5230-b6d1-45c9-a9c3-4e34e20a37e7</id>
+			<name>Feel No Paint</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>169362e1-335c-4def-a44d-6ec144012ca4</id>
+			<name>Force of Personality</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>1cf78420-50c0-4ebd-ae50-46b77ff33b00</id>
+			<name>Laminate</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+				<spell>
+			<id>c2f6b45f-8a12-493e-846f-460e5dd1edfd</id>
+			<name>Perfect Sight</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+
+		<spell>
+			<id>32342537-693a-41c6-ae30-ace912507052</id>
+			<name>Sharpshooter</name>
+			<page>197</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>aa1d5cce-2402-40bc-b3e0-6abc926c01f9</id>
+			<name>Water Breathing</name>
+			<page>197</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
 	</spells>
 </chummer>
