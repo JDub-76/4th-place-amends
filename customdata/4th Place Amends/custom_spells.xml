@@ -649,20 +649,6 @@
 		</spell>
 
 		<spell>
-			<id>a47a567d-1ca0-400f-92dd-ab3ac1be35e7</id>
-			<name>Witch's Moss</name>
-			<page>220</page>
-			<source>SG</source>
-			<category>Compounds</category>
-			<damage>-</damage>
-			<descriptor></descriptor>
-			<duration>I</duration>
-			<dv>F</dv>
-			<range>-</range>
-			<type>-</type>
-		</spell>
-
-		<spell>
 			<id>8706c62a-6143-455f-8fb7-50540aa52f30</id>
 			<name>Alchemical Duct Tape</name>
 			<page>194</page>
