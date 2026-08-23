@@ -90,20 +90,36 @@
       <id>ff06549c-fe90-427d-97cd-c1336a7ecb5a</id>
 			<slots>2</slots>
 		</mod>
-		    <mod>
-				<!-- obvious armor -->
-      <id>4dcee44f-6222-4188-bcf9-09c3cde60f2a</id>
-				<slots>Rating</slots>
-				<rating>ceiling(Body*0.5)</rating>
-			</mod>
+	<mod>
+		<!-- obvious armor -->
+		<id>4dcee44f-6222-4188-bcf9-09c3cde60f2a</id>
+		<slots>Rating</slots>
+		<rating>ceiling(Body*0.5)</rating>
+		<forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
+	</mod>
     <mod>
 		<!-- Concealed armor -->
       <id>85a85cfd-7703-48f6-9745-d0a2b64c8b9e</id>
-		<slots>Rating * 2</slots>
+	  <slots>Rating * 2</slots>
+      <forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
 	</mod>
-
-
-
+    <mod>
+      <!-- Personal Armor -->
+	  <id>7dbf54b3-6921-4fb6-b0e8-2a2e5e5e84fe</id>
+      <forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
+    </mod>
 	</mods>
 	<vehicles>
 		<vehicle>

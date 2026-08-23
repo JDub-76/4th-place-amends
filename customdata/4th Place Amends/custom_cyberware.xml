@@ -255,6 +255,8 @@
 			<bonus>
 				<initiativepass precedence="0">Rating</initiativepass>
 				<initiative precedence="0">Rating</initiative>
+				<matrixinitiativediceadd precedence="0">Rating</matrixinitiativediceadd>
+				<matrixinitiative precedence="0">Rating</matrixinitiative>
 			</bonus>
 		</cyberware>
 		<cyberware>
@@ -1637,8 +1639,41 @@
 
 
 		<cyberware>
-		  <id>c4e75dde-aa64-49af-bd84-e348074dc6e5</id>
+		  <id>f74d2c60-5bf7-4dde-a12e-2f8af45e955b</id>
 		  <name>Component Miniaturization (Hand/Foot/Half-Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>1</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Foot</name>
+				<name operation="contains">Obvious Hand</name>
+				<name>Partial Cyberskull</name>
+				  <name operation="contains">Synthetic Hand</name>
+				  <name operation="contains">Synthetic Foot</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Throwback Component Miniaturization (Hand/Foot/Half-Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+		</cyberware>
+
+
+		<cyberware>
+		  <id>c4e75dde-aa64-49af-bd84-e348074dc6e5</id>
+		  <name>Throwback Component Miniaturization (Hand/Foot/Half-Skull)</name>
 		  <limit>False</limit>
 		  <category>Cyberlimb Enhancement</category>
 		  <ess>0.1</ess>
@@ -1660,11 +1695,55 @@
 			  </OR>
 			</parentdetails>
 		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Component Miniaturization (Hand/Foot/Half-Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
 		</cyberware>
+
+
+
+		<cyberware>
+		  <id>0db902b8-8b14-4183-8e5b-d4d60cbab72b</id>
+		  <name>Component Miniaturization (Lower Arm/Lower Leg/Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>2</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Lower Leg</name>
+				<name operation="contains">Obvious Lower Arm</name>
+				<name>Obvious Skull</name>
+				  <name operation="contains">Synthetic Lower Leg</name>
+				  <name operation="contains">Synthetic Lower Arm</name>
+				  <name>Synthetic Skull</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Throwback Component Miniaturization (Lower Arm/Lower Leg/Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+
+		</cyberware>
+
 
 		<cyberware>
 		  <id>14a0f46b-55ba-4ddf-8fb6-78c412334fd8</id>
-		  <name>Component Miniaturization (Lower Arm/Lower Leg/Skull)</name>
+		  <name>Throwback Component Miniaturization (Lower Arm/Lower Leg/Skull)</name>
 		  <limit>False</limit>
 		  <category>Cyberlimb Enhancement</category>
 		  <ess>FixedValues(0.1,0.15)</ess>
@@ -1687,13 +1766,20 @@
 			  </OR>
 			</parentdetails>
 		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Component Miniaturization (Lower Arm/Lower Leg/Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
 		</cyberware>
 
 
 
 		<cyberware>
 		  <id>4309456e-2bf3-467a-bc0c-f8a91a55d98d</id>
-		  <name>Compact Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
+		  <name>Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
 		  <limit>False</limit>
 		  <category>Cyberlimb Enhancement</category>
 		  <ess>0</ess>
@@ -1727,14 +1813,14 @@
 		<forbidden>
 			<parentdetails>
 			<oneof>
-          <cyberware sameparent="True">Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
+          <cyberware sameparent="True">Throwback Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
         	</oneof>
 			</parentdetails>
 		</forbidden>
 		</cyberware>
 		<cyberware>
 		  <id>4aa09637-1052-417a-ae3e-92a45396a96f</id>
-		  <name>Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
+		  <name>Throwback Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
 		  <limit>False</limit>
 		  <category>Cyberlimb Enhancement</category>
 			<ess>FixedValues(0.1,0.15,0.2,0.25)</ess>
@@ -1769,7 +1855,7 @@
 		<forbidden>
 			<parentdetails>
 			<oneof>
-          <cyberware sameparent="True">Compact Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
+          <cyberware sameparent="True">Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
         	</oneof>
 			</parentdetails>
 		</forbidden>

@@ -2908,6 +2908,28 @@
 		</required>
 
     </quality>
-
+    <quality>
+      <id>e09e9abb-3cd2-409f-a728-247947855447</id>
+      <name>Catlike Reflexes</name>
+      <karma>0</karma>
+      <category>Positive</category>
+      <bonus>
+        <specificattribute>
+          <name>AGI</name>
+          <val>1</val>
+        </specificattribute>
+        <specificattribute>
+          <name>REA</name>
+          <val>1</val>
+        </specificattribute>
+        <specificskill>
+          <name>Gymnastics</name>
+          <bonus>2</bonus>
+        </specificskill>
+      </bonus>
+      <source>4PR</source>
+      <page>1</page>
+      <hide />
+    </quality>
 	</qualities>
 </chummer>

@@ -459,7 +459,14 @@
 				<name>Rigger Interface</name>
 				<name>Suncell</name>
 			</mods>
-			<notes>The Shadowdancer's Drone Arms have Agility 8 and Strength 9.</notes>
+			<notes>The Shadowdancer's Drone Arms have Agility 8 and Strength 9.
+
+			When worn by a metahuman and moving at speeds the pilot could achieve on foot, it behaves like a character in combat rather than a vehicle.
+
+			Attacks will normally hit the pilot. Vehicular called shots will hit and damage the Shadowdancer. AoE attacks hit both.
+
+			Shadowdancers are custom fit for their pilots, and cannot be piloted by trolls. A pilot may wear a helmet and armor with an armor rating of 9 or lower while inside.
+			</notes>
 		</vehicle>
 		<vehicle>
 			<id>355071ef-2726-4bcf-aac3-ae6f7a132938</id>
@@ -792,9 +799,7 @@
         </weaponmount>
       </weaponmounts>
     </vehicle>
-
-
-<vehicle>
+	<vehicle>
       <id>79a9e89a-ec54-4725-9244-5157e73efdf2</id>
       <name>Evocative</name>
       <page>1</page>
@@ -837,8 +842,6 @@
         </weaponmount>
       </weaponmounts>
     </vehicle>
-
-
     <vehicle>
       <id>7a8c01cb-6817-41d2-bffc-4f433153e7e6</id>
       <name>GTI Revolution</name>
@@ -1039,11 +1042,15 @@
 			<cost>Variable(0-1000000)</cost>
 			<rating>body</rating>
 			<slots>-Rating</slots>
-
+			<required>
+				<oneof>
+					<quality>It Just Has To Fit</quality>
+				</oneof>
+			</required>
 		</mod>
 		<mod>
 		  <id>0e6bd2ca-e369-45e8-9593-b78816e0f87f</id>
-		  <name>Grey mana shielding</name>
+		  <name>Grey Mana Shielding</name>
 		  <page>1</page>
 		  <source>4PR</source>
 		  <avail>Rating * 4</avail>
@@ -1085,8 +1092,7 @@
       <rating>6</rating>
       <slots>2</slots>
     </mod>
-
-		<mod>
+	<mod>
       <id>fdd69c25-3b4f-428b-9e4f-1776c65bac6e</id>
       <name>Milspec Plates</name>
       <page>1</page>
@@ -1099,8 +1105,13 @@
 			<bonus>
         <armor>Rating</armor>
       </bonus>
+      <forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
     </mod>
-		<mod>
+	<mod>
       <id>6cd81699-6940-48de-a383-89a232c7673b</id>
       <name>Reinforced Frame</name>
       <page>1</page>
@@ -1111,7 +1122,20 @@
       <rating>3</rating>
       <slots>Rating</slots>
     </mod>
-
-
+	<mod>
+      <id>3f9c6d0f-03e2-4453-88b0-1669d8202ea0</id>
+      <name>Shadowdancer Heavy Equipment Mount</name>
+      <page>1</page>
+      <source>4PR</source>
+      <avail>24F</avail>
+      <category>Weapons</category>
+      <cost>5000</cost>
+      <rating>0</rating>
+      <slots>0</slots>
+        <vehicledetails>
+        	<name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+	  <notes>Allows one-handed operation of a weapon of medium machine gun/sniper rifle size or smaller. Can have 1 per arm.</notes>
+    </mod>
 	</mods>
 </chummer>

@@ -49,5 +49,492 @@
       <source>SG</source>
       <page>234</page>
     </mentor>
+    <mentor>
+      <id>f7180aae-1f71-47b3-9d7b-1b83b8b43e5d</id>
+      <name>Bull</name>
+      <advantage>All: +2 to the Athletics skill group.</advantage>
+      <disadvantage>A follower of Bull must have an unaugmented Strength and Body of at least 5.</disadvantage>
+      <bonus>
+        <skillgroup>
+          <name>Athletics</name>
+          <bonus>2</bonus>
+        </skillgroup>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Combat Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Combat</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Mystic Aptitude</name>
+          <bonus>
+            <specificpower>
+              <name>Mystic Aptitude</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <required>
+        <allof>
+          <attribute>
+            <name>BOD</name>
+            <natural />
+            <total>5</total>
+          </attribute>
+          <attribute>
+            <name>STR</name>
+            <natural />
+            <total>5</total>
+          </attribute>
+        </allof>
+      </required>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>a9a8caf6-76f5-4b61-afb4-6db820a35c69</id>
+      <name>Champion</name>
+      <advantage>All: +2 to the Athletics skill group, or +2 to either Throwing Weapons or Archery.</advantage>
+      <disadvantage>A follower of the Champion must show good sportsmanship. They must pass a Composure (3) test to refuse a challenge or cheat in a contest.</disadvantage>
+      <choices>
+        <choice>
+          <name>+2 to the Athletics skill group</name>
+          <bonus>
+            <skillgroup>
+              <name>Athletics</name>
+              <bonus>2</bonus>
+            </skillgroup>
+          </bonus>
+        </choice>
+        <choice>
+          <name>+2 to Archery</name>
+          <bonus>
+            <specificskill>
+              <name>Archery</name>
+              <bonus>2</bonus>
+            </specificskill>
+          </bonus>
+        </choice>
+        <choice>
+          <name>+2 to Throwing Weapons</name>
+          <bonus>
+            <specificskill>
+              <name>Throwing Weapons</name>
+              <bonus>2</bonus>
+            </specificskill>
+          </bonus>
+        </choice>
+        <choice set="2">
+          <name>Magician: +2 to Health Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Health</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice set="2">
+          <name>Adept: 1 free level of Stride and Light Body</name>
+          <bonus>
+            <specificpower>
+              <name>Stride</name>
+              <val>1</val>
+            </specificpower>
+            <specificpower>
+              <name>Light Body</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>1162212c-2e54-43ae-8baa-97727cd9f832</id>
+      <name>Dragon</name>
+      <advantage>All: +1 to the Influence skill group.</advantage>
+      <disadvantage>Followers of Dragon are hoarders. They must succeed a Composure (3) test to relinquish or loan an item of value (including selling it, but not upgrading it).</disadvantage>
+      <bonus>
+        <skillgroup>
+          <name>Influence</name>
+          <bonus>1</bonus>
+        </skillgroup>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Manipulation Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Manipulation</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Kinesics and Analytics</name>
+          <bonus>
+            <specificpower>
+              <name>Kinesics</name>
+              <val>1</val>
+            </specificpower>
+            <specificpower>
+              <name>Analytics</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>7b1e7a8c-f225-4f1d-b4ba-92ceb6d17cff</id>
+      <name>Fenrir</name>
+      <advantage>All: Gains the benefits of a R1 Adrenaline Pump when berserk from any source. If the character has an adrenaline pump, it activates at a rating 1 higher than normal instead.</advantage>
+      <disadvantage>The character gets the Berserker quality with no bonus karma.</disadvantage>
+      <bonus>
+        <addqualities>
+          <addquality>Berserker</addquality>
+        </addqualities>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Combat and +1 to Health Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Combat</name>
+              <val>2</val>
+            </spellcategory>
+            <spellcategory>
+              <name>Health</name>
+              <val>1</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: free Berserk power.</name>
+          <bonus>
+            <specificpower>
+              <name>Berserk</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>84090f4e-bdfa-4004-b9ea-cbd8fe71dc99</id>
+      <name>Griffin</name>
+      <advantage>All: +2 to a single Combat Active skill.</advantage>
+      <disadvantage>Composure (3) test to attack from surprise or accept aid from another in combat.</disadvantage>
+      <bonus>
+        <selectskill skillcategory="Combat Active">
+          <val>2</val>
+        </selectskill>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Combat and +2 to Health Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Combat</name>
+              <val>2</val>
+            </spellcategory>
+            <spellcategory>
+              <name>Health</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Combat Sense and Mystic Armor.</name>
+          <bonus>
+            <specificpower>
+              <name>Combat Sense</name>
+              <val>1</val>
+            </specificpower>
+            <specificpower>
+              <name>Mystic Armor</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>400f2fc4-904a-4a37-adaf-999e8854467c</id>
+      <name>Phoenix</name>
+      <advantage>All: +1 to Performance and 2 additional Physical Overflow boxes.</advantage>
+      <disadvantage>Minimum Charisma and Performance of 4.</disadvantage>
+      <required>
+        <allof>
+          <attribute>
+            <name>CHA</name>
+            <natural />
+            <total>4</total>
+          </attribute>
+          <skill>
+            <name>Performance</name>
+            <val>4</val>
+          </skill>
+        </allof>
+      </required>
+      <bonus>
+        <specificskill>
+          <name>Performance</name>
+          <bonus>1</bonus>
+        </specificskill>
+        <conditionmonitor>
+          <overflow>2</overflow>
+        </conditionmonitor>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +1 to Health and Illusion Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Health</name>
+              <val>1</val>
+            </spellcategory>
+            <spellcategory>
+              <name>Illusion</name>
+              <val>1</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Magician: +2 dice for Summoning or Binding Spirits of Fire</name>
+          <bonus>
+            <specificskill>
+              <name>Summoning</name>
+              <bonus>2</bonus>
+              <condition>Spirits of Fire</condition>
+            </specificskill>
+            <specificskill>
+              <name>Binding</name>
+              <bonus>2</bonus>
+              <condition>Spirits of Fire</condition>
+            </specificskill>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Improved Mental Attribute (Charisma).</name>
+          <bonus>
+            <specificpower>
+              <name>Improved Mental Attribute</name>
+              <val>1</val>
+              <bonusoverride>
+                <selectattribute>
+                  <attribute>CHA</attribute>
+                </selectattribute>
+              </bonusoverride>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>1f07ef2b-c368-4af2-8b98-f0ca324ea2a7</id>
+      <name>The King</name>
+      <advantage>All: +2 to Performance.</advantage>
+      <disadvantage>-2 to Sneaking and Disguise tests, and -2 to casting spells to hide them or disguise their identity.</disadvantage>
+      <bonus>
+        <specificskill>
+          <name>Performance</name>
+          <bonus>2</bonus>
+        </specificskill>
+        <specificskill>
+          <name>Sneaking</name>
+          <bonus>-2</bonus>
+        </specificskill>
+        <specificskill>
+          <name>Disguise</name>
+          <bonus>-2</bonus>
+        </specificskill>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Illusion Spells, Preparations, and Rituals</name>
+          <bonus>
+            <spellcategory>
+              <name>Illusion</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: free Enthralling Performance.</name>
+          <bonus>
+            <specificpower>
+              <name>Enthralling Performance</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>62d6c9fa-6f75-499d-8a2a-e530c3431747</id>
+      <name>The Masterless Man</name>
+      <advantage>All: +2 to a single Combat Active skill.</advantage>
+      <disadvantage>Cannot grant or benefit from Leadership bonuses.</disadvantage>
+      <bonus>
+        <selectskill skillcategory="Combat Active">
+          <val>2</val>
+        </selectskill>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +1 to Summon and Bind Guardian and Task spirits.</name>
+          <bonus>
+            <specificskill>
+              <name>Summoning</name>
+              <bonus>1</bonus>
+              <condition>Guardian Spirit</condition>
+            </specificskill>
+            <specificskill>
+              <name>Binding</name>
+              <bonus>1</bonus>
+              <condition>Guardian Spirit</condition>
+            </specificskill>
+            <specificskill>
+              <name>Summoning</name>
+              <bonus>1</bonus>
+              <condition>Task Spirit</condition>
+            </specificskill>
+            <specificskill>
+              <name>Binding</name>
+              <bonus>1</bonus>
+              <condition>Task Spirit</condition>
+            </specificskill>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Pain Resistance, free Sustenance.</name>
+          <bonus>
+            <specificpower>
+              <name>Pain Resistance</name>
+              <val>1</val>
+            </specificpower>
+            <specificpower>
+              <name>Sustenance</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>305765dc-9a5d-43c6-902e-34e83b685978</id>
+      <name>Turtle</name>
+      <advantage>All: +2 Armor.</advantage>
+      <disadvantage>Acts last on the first initiative pass of combat. May not take actions which directly prevent another character from taking damage.</disadvantage>
+      <bonus>
+        <armor>2</armor>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +2 to Health spells and summoning Spirits of Water.</name>
+          <bonus>
+            <specificskill>
+              <name>Summoning</name>
+              <bonus>2</bonus>
+              <condition>Spirits of Water</condition>
+            </specificskill>
+            <spellcategory>
+              <name>Health</name>
+              <val>2</val>
+            </spellcategory>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Supernatural Toughness.</name>
+          <bonus>
+            <specificpower>
+              <name>Supernatural Toughness</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
+    <mentor>
+      <id>2b7b3234-7fd1-4a85-a2d7-debb91fac3ce</id>
+      <name>Unicorn</name>
+      <advantage>All: +2 to Judge Intentions.</advantage>
+      <disadvantage>Gains the 'Ware Intolerance quality with no bonus karma.</disadvantage>
+      <bonus>
+        <judgeintentions>2</judgeintentions>
+        <addqualities>
+          <addquality>'Ware Intolerance</addquality>
+        </addqualities>
+      </bonus>
+      <choices>
+        <choice>
+          <name>Magician: +1 to Health and Detection spells, rituals, and preparations.</name>
+          <bonus>
+            <spellcategory>
+              <name>Health</name>
+              <val>1</val>
+            </spellcategory>
+            <spellcategory>
+              <name>Detection</name>
+              <val>1</val>
+            </spellcategory>           
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Natural Immunity and 1 free level of Spell Resistance.</name>
+          <bonus>
+            <specificpower>
+              <name>Natural Immunity</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+          <bonus>
+            <specificpower>
+              <name>Spell Resistance</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+        <choice>
+          <name>Adept: 1 free level of Natural Immunity and 1 free level of Mystic Armor.</name>
+          <bonus>
+            <specificpower>
+              <name>Natural Immunity</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+          <bonus>
+            <specificpower>
+              <name>Mystic Armor</name>
+              <val>1</val>
+            </specificpower>
+          </bonus>
+        </choice>
+      </choices>
+      <source>4PR</source>
+      <page>1</page>
+    </mentor>
     </mentors>
 </chummer>
