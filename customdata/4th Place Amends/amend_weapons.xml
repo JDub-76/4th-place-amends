@@ -816,9 +816,11 @@
 		</weapon>
 		<weapon>
 			<name>M79B1 LAW Rocket</name>
-			<damage>24P (-4/m)</damage>
-			<ap>-4//-10</ap>
-			<notes>only fires AV rockets.</notes>
+			<accuracy>7</accuracy>
+			<damage>18P (-4/m)</damage>
+			<ap>-2//-6</ap>
+			<range>Sporting Rifles</range>
+			<notes>Anti-Vehicle. Disposable. Accuracy is 3 against personnel.</notes>
 		</weapon>
 		<weapon>
       		<name>Mitsubishi Yakusoku MRL</name>

@@ -255,7 +255,18 @@
 			<avail>20F</avail>
 			<cost>160</cost>
 			<costfor>10</costfor>
-			<ammoforweapontype>hipower</ammoforweapontype>
+			<ammoforweapontype>typhoon</ammoforweapontype>
+		</gear>
+		<gear>
+			<id>e9f6e7cb-73fa-4c2f-b3de-d0ef52367fca</id>
+			<name>Ammo: Typhoon</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>12F</avail>
+			<cost>500</cost>
+			<ammoforweapontype>typhoon</ammoforweapontype>
 		</gear>
 		<!-- Rockets and Missiles -->
 		<gear>
@@ -550,6 +561,18 @@
           <costfor>1</costfor>
         </gear>
         <gear>
+          <id>cd751d16-eb8d-4006-bc85-fcc2844ee9a8</id>
+          <name>Grenade: HEDP</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Grenade: HEDP</addweapon>
+          <cost>175</cost>
+          <costfor>1</costfor>
+        </gear>
+        <gear>
           <id>8e73a2b0-e2cb-49c5-8027-92ab77585f08</id>
           <name>Minigrenade: Cluster</name>
           <category>Ammunition</category>
@@ -683,6 +706,18 @@
 			<cost>125</cost>
 			<ammoforweapontype noextra="True">glauncher</ammoforweapontype>
 		</gear>
+        <gear>
+          <id>1e25d338-90ef-46e8-b342-1603f750f8e2</id>
+          <name>Minigrenade: HEDP</name>
+          <category>Ammunition</category>
+          <rating>0</rating>
+          <source>4PR</source>
+          <page>1</page>
+          <avail>12F</avail>
+          <addweapon>Minigrenade: HEDP</addweapon>
+          <cost>175</cost>
+      	  <ammoforweapontype noextra="True">glauncher</ammoforweapontype>
+        </gear>
 		<!-- Misc Gear -->
 		<gear>
 			<id>c699d503-e181-4d51-b060-0f9cd9f0e735</id>

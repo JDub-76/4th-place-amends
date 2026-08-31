@@ -322,7 +322,7 @@
 		</gear>
 		<gear>
 			<name>Ammo: Krime Crackle Fin-Stabilized HEAT Slugs</name>
-			<hide />
+			<notes>Requires Edge (1) for simple BF, (2) for complex BF/simple FA, (3) for complex FA, jams on failure, explodes on glitch.</notes>
 		</gear>
 		<gear>
 			<name>Krime Ripper Sensor Array</name>
