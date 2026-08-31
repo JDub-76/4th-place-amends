@@ -255,7 +255,18 @@
 			<avail>20F</avail>
 			<cost>160</cost>
 			<costfor>10</costfor>
-			<ammoforweapontype>hipower</ammoforweapontype>
+			<ammoforweapontype>typhoon</ammoforweapontype>
+		</gear>
+		<gear>
+			<id>e9f6e7cb-73fa-4c2f-b3de-d0ef52367fca</id>
+			<name>Ammo: Typhoon</name>
+			<category>Ammunition</category>
+			<rating>0</rating>
+			<source>4PR</source>
+			<page>1</page>
+			<avail>12F</avail>
+			<cost>500</cost>
+			<ammoforweapontype>typhoon</ammoforweapontype>
 		</gear>
 		<!-- Rockets and Missiles -->
 		<gear>

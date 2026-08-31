@@ -843,6 +843,29 @@
       <hide />
     </weapon>
     <weapon>
+      <id>7e388554-5080-42eb-8f91-a37927c977d3</id>
+      <name>AT Lance</name>
+      <category>Blades</category>
+      <type>Melee</type>
+      <conceal>10</conceal>
+      <accuracy>6</accuracy>
+      <reach>3</reach>
+      <damage>({STR}/2+18)P</damage>
+      <ap>-10</ap>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>0</ammo>
+      <avail>12F</avail>
+      <cost>1200</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <notes>Single use. Acc 3 when not charging. Only detonates and deals full damage when charging a vehicle, barrier, or target with hardened armor.
+      
+      Damage is STR+2P/-2 if the head doesn't detonate.
+      
+      Upon detonation, everyone but the target must resist 18P(f)/+5 with a blast of -1/meter. No benefit from Energy/Element aura.</notes>
+    </weapon>
+    <weapon>
       <id>9cb4835e-3a3f-4166-94be-030ac0e4ee00</id>
       <name>Evington's Propelled Katana</name>
       <category>Blades</category>
@@ -2978,7 +3001,7 @@
       <ammo>2x10(c) or External Source</ammo>
       <avail>22F</avail>
       <cost>38500</cost>
-      <source>ZDR</source>
+      <source>4PR</source>
       <page>1</page>
       <accessories>
         <accessory>
@@ -3309,6 +3332,130 @@
       <source>RG</source>
       <page>22</page>
       <useskill>Clubs</useskill>
+    </weapon>
+    <weapon>
+      <id>ba9609c6-e6a4-49cf-bb47-d2adab02e395</id>
+      <name>Typhoon</name>
+      <category>Grenade Launchers</category>
+      <weapontype>typhoon</weapontype>
+      <type>Melee</type>
+      <conceal>-2</conceal>
+      <accuracy>Physical</accuracy>
+      <reach>0</reach>
+      <damage>20P(f) (-1/m)</damage>
+      <ap>+5</ap>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>4(m)</ammo>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <cyberware>True</cyberware>
+      <hide />
+      <spec>Grenade Launchers</spec>
+      <useskill>Heavy Weapons</useskill>
+      <notes>Can alternatively deal 18P/-2 with a blast of (-2/m). User takes half damage. 
+      
+      A character can Riposte with the Typhoon even without the martial art. Success negates the enemy attack and prevents them from avoiding the blast damage.
+      
+      Failure permits the attacker to deal damage normally and make a Run For Your Life interrupt to avoid the blast damage.</notes>
+    </weapon>
+    <weapon>
+      <id>04452c78-eec7-4bca-a043-8a83a7b3da7a</id>
+      <name>Hammerhand</name>
+      <category>Unarmed</category>
+      <type>Melee</type>
+      <conceal>-2</conceal>
+      <accuracy>Physical</accuracy>
+      <reach>0</reach>
+      <damage>({STR}+5)P</damage>
+      <ap>-3</ap>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>0</ammo>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <cyberware>True</cyberware>
+      <notes>No AP, Damage -3 if used uncharged. Has 1 charge and requires 1 turn to recharge. Can be treated as a penetration weapon when charged.</notes>
+      <hide />
+    </weapon>
+    <weapon>
+      <id>6ed1dae7-f72f-476e-bfe3-d92c2c33dfa7</id>
+      <name>Chain Ripper</name>
+      <category>Exotic Melee Weapons</category>
+      <type>Melee</type>
+      <conceal>2</conceal>
+      <accuracy>Physical</accuracy>
+      <reach>0</reach>
+      <damage>12P</damage>
+      <ap>-8</ap>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>0</ammo>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <cyberware>True</cyberware>
+      <hide />
+      <spec>Cyber Implants</spec>
+      <useskill>Unarmed Combat</useskill>
+    </weapon>
+    <weapon>
+      <id>a11b30f6-5911-44ed-adbe-3e3e9d97669c</id>
+      <name>Cyberdendrite</name>
+      <category>Exotic Melee Weapons</category>
+      <type>Melee</type>
+      <conceal>0</conceal>
+      <accuracy>Physical</accuracy>
+      <reach>3</reach>
+      <damage>({STR}+2)P</damage>
+      <ap>-2</ap>
+      <accessories>
+        <accessory>
+          <name>Smart Materials</name>
+        </accessory>
+      </accessories>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>0</ammo>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <cyberware>True</cyberware>
+      <hide />
+      <spec>Cyber Implants</spec>
+      <useskill>Unarmed Combat</useskill>
+      <notes>
+      May use either AGI or LOG to attack. Can be used for subdual and entanglement. 
+      
+      Can extend up to 3m, and can support up to 300kg.
+      </notes>
+    </weapon>
+    <weapon>
+      <id>4c8c9085-1f7a-4e29-b68b-9ef468d519be</id>
+      <name>Electrocutioner</name>
+      <category>Unarmed</category>
+      <type>Melee</type>
+      <conceal>4</conceal>
+      <accuracy>Physical</accuracy>
+      <reach>0</reach>
+      <damage>14S(e)</damage>
+      <ap>-5</ap>
+      <mode>0</mode>
+      <rc>0</rc>
+      <ammo>0</ammo>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <cyberware>True</cyberware>
+      <notes>Can deal damage to clinching/grappling targets, or on a block with 2 hits. Can deal either Physical or Stun.</notes>
+      <hide />
     </weapon>
   </weapons>
 </chummer>

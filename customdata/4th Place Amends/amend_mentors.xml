@@ -20,14 +20,6 @@
 <chummer>
   <mentors>
      <mentor>
-      <name>Holy Text</name>
-      <hide />
-    </mentor>
-     <mentor>
-      <name>Tohu Wa-Bohu</name>
-      <hide />
-    </mentor>
-     <mentor>
       <name>Eurasian Jay</name>
       <disadvantage>Eurasian Jay loves to divide his possessions. You must possess at least two Lifestyles and Fake SINs. If you do not meet this requirement, you cannot spend nuyen on anything other than lifestyle upkeep or purchasing new SINs and lifestyles.</disadvantage>
     </mentor>
@@ -164,11 +156,13 @@
     </mentor>
     <mentor>
       <name>Spider (Alt)</name>
-      <choices amendoperation="replace">
-        <advantage>All: +2 dice pool modifier for tests using one skill in the Stealth skill group.</advantage>
+      <advantage>All: +2 dice pool modifier for tests using one skill in the Stealth skill group.</advantage>
+      <bonus>
         <selectskill skillgroup="Stealth">
           <val>2</val>
         </selectskill>
+      </bonus>
+      <choices amendoperation="replace">
         <choice>
           <name>Magician: +2 dice pool modifier when casting Manipulation spells, preparations, and rituals</name>
           <bonus>

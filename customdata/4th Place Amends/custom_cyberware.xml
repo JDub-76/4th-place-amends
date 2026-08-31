@@ -1774,9 +1774,6 @@
 				</parentdetails>
 			</forbidden>
 		</cyberware>
-
-
-
 		<cyberware>
 		  <id>4309456e-2bf3-467a-bc0c-f8a91a55d98d</id>
 		  <name>Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
@@ -1860,8 +1857,7 @@
 			</parentdetails>
 		</forbidden>
 		</cyberware>
-
-		<cyberware>
+	<cyberware>
       <id>c27a0acd-8e51-4625-a256-c60314d27848</id>
       <name>EVO Icepick</name>
       <limit>False</limit>
@@ -1872,8 +1868,7 @@
       <cost>10000</cost>
       <source>4PR</source>
       <page>1</page>
-
-      <required>
+    	<required>
 			<parentdetails>
 			<oneof>
           	<cyberware sameparent="True">Spurs</cyberware>
@@ -1883,7 +1878,7 @@
 			</parentdetails>
 		</required>
     </cyberware>
-				<cyberware>
+	<cyberware>
       <id>ae8ff45f-0d4d-4fe6-b9b9-0e6d00392f23</id>
       <name>Horizon Shellshock</name>
       <limit>False</limit>
@@ -1900,7 +1895,7 @@
         	</oneof>
 		</required>
     </cyberware>
-		<cyberware>
+	<cyberware>
       <id>6b62c51a-b71b-4035-84de-3468e5821657</id>
       <name>Chemical Protection</name>
       <limit>False</limit>
@@ -1914,8 +1909,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-
-		<cyberware>
+	<cyberware>
       <id>71ebf987-2ea2-4e96-b365-945edd89211e</id>
       <name>Fire Resistance</name>
       <limit>False</limit>
@@ -1929,8 +1923,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-
-			<cyberware>
+	<cyberware>
       <id>bfd39aae-8c87-4a36-8c80-4d88d890cc72</id>
       <name>Insulation</name>
       <limit>False</limit>
@@ -1944,7 +1937,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-				<cyberware>
+	<cyberware>
       <id>17e78d2f-c69c-40a3-83be-522ecd7328de</id>
       <name>Nonconductivity</name>
       <limit>False</limit>
@@ -1958,7 +1951,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-		<cyberware>
+	<cyberware>
       <id>5ba93a46-cae6-45a3-a357-ef603c8920d1</id>
       <name>Radiation Shielding</name>
       <limit>False</limit>
@@ -1972,8 +1965,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-
-				<cyberware>
+	<cyberware>
       <id>6139f4ec-e362-4a54-9056-d66982952ec8</id>
       <name>Thermal Damping</name>
       <limit>False</limit>
@@ -1989,7 +1981,7 @@
     </cyberware>
 		<cyberware>
       <id>120e5db0-2ed3-468b-a04c-d8f1fbf3d0e1</id>
-      <name>Universal mirror material</name>
+      <name>Universal Mirror Material</name>
       <limit>False</limit>
       <category>Cyberlimb Enhancement</category>
       <ess>0</ess>
@@ -2001,8 +1993,7 @@
       <rating>6</rating>
       <requireparent />
     </cyberware>
-
-				<cyberware>
+	<cyberware>
       <id>9f496feb-c390-41c2-94a4-23441c255796</id>
       <name>Solar Scales</name>
       <limit>False</limit>
@@ -2016,7 +2007,154 @@
       <rating>2</rating>
       <requireparent />
     </cyberware>
+    <cyberware>
+      <id>72799f39-f115-42ba-a01e-c16f96c731b5</id>
+      <name>Typhoon Cyberlimb Modification</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[3]</capacity>
+      <avail>18F</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <required>
+        <parentdetails>
+          <OR>
+            <name>Centaur Front Leg</name>
+            <name>Centaur Rear Leg</name>
+            <name operation="contains">Full Leg</name>
+            <name operation="contains">Full Arm</name>
+            <name operation="contains">Drone Leg</name>
+            <name operation="contains">Drone Arm</name>
+            <name operation="contains">Liminal Body</name>
+          </OR>
+        </parentdetails>
+      </required>
+	<note>A Typhoon user should have four of these augmentations - 2 in the arms, and 2 in the legs.
+	
+	The Typhoon itself will show up once this cyberware is installed.
+	</note>
+    </cyberware>
+    <cyberware>
+      <id>927f7847-3b39-454f-ba35-e33db3ac6a13</id>
+      <name>Ares Typhoon Defensive Explosive Projector</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>0</capacity>
+      <avail>18F</avail>
+      <cost>30000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Typhoon</addweapon>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+      <required>
+        <oneof>
+          <cyberware>Typhoon Cyberlimb Modification</cyberware>
+        </oneof>
+      </required>
+    </cyberware>
+    <cyberware>
+      <id>6a553313-ed35-46b0-85c8-879296ef81ea</id>
+      <name>Hammerhand</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[5]</capacity>
+      <avail>10R</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Hammerhand</addweapon>
+	  <requireparent />
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>1b9753a2-aaa4-40d4-96cc-7bec3703ac01</id>
+      <name>Chain Ripper</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Chain Ripper</addweapon>
+	  <requireparent />
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>195b9ef7-78e5-4de7-9635-abb7138c8378</id>
+      <name>Cyberdendrite</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0.5</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>12000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Cyberdendrite</addweapon>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>b900ea21-e483-420f-aab2-8f8e86541938</id>
+      <name>Hurt Locker</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+	  <requireparent />
+	  <notes>-2d and -2 Limit to all actions using the limb when off. Activation is a Complex action (Simple with Wireless).
 
+	  When on, the penalty doesn't apply to Unarmed tests, and the user takes a cumulative 1S fatigue damage per turn.
 
+	  Attacks with the limb or any implanted cyberweapons that deal STR-based damage gain +3 damage and -3 AP.
+
+	  The user must soak (limb STR/2 + 1)S damage with BOD only whenever an attack is made with a Hurt Locker-modified limb.
+
+	  A glitch makes the damage Physical; a critical glitch makes the damage unresisted Physical.
+	  </notes>
+    </cyberware>
+    <cyberware>
+      <id>61f5da9a-3221-478a-b6fe-2c9650287377</id>
+      <name>Electrocutioner</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>8000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Electrocutioner</addweapon>
+	  <requireparent />
+      <bonus>
+        <unarmedreach>1</unarmedreach>
+      </bonus>
+      <forbidden>
+        <oneof>
+          <bioware>Sharkskin</bioware>
+        </oneof>
+      </forbidden>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+	  <notes>Cannot be installed into a limb with cyberlimb armor. Maximum +2 unarmed Reach.</notes>
+    </cyberware>
 	</cyberwares>
 </chummer>
