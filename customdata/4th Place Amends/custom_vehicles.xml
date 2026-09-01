@@ -1270,7 +1270,7 @@
 
 	<mod>
       <id>7a6ffb15-814b-47e6-a5e9-3dd19b840f75</id>
-      <name>Amenities (Squatter)</name>
+      <name>Living Space (Squatter)</name>
       <page>1</page>
       <source>4PR</source>
       <avail>0</avail>
@@ -1284,7 +1284,7 @@
     </mod>
     <mod>
       <id>50725bdd-7ee4-4e59-9d1a-b0d2baed5c08</id>
-      <name>Amenities (Low)</name>
+      <name>Living Space (Low)</name>
       <page>1</page>
       <source>4PR</source>
       <avail>0</avail>
@@ -1298,7 +1298,7 @@
     </mod>
     <mod>
       <id>aa52ac79-fb88-41bb-b376-e636ab4fbae3</id>
-      <name>Amenities (Middle)</name>
+      <name>Living Space (Middle)</name>
 		<page>1</page>
       <source>4PR</source>
       <avail>2</avail>
@@ -1312,7 +1312,7 @@
     </mod>
     <mod>
       <id>afffc5d4-9cdd-4bf9-8494-029e9a996d28</id>
-      <name>Amenities (High)</name>
+      <name>Living Space (High)</name>
   		<page>1</page>
       <source>4PR</source>
       <avail>8</avail>
@@ -1326,7 +1326,7 @@
     </mod>
     <mod>
       <id>fd18596b-e26d-44f2-8dc2-8555fc5ea8e2</id>
-      <name>Amenities (Luxury)</name>
+      <name>Living Space (Luxury)</name>
        <page>1</page>
       <source>4PR</source>
       <avail>16</avail>
@@ -1338,7 +1338,6 @@
         <seats>-5</seats>
       </bonus>
 
-
      </mod>
 		<mod>
 			<id>1ca1e8f7-bb12-4280-9bc5-7ecdb12f78b6</id>
@@ -1348,8 +1347,11 @@
 			<avail>0</avail>
 			<category>Powertrain</category>
 			<cost>Variable(0-1000000)</cost>
-			<rating>body</rating>
-			<slots>-Rating</slots>
+			<rating>5</rating>
+			<slots>0</slots>
+			<bonus>
+				<seats>+Rating</seats>
+			</bonus>
 			<required>
 				<oneof>
 					<quality>Mobile Architect</quality>
