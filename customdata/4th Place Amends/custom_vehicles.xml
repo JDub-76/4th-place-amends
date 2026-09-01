@@ -937,7 +937,137 @@
 		  <name>Multifuel Engine</name>
 
       </mods>
+
     </vehicle>
+
+	<vehicle>
+		<id>0f1eeb20-398a-4522-aeaf-fb4e0c5fb54e</id>
+		<name>Sky Whale</name>
+		<page>60</page>
+		<source>SL</source>
+		<accel>3</accel>
+		<armor>14</armor>
+		<avail>36R</avail>
+		<body>14</body>
+		<category>Gravdrive</category>
+		<cost>1000000</cost>
+		<handling>4</handling>
+		<pilot>6</pilot>
+		<sensor>6</sensor>
+		<speed>4</speed>
+		<gears>
+			<gear>
+				<name>Sensor Array</name>
+				<rating>6</rating>
+				<maxrating>6</maxrating>
+			</gear>
+		</gears>
+		<seats>4</seats>
+	</vehicle>
+	<vehicle>
+		<id>d60ee5a4-e2d5-452d-b428-880a4384e5fd</id>
+		<name>Sprawl Wanderer</name>
+		<page>61</page>
+		<source>SL</source>
+		<accel>2</accel>
+		<armor>8</armor>
+		<avail>24R</avail>
+		<body>14</body>
+		<category>Gravdrive</category>
+		<cost>350000</cost>
+		<handling>6</handling>
+		<pilot>4</pilot>
+		<sensor>4</sensor>
+		<speed>2</speed>
+		<gears>
+			<gear>
+				<name>Sensor Array</name>
+				<rating>4</rating>
+				<maxrating>6</maxrating>
+			</gear>
+		</gears>
+		<seats>4</seats>
+	</vehicle>
+
+	    <vehicle>
+      <id>eeee5a33-2c97-43ab-b941-810fb1bcb6ca</id>
+      <name>Hummingbird(Small)</name>
+      <page>63</page>
+      <source>SL</source>
+      <accel>2</accel>
+      <armor>2</armor>
+      <avail>20R</avail>
+      <body>4</body>
+      <category>Drones: Small</category>
+      <cost>50000</cost>
+      <handling>5</handling>
+      <pilot>3</pilot>
+      <sensor>3</sensor>
+      <speed>3</speed>
+      <gears>
+        <gear>
+          <name>Sensor Array</name>
+          <rating>3</rating>
+          <maxrating>4</maxrating>
+        </gear>
+      </gears>
+      <mods>
+        <name>Rigger Interface</name>
+      </mods>
+    </vehicle>
+	    <vehicle>
+      <id>f917506e-b207-4a44-8c7d-fb1309cd9100</id>
+      <name>Hummingbird(Medium)</name>
+      <page>63</page>
+      <source>SL</source>
+      <accel>4</accel>
+      <armor>6</armor>
+      <avail>20R</avail>
+      <body>7</body>
+      <category>Drones: Medium</category>
+      <cost>75000</cost>
+      <handling>4</handling>
+      <pilot>3</pilot>
+      <sensor>3</sensor>
+      <speed>4</speed>
+      <gears>
+        <gear>
+          <name>Sensor Array</name>
+          <rating>3</rating>
+          <maxrating>4</maxrating>
+        </gear>
+      </gears>
+      <mods>
+        <name>Rigger Interface</name>
+      </mods>
+    </vehicle>
+  <vehicle>
+      <id>b1b614b1-bd8c-4e89-b5b8-663f4dda988d</id>
+      <name>Hummingbird(Large)</name>
+      <page>63</page>
+      <source>SL</source>
+      <accel>3</accel>
+      <armor>8</armor>
+      <avail>20R</avail>
+      <body>10</body>
+      <category>Drones: Large</category>
+      <cost>100000</cost>
+      <handling>4</handling>
+      <pilot>3</pilot>
+      <sensor>3</sensor>
+      <speed>5</speed>
+      <gears>
+        <gear>
+          <name>Sensor Array</name>
+          <rating>3</rating>
+          <maxrating>4</maxrating>
+        </gear>
+      </gears>
+      <mods>
+        <name>Rigger Interface</name>
+      </mods>
+    </vehicle>
+
 
 	</vehicles>
 	<mods>
@@ -1137,5 +1267,97 @@
         </vehicledetails>
 	  <notes>Allows one-handed operation of a weapon of medium machine gun/sniper rifle size or smaller. Can have 1 per arm.</notes>
     </mod>
+
+	<mod>
+      <id>7a6ffb15-814b-47e6-a5e9-3dd19b840f75</id>
+      <name>Living Space (Squatter)</name>
+      <page>1</page>
+      <source>4PR</source>
+      <avail>0</avail>
+      <category>Body</category>
+      <cost>500</cost>
+      <rating>0</rating>
+      <slots>2</slots>
+		<bonus>
+        <seats>-1</seats>
+      </bonus>
+    </mod>
+    <mod>
+      <id>50725bdd-7ee4-4e59-9d1a-b0d2baed5c08</id>
+      <name>Living Space (Low)</name>
+      <page>1</page>
+      <source>4PR</source>
+      <avail>0</avail>
+      <category>Body</category>
+      <cost>2000</cost>
+      <rating>0</rating>
+      <slots>4</slots>
+		<bonus>
+        <seats>-2</seats>
+      </bonus>
+    </mod>
+    <mod>
+      <id>aa52ac79-fb88-41bb-b376-e636ab4fbae3</id>
+      <name>Living Space (Middle)</name>
+		<page>1</page>
+      <source>4PR</source>
+      <avail>2</avail>
+      <category>Body</category>
+      <cost>5000</cost>
+      <rating>0</rating>
+      <slots>6</slots>
+		<bonus>
+        <seats>-3</seats>
+      </bonus>
+    </mod>
+    <mod>
+      <id>afffc5d4-9cdd-4bf9-8494-029e9a996d28</id>
+      <name>Living Space (High)</name>
+  		<page>1</page>
+      <source>4PR</source>
+      <avail>8</avail>
+      <category>Body</category>
+      <cost>10000</cost>
+      <rating>0</rating>
+      <slots>8</slots>
+		<bonus>
+        <seats>-4</seats>
+      </bonus>
+    </mod>
+    <mod>
+      <id>fd18596b-e26d-44f2-8dc2-8555fc5ea8e2</id>
+      <name>Living Space (Luxury)</name>
+       <page>1</page>
+      <source>4PR</source>
+      <avail>16</avail>
+      <category>Body</category>
+      <cost>100000</cost>
+      <rating>0</rating>
+      <slots>10</slots>
+		<bonus>
+        <seats>-5</seats>
+      </bonus>
+
+     </mod>
+		<mod>
+			<id>1ca1e8f7-bb12-4280-9bc5-7ecdb12f78b6</id>
+			<name>Mobile Architect Seats</name>
+			<page>1</page>
+			<source>4PR</source>
+			<avail>0</avail>
+			<category>Powertrain</category>
+			<cost>0</cost>
+			<rating>5</rating>
+			<slots>0</slots>
+			<bonus>
+				<seats>+Rating</seats>
+			</bonus>
+			<required>
+				<oneof>
+					<quality>Mobile Architect</quality>
+				</oneof>
+			</required>
+		</mod>
+
 	</mods>
 </chummer>

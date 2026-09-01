@@ -961,6 +961,9 @@
         <oneof>
           <bioware>Orthoskin</bioware>
         </oneof>
+	   <bonus>
+        <radiationresist>2</radiationresist>
+      </bonus>
       </required>
       <source>4PR</source>
       <page>1</page>

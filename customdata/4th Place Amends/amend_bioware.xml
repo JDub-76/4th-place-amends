@@ -196,5 +196,141 @@
         </addqualities>
       </bonus>
     </bioware>
+
+     <bioware>
+      <id>7aad79ff-7722-440d-a9c6-5b33b4ad7440</id>
+      <name>Allergen Tolerance</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.1</ess>
+      <capacity>0</capacity>
+      <avail>6</avail>
+      <cost>20000</cost>
+      <bonus/>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>d4f12de1-29bc-4d6e-9ef2-d395b446c9e4</id>
+      <name>Cold Adaptation</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>5</avail>
+      <cost>8000</cost>
+      <bonus>
+        <coldarmor>2</coldarmor>
+      </bonus>
+      <forbidden>
+        <oneof>
+          <bioware>Heat Adaptation</bioware>
+        </oneof>
+      </forbidden>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>f5b67712-1609-4f76-bb61-ad83d3d3e926</id>
+      <name>Cryo Tolerance</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.05</ess>
+      <capacity>0</capacity>
+      <avail>18</avail>
+      <cost>50000</cost>
+      <bonus/>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>7b5bfe60-c7f6-4df2-9e53-56a76a4e8a8e</id>
+      <name>Heat Adaptation</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>5</avail>
+      <cost>8000</cost>
+      <bonus>
+        <firearmor>2</firearmor>
+      </bonus>
+      <forbidden>
+        <oneof>
+          <bioware>Cold Adaptation</bioware>
+        </oneof>
+      </forbidden>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>0453cf1e-3224-46ce-82bb-fde03ef6e451</id>
+      <name>Low Oxygen Adaptation</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.1</ess>
+      <capacity>0</capacity>
+      <avail>4</avail>
+      <cost>8000</cost>
+      <bonus>
+        <lifestylecost>10</lifestylecost>
+      </bonus>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>4c67dc6a-eafb-40c7-88a1-b32518800db2</id>
+      <name>Microgravity Adaptation</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.05</ess>
+      <capacity>0</capacity>
+      <avail>4</avail>
+      <cost>30000</cost>
+      <bonus/>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>5b3d3dce-2cd2-4720-84ae-4445092a4245</id>
+      <name>Pollution Tolerance</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>5</avail>
+      <cost>15000</cost>
+      <bonus>
+        <toxincontactresist>2</toxincontactresist>
+        <toxiningestionresist>2</toxiningestionresist>
+        <toxininhalationresist>2</toxininhalationresist>
+      </bonus>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>163</page>
+    </bioware>
+    <bioware>
+      <id>3550fe0d-453d-431f-bd84-d9cd50581f39</id>
+      <name>Radiation Tolerance</name>
+      <category>Environmental Microadaptation</category>
+      <ess>0.2</ess>
+      <capacity>0</capacity>
+      <avail>6</avail>
+      <cost>15000</cost>
+      <bonus>
+        <radiationresist>2</radiationresist>
+      </bonus>
+      <forcegrade>None</forcegrade>
+      <isgeneware />
+      <source>CF</source>
+      <page>164</page>
+    </bioware>
+
   </biowares>
 </chummer>

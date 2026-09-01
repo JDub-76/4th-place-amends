@@ -483,7 +483,7 @@
 		  <dv>3</dv>
 		  <range>Special</range>
 		  <type>M</type>
-			<notes>Nethits bonus to next influence Test within nethits days. This ritual takes 2 hours</notes>
+			<notes>Nethits bonus to next Charisma Test within nethits days. This ritual takes 2 hours</notes>
 		</spell>
 		<spell>
 		  <id>0876a769-f939-490e-958b-ae5d604e8b25</id>
@@ -498,6 +498,214 @@
 		  <range>Special</range>
 		  <type>M</type>
 			<notes>Participants may pool together Spell defense dice, Each nethit adds particpiants dice to total pool. This ritual takes 1 hour</notes>
+		</spell>
+		<spell>
+		  <id>496d4068-0e2d-43ea-b519-e9e3e40931f5</id>
+		  <name>Elemental Sentinel</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>35ec5af6-320d-4ce5-a522-3b398c868de5</id>
+		  <name>Spectral Custodians</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>3715c882-82d7-4dee-ba9e-895c4e3d6483</id>
+		  <name>Wild Allegiance</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>b7f91d64-c2f4-4706-978b-f053c6704594</id>
+		  <name>Bountiful Oasis</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Material Link</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>fb9646a7-c0e4-41f6-9dec-d5be0372ac2d</id>
+		  <name>Bacchanalia</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>c7dd1f1d-7da0-4e3e-a8de-368421d98887</id>
+		  <name>Fantastic Facade</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+
+		<spell>
+		  <id>c848eb96-b84c-415d-a14e-f581eb6ad11a</id>
+		  <name>Domain</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>a359a451-0c01-4e8c-a3c2-7c9a085f671b</id>
+		  <name>Pyrotechnics</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+
+		<spell>
+		  <id>10f75d3a-a9ea-4eba-a706-9be33840c843</id>
+		  <name>Multipresence</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>4</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+		<spell>
+		  <id>d63d6db9-2d25-43d0-a1ef-3c1805bffab3</id>
+		  <name>Living Bastion</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>0ca972b4-30d4-4dc5-8188-1fc08edf2694</id>
+		  <name>Unbalanced Fate</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Contractual</descriptor>
+		  <duration>Special</duration>
+		  <dv>4</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+		<spell>
+		  <id>e97f2938-9e82-457c-89b3-36730bfcabf3</id>
+		  <name>Concealment's Curtain</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor></descriptor>
+		  <duration>Special</duration>
+		  <dv>2</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>d5fa8356-28c8-46cf-894e-e0d42c100e2d</id>
+		  <name>Dread Ambiance</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>2</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>76ac1748-ec62-4cab-9301-59801d12f723</id>
+		  <name>Crawling Blight</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor></descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>c6a69b75-a676-4579-9568-2dbdd463fc9e</id>
+		  <name>Sky Write</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Contractual</descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
 		</spell>
 
 		<spell>
@@ -567,6 +775,8 @@
 			<range>LOS (A)</range>
 			<type>P</type>
 		</spell>
+
+
 
 		<spell>
 			<id>e3a4157f-9df7-4a87-b0de-08ed0637c363</id>

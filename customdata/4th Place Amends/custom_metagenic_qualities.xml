@@ -1249,9 +1249,18 @@ If you ever lose your magic attribute, you can't use the wings this way. Neverth
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+
 			<notes>This mutation acts similarly to the Striking Skin Pigmentation metagenic quality, but for one’s eyes. The mutant’s sclera shows a very unique color. Red, Black, Blue. This mutation's coloration varies wildly, but must be unique for the race to which it belongs. When the runner’s eyes have been perceived, all Matrix Searches and Memory Tests to recall what the character looks like receive a +1 dice bonus. This stacks with Striking Skin Pigmentation.
 If the character ever replaces his eyes with cybereyes, he must buy of this quality instantly or go into karma debt until it is paid off.
 			</notes>
+
 		</quality>
 		<quality>
 			<id>2e37b794-041e-459d-b54e-53025ae211c9</id>
@@ -1261,6 +1270,13 @@ If the character ever replaces his eyes with cybereyes, he must buy of this qual
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>The SURGE affected your lower body quite heavily, fusing your legs together completely and elongating them into a single long, snakelike limb. This gives you an incredibly striking appearance, granting everyone +4 dice to Memory Tests to remember your appearance, or to search about you on the Matrix. This stacks with Striking Skin Pigmentation and Striking Sclera. In addition your movements are more sluggish, causing you to change your movement rates to Agility x 1 for walking and Agility x 2 for running, sprinting (+0.5m/hit). Finally, this mutation also removes your ability to gain and use Cyberlegs, unless you gain a Liminal Body and buy off this quality. 
 
 If this quality is taken in concert with Adiposis you are always counted as ‘running’ even when moving at walking speed, requiring a free action to move. In addition you count your Agility as one lower for the purposes of Movement speed.
@@ -1274,6 +1290,13 @@ If this quality is taken in concert with Adiposis you are always counted as ‘r
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>The character's skin is fragile and constantly covered in a protective slime. This slime leaves them more prone to dehydration, halving all intervals in which fatigue is rolled in dry or hot areas. Additionally, as the slime dries off they become increasingly uncomfortable. They are treated as suffering from a minor allergy if they have taken any fatigue damage caused by dehydration. For every 3 fatigue damage the character has taken this way, the allergy is treated as being one step higher in severity, up to severe. Characters with the Slime Coating quality suffer social stigma and modifiers. This is incompatible with bioware, or cyberware that alter the skin.
 			</notes>
 		</quality>
@@ -1285,6 +1308,13 @@ If this quality is taken in concert with Adiposis you are always counted as ‘r
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>You don't need to drink! Well you do actually, but similar to a frog, you take in water through your skin. This leaves you highly susceptible to many toxins and pollutants. Liquid ingestion vector toxins and drugs can affect you through mere contact as if they had been mixed with DMSO, and you take a -4 to resist toxins that are normally (or have through DMSO been made) contact vector. This quality is incompatible with orthoskin.
 			</notes>
 		</quality>
@@ -1296,6 +1326,13 @@ If this quality is taken in concert with Adiposis you are always counted as ‘r
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Something about lying on your back is just so relaxing, kind of like how sharks go into a trance when flipped onto their back. Unfortunately this means that when you're dropped down on your back you have some real trouble getting back up. In order to get up when lying on your back, including being knocked prone (but not after dropping prone by your own choice, you are assumed to be smart enough to belly flop for that), you must roll a Composure (3) test before you can attempt the normal test to get back up.
 			</notes>
 		</quality>
@@ -1307,6 +1344,13 @@ If this quality is taken in concert with Adiposis you are always counted as ‘r
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Also known as irregular cranial or skull configurations, AHD normally manifests as significant physical diversion from standard metahuman structure and appearance. These can be in nearly any form of such, often fitting in with features that are found among other species of the world. The difference in these appearances is they are principally cosmetic for the purposes of game mechanics. All of these apply Freaks.
 			Avian
 These individuals have had their cranial/aural properties adjusted to appear like those of common avians, including pronounced narrow jaw lines (but not into full beaks), widened or enlarged optical cavities, and similar traits.
@@ -1321,6 +1365,13 @@ These individuals have had their cranial/aural properties adjusted to appear lik
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Also known as irregular cranial or skull configurations, AHD normally manifests as significant physical diversion from standard metahuman structure and appearance. These can be in nearly any form of such, often fitting in with features that are found among other species of the world. The difference in these appearances is they are principally cosmetic for the purposes of game mechanics. All of these apply Freaks.
 			Canine/Feline
 This is a very common trait, with an assortment of canine and feline variations. It provides pronounced jawlines, slight changes to teeth (not enough to use them as weapons), and even shifts in the position of the ears. 
@@ -1334,6 +1385,13 @@ This is a very common trait, with an assortment of canine and feline variations.
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Also known as irregular cranial or skull configurations, AHD normally manifests as significant physical diversion from standard metahuman structure and appearance. These can be in nearly any form of such, often fitting in with features that are found among other species of the world. The difference in these appearances is they are principally cosmetic for the purposes of game mechanics. All of these apply Freaks.
 			Canine/Feline
 This is a very common trait, with an assortment of canine and feline variations. It provides pronounced jawlines, slight changes to teeth (not enough to use them as weapons), and even shifts in the position of the ears. 
@@ -1347,6 +1405,13 @@ This is a very common trait, with an assortment of canine and feline variations.
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Also known as irregular cranial or skull configurations, AHD normally manifests as significant physical diversion from standard metahuman structure and appearance. These can be in nearly any form of such, often fitting in with features that are found among other species of the world. The difference in these appearances is they are principally cosmetic for the purposes of game mechanics. All of these apply Freaks.
 			Pachy (Rhino, Elephant, Hippo)
 Individuals have widened upper aural helices, often with some adjustment to the position of ears. They also display vestigial horns (rhino), proboscis (elephantine), or widened jaws with distally placed teeth (hippo). Appearances are often leathery along the cranial and upper torso.
@@ -1360,6 +1425,13 @@ Individuals have widened upper aural helices, often with some adjustment to the 
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Possessing wide and flat feet with no discernible arch or exposed heel, individuals with this quality are hindered in physical tests. All such test suffer a -1 Dice pool modifier.All footwear must be custom-made, increasing cost by twenty-five percent. Physical Tests include Defense tests. If you ever replace your legs with cyberlegs you need to immediately buy of this quality
 			</notes>
 		</quality>
@@ -1371,6 +1443,13 @@ Individuals have widened upper aural helices, often with some adjustment to the 
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>The user’s eyes reflect any light directed at them, as often seen with cats, rats, and some reptiles. This makes spotting the individual in dark or nighttime conditions easier, so any observers get a +1 dice pool bonus on Perception tests. Such reflective eyes cannot be negated through simple eyewear. If any cybereyes are bought, this quality needs to be bought of
 			</notes>
 		</quality>
@@ -1382,6 +1461,13 @@ Individuals have widened upper aural helices, often with some adjustment to the 
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Also called Bug Eyes or Oni Eyes, this quality makes the eyes seem pronounced and bulbous. The ocular sockets have a shallower development. Irises are either blood red, pumpkin orange, or neon yellow. The eyes are more vulnerable to irritation—increase modifiers for smoke, ash, or other airborne substances by 1. If any cybereyes are bought, this quality needs to be bought of
 			</notes>
 		</quality>
@@ -1393,6 +1479,13 @@ Individuals have widened upper aural helices, often with some adjustment to the 
 			<metagenic>True</metagenic>
 			<source>6e</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>It’s one thing to be bald, another to be hairless. This individual no longer has any hair or hair follicles anywhere on their body (though skin pores do exist). This affects the entire dermal biome and overall appearance. Sweating is more difficult, and social engagements with metahumans can be awkward. First social encounters with metahumans are done with a –1 dice pool modifier. The individual also shows up more easily on thermographic vision and thermal sensors, giving +1 for Perception tests to see them. Incompatible with Hair based bioware or cyberware.
 			</notes>
 		</quality>
@@ -1404,6 +1497,13 @@ Individuals have widened upper aural helices, often with some adjustment to the 
 			<metagenic>True</metagenic>
 			<source>4PR</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Your hair is made up of tendrils, tentacles, snakes or some other wriggly things (up to you). It flows and moves like a living organism and while you have limited control over it, it also seems to have a mind of its own, acting involuntarily based on your subconscious.
 Your hair can hold onto items but it has difficulty with fine manipulation. Apply a -6 dice modifier to any attempt at fine manipulation of an object with your hair, such as pressing a button, pulling a trigger or making an attack. Your Living Hair has an effective Strength equal to half the character's unaugmented strength and Agility equal to  the character’s unaugmented agility (rounded down) and a Reach of -1. Living Hair does not provide any extra attacks. If you have the Natural Venom quality (RF 117), the venom can be administered via stinger cells at the end of your Living Hair as an Injection Vector.
 Physical or emotional stress can cause your Living Hair to react unpredictably, forcing you to make a Composure (3) Test (SR5 152). Failing the test will cause the hair to lash out and try to attack anyone nearby (preferably the cause of the stress), injecting any venom if available. The hair doesn’t suffer from the -6 dice penalty and has 6 ranks in Unarmed when making this attack. This can cause surrounding people to react negatively or with outright hostility.
@@ -1424,6 +1524,13 @@ Characters with this quality will normally incur social modifiers (Freaks sideba
 					<bonus>2</bonus>
 				</specificskill>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>The character has developed cutaneous mucous glands. The character gains +2 dice bonus to Escape Artists tests. Additionally, when making defense tests to avoid being Subdued (SR5 195) or Clinched (RF 119) as well as tests made to escape Subdue or Clinch, the character gains a +2 dice bonus. If the character has the Natural Venom quality (RF 117), the venom can be secreted as a Contact Vector Toxin via the cutaneous slime.
 The character leaves slime wherever they go. Not a lot, but just enough to be noticeable and disgusting. Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123). Moreover, any test to Clinch, Subdue, Climb and maintain a grip on things is made at a -2 dice penalty. It’s also almost impossible to not leave some genetic marker behind. Matrix Search tests and other tests to identify or locate the character are made with a +1 die bonus. This quality is incompatible with Dermal Alteration (RF 113) or artificial skin modifications, but is compatible with other natural skin modifications such as Dermal Deposits or Defensive Secretion (RF 114).
 			</notes>
@@ -1447,6 +1554,13 @@ The character leaves slime wherever they go. Not a lot, but just enough to be no
 					<condition>Olfactory</condition>
 				</specificskill>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Characters with this quality have a nose similar to an old flat vid villain, snake or pug. Due to this deformity, they have trouble breathing, can’t keep a partner for snoring and wheezing, and physical activity is more difficult for them.
 The character takes a -2 dice penalty to all Physical Active Skills. The character also suffers an added -1 dice penalty to olfactory Perception tests. Finally, fatigue DV from running (SR5 172) is increased by a cumulative +1S, every time you make a fatigue resistance test for running. Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123).
 			</notes>
@@ -1462,6 +1576,13 @@ The character takes a -2 dice penalty to all Physical Active Skills. The charact
 			<addqualities>
 				<addquality>Distinctive Style</addquality>
 			</addqualities>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>You have unfortunately developed multiple features that resemble demons as portrayed by many cultures. The features can be fangs, horns, wings, tail, etc. Whatever they may be, they are cosmetic only, and provide no mechanical benefit unless an appropriate quality is also chosen. Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123) as well as the effects of the Distinctive Style quality (SR5 80).
 It also causes the character to suffer the Hostile (SR5 140) social modifier when encountering any religious NPCs. The NPC may outrightly refuse to deal with this character or even act with hostility. If drawn into combat, such people may attack the character first (to remove the apparent evil).
 			</notes>
@@ -1474,6 +1595,13 @@ It also causes the character to suffer the Hostile (SR5 140) social modifier whe
 			<metagenic>True</metagenic>
 			<source>4PR</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>All Mental attributes are reduced by 1 during night hours (after sunset, before sunrise) due to weariness.
 			</notes>
 		</quality>
@@ -1488,6 +1616,13 @@ It also causes the character to suffer the Hostile (SR5 140) social modifier whe
 			<bonus>
 				<lifestylecost>20</lifestylecost>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>You shed your skin, scales, or fur with alarming regularity. The process is uncomfortable and happens during days least predicted. At the beginning of each run, you must make a Body (2) test to see if you start molting. If you fail this roll, you suffer a -1 die penalty to all skill tests for the length of the run due to discomfort of your skin slowly molting throughout the entire run. In addition, your skin requires special care and maintenance to avoid infections, increasing your lifestyle cost by +20%.
 			</notes>
 		</quality>
@@ -1502,6 +1637,13 @@ It also causes the character to suffer the Hostile (SR5 140) social modifier whe
 			<bonus>
 				<lifestylecost>10</lifestylecost>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Your genetic template includes something that enters regular hibernation, unfortunately, that’s crossed with your metahuman DNA, leading to a massive appetite and outrageous sleeping habits. You suffer a 10% increase in lifestyle costs, and lose one Monthly Focus.
 			</notes>
 		</quality>
@@ -1513,6 +1655,13 @@ It also causes the character to suffer the Hostile (SR5 140) social modifier whe
 			<metagenic>True</metagenic>
 			<source>4PR</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>Your nose and lips are much closer to that of an animal. Your jaws are elongated, making your mouth look like an animal muzzle. This slightly impedes your ability to speak, such as having difficulty pronouncing some words. Any Skill Test involving speech takes a -1 die penalty. Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123).
 On the plus side, if you have the Fangs quality (RF 115), the Accuracy of your fangs is improved by +1. This quality is incompatible with the bioware modification Muzzle (CF 121).
 			</notes>
@@ -1532,6 +1681,13 @@ On the plus side, if you have the Fangs quality (RF 115), the Accuracy of your f
 					<thresholdoffset>2</thresholdoffset>
 				</conditionmonitor>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>You embody death and decay, creatures that feed on carrion regularly call you their home. You resemble something akin to a traditional, decomposing zombie with a stench of decay. Only the strongest of will and stomach can take more than a short conversation in your presence. Any person within conversation distance of you will need to take a Composure (2) test to remain in your presence. If they fail, they will move away from you out of disgust and you will suffer an additional -3 dice penalty to all Social tests against that person. Your necrotic flesh makes healing difficult as your own immune system fights off any attempts to heal. All Healing tests performed on you, including natural healing are done at a -3 dice penalty.
 On the plus side, you feel less pain and can ignore two additional boxes of damage when calculating Wound Modifiers (SR5 169). Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123).
 			</notes>
@@ -1549,6 +1705,13 @@ On the plus side, you feel less pain and can ignore two additional boxes of dama
 				<bonus>-3</bonus>
 				<condition>Hearing</condition>
 			</specificskill>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>The character no longer has earlobes common to metahumans. Instead, their auditory organs formed like those of a lizard. They cannot wear eyeglasses, for they have no ears upon which to rest the temples. However, a metahuman is not a lizard and though the hearing of a reptile is generally known to be rather good, it doesn’t translate well for the character.
 Any test involving hearing takes a -3 dice penalty. The character’s hearing cannot be repaired or corrected (even with cyber ears) due to the internal differences of a normal metahuman ear and the character’s. Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 124).
 			</notes>
@@ -1561,6 +1724,13 @@ Any test involving hearing takes a -3 dice penalty. The character’s hearing ca
 			<metagenic>True</metagenic>
 			<source>4PR</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<notes>For some reason, you are an anathema to all spirit kind. Similar to Spirit Bane (SR5 85), a character with this quality really pisses off spirits, of all kinds. Any spirit within five meters of the character, that has not been summoned by them, reacts with hostility towards the character. Spirits will always use lethal force against characters with the Spirit Blight quality.
 A character with this quality has a difficult time summoning or binding spirits and in combat an opposing spirit will seek her out and attempt to destroy the character first.
 
@@ -1589,6 +1759,14 @@ The character suffers a -2 dice pool modifier to summon or bind spirits. If the 
 					<val>-2</val>
 				</runmultiplier>
 			</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+
 			<forbidden>
 				<oneof>
 					<quality>Albinism</quality>
@@ -1605,6 +1783,13 @@ The character suffers a -2 dice pool modifier to summon or bind spirits. If the 
 			<metagenic>True</metagenic>
 			<source>4PR</source>
 			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
 			<forbidden>
 				<oneof>
 					<quality>Albinism</quality>
@@ -1616,5 +1801,343 @@ Due to the lack of protective pigmentation, they suffer sunburn more quickly and
 Characters with this quality will normally incur social modifiers (Freaks sidebar, RF 123). This quality is incompatible with Albinism (RF 151) or any other natural or artificial skin modification.
 			</notes>
 		</quality>
+
+		<quality>
+			<id>c0936888-074d-4fdc-a00c-c620ec4efc9a</id>
+			<name>Burst Locomotion</name>
+			<karma>3</karma>
+			<category>Positive</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			 <bonus>
+				<sprintbonus>
+				  <category>Ground</category>
+				  <val>200</val>
+				</sprintbonus>
+				 <sprintbonus>
+				  <category>Swim</category>
+				  <val>200</val>
+				</sprintbonus>
+				 <sprintbonus>
+				  <category>Fly</category>
+				  <val>200</val>
+				</sprintbonus>
+			  </bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+
+			<forbidden>
+				<oneof>
+					<quality>Celerity</quality>
+					<quality>Satyr Legs</quality>
+				</oneof>
+			</forbidden>
+		</quality>
+
+		<quality>
+			<id>eaa0e956-6fe7-4270-926e-4a20d37bbb89</id>
+			<name>Cognitive Inertia</name>
+			<karma>4</karma>
+			<category>Positive</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>+2 to resist Unwanted actions or memory modification
+			</notes>
+		</quality>
+		<quality>
+			<id>475ccf54-f9b3-4d72-b42c-c4f11baa900f</id>
+			<name>Chili Blood</name>
+			<karma>2</karma>
+			<category>Positive</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>TH4 composure to continue feeding on you
+			</notes>
+		</quality>
+
+		<quality>
+			<id>d18dcb8a-6c92-4ef3-a072-f1b745db9b50</id>
+			<name>Extra Legs</name>
+			<karma>8</karma>
+			<category>Positive</category>
+			<limit>2</limit>
+			<metagenic>True</metagenic>
+			<bonus>
+				<addlimb>
+				  <limbslot>leg</limbslot>
+				  <val>2</val>
+				</addlimb>
+			</bonus>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+
+			<notes/>
+		</quality>
+		<quality>
+			<id>96b88745-c8b2-4f04-9109-1476f9fb04b9</id>
+			<name>Mana Sensitivity</name>
+			<karma>-5</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>Takes negative bgc penalty up to -3, can roll int to get bgc alignment
+			</notes>
+		</quality>
+
+		<quality>
+			<id>df0041d1-8810-4b60-8427-b43cac967087</id>
+			<name>Sluggish</name>
+			<karma>-8</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<bonus>
+				<walkmultiplier>
+				  <category>Ground</category>
+				  <val>-1</val>
+				</walkmultiplier>
+				<runmultiplier>
+				  <category>Ground</category>
+				  <val>-1</val>
+				</runmultiplier>
+			   <walkmultiplier>
+				  <category>Swim</category>
+				  <val>-1</val>
+				</walkmultiplier>
+				<runmultiplier>
+				  <category>Swim</category>
+				  <val>-1</val>
+				</runmultiplier>
+					<walkmultiplier>
+				  <category>Fly</category>
+				  <val>-1</val>
+				</walkmultiplier>
+				<runmultiplier>
+				  <category>Fly</category>
+				  <val>-1</val>
+				</runmultiplier>
+			  </bonus>
+
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>
+			</notes>
+		</quality>
+
+		<quality>
+			<id>fab2047d-614e-4045-8c12-c86521c5c2d8</id>
+			<name>Elemental Vulnerability</name>
+			<karma>-7</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<bonus>
+				<selecttext />
+		  	</bonus>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>can’t be healed by Regeneration or healing magic
+			</notes>
+		</quality>
+
+				<quality>
+			<id>d6acbc09-3dc4-422e-b6fb-21ffe8f1955a</id>
+			<name>Autonomous Tail</name>
+			<karma>-3</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<bonus>
+				<selecttext />
+		  	</bonus>
+			<required>
+				<allof>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+				<oneof>
+					<quality>Vestigial Tail</quality>
+					<quality>Functional Tail (Balance)</quality>
+				  	<quality>Functional Tail (Paddle)</quality>
+				  	<quality>Functional Tail (Prehensile)</quality>
+				  	<quality>Functional Tail (Thagomizer)</quality>
+				</oneof>
+				</allof>
+			</required>
+			<notes>can’t be healed by Regeneration or healing magic
+			</notes>
+		</quality>
+
+
+		<quality>
+			<id>39b4784a-807e-48a7-bbed-21437213d3d3</id>
+			<name>Elongated Neck</name>
+			<karma>-3</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>Reduces Called shot neck penalty against you to -4
+			</notes>
+		</quality>
+
+
+		<quality>
+			<id>8afabfd3-e8a9-496c-9932-f28ce5dae741</id>
+			<name>Prey Reflex</name>
+			<karma>-5</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>+1 TH on surprise test when surprised, +2 if loud noises and bright lights
+			</notes>
+		</quality>
+
+		<quality>
+			<id>b7df9e8f-daa6-490f-a7d5-9f6a17f31f9e</id>
+			<name>Squeaky Voice</name>
+			<karma>-2</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>-2 On intimidation when you have to talk for it
+			</notes>
+		</quality>
+
+		<quality>
+			<id>ee324b73-1e43-440f-b469-e1b4fd58a99c</id>
+			<name>Fragile Physiology</name>
+			<karma>-4</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>Treat dmg as 3 higher to determine if its P or S dmg.
+			</notes>
+		</quality>
+
+		<quality>
+			<id>90ce3d59-adc0-4169-aadf-6d87437ff173</id>
+			<name>Phototaxis</name>
+			<karma>-4</karma>
+			<category>Negative</category>
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>Raise category for bright light, composre to not walk into the light.
+			</notes>
+		</quality>
+
+		<quality>
+			<id>212253f2-01ad-4239-851d-fa8008341a06</id>
+			<name>Oversized Claw</name>
+			<karma>5</karma>
+			<category>Positive</category>
+			<addweapon>Oversized Claw</addweapon>
+
+			<metagenic>True</metagenic>
+			<source>4PR</source>
+			<page>1</page>
+			<required>
+				<oneof>
+					<quality>Changeling (Class I SURGE)</quality>
+					<quality>Changeling (Class II SURGE)</quality>
+					<quality>Changeling (Class III SURGE)</quality>
+				</oneof>
+			</required>
+			<notes>Raise category for bright light, composre to not walk into the light.
+			</notes>
+		</quality>
+
+
 	</qualities>
 </chummer>
