@@ -2931,5 +2931,16 @@
       <page>1</page>
       <hide />
     </quality>
+	<quality>
+      <id>4c9603ac-81f1-4114-a66b-d663e63c9a44</id>
+      <name>Mobile Architect</name>
+      <karma>3</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	<notes>Allows To save some seats otherwise lost to the living space modification</notes>
+    </quality>
+
 	</qualities>
 </chummer>
