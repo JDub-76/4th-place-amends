@@ -1346,7 +1346,7 @@
 			<source>4PR</source>
 			<avail>0</avail>
 			<category>Powertrain</category>
-			<cost>Variable(0-1000000)</cost>
+			<cost>0</cost>
 			<rating>5</rating>
 			<slots>0</slots>
 			<bonus>
