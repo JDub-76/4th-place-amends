@@ -664,6 +664,17 @@
           <page>1</page>
         </power>
         <power>
+          <id>0ff39ca2-953b-4522-804c-7b364b94bbf9</id>
+          <name>Resonant Flight</name>
+          <category>Emerged</category>
+          <type />
+          <action />
+          <range />
+          <duration />
+          <source>4PR</source>
+          <page>1</page>
+        </power>
+        <power>
           <id>a8c515a5-334d-466f-a425-c58080b9060e</id>
           <name>Echolocation</name>
           <category>Drake</category>
