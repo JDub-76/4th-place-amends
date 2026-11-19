@@ -368,6 +368,7 @@
 		<weapon>
 			<name>Ares Redline</name>
 			<useskill>Directed Energy Weapons</useskill>
+      		<conceal>0</conceal>
 			<damage>7P</damage>
 			<accessorymounts amendoperation="Append">
 				<mount>Top</mount>
@@ -508,6 +509,7 @@
 		</weapon>
 		<weapon>
 			<name>Walther Battle Sword</name>
+			<reach>2</reach>
 			<conceal>10</conceal>
 		</weapon>
 		<weapon>
@@ -547,6 +549,7 @@
 		<weapon>
 			<name>Rheinmetall Cleaner (Telescoping Halberd)</name>
 			<conceal>10</conceal>
+			<spec>Axes</spec>
 		</weapon>
 		<weapon>
 			<name>Ballistic Shield</name>
@@ -805,6 +808,77 @@
       		<id>ad28b2dd-4f4f-4089-af6b-39f3ff6900fd</id>
       		<name>HK Urban Fighter (German)</name>
     	</weapon>
+		<weapon>
+			<name>Aztechnology Striker</name>
+			<damage>14P</damage>
+			<ap>-0</ap>
+			<notes>Damage is impact damage.</notes>
+		</weapon>
+		<weapon>
+			<name>M79B1 LAW Rocket</name>
+			<accuracy>7</accuracy>
+			<damage>18P (-4/m)</damage>
+			<ap>-2//-6</ap>
+			<range>Sporting Rifles</range>
+			<notes>Anti-Vehicle. Disposable. Accuracy is 3 against personnel.</notes>
+		</weapon>
+		<weapon>
+      		<name>Mitsubishi Yakusoku MRL</name>
+			<damage>14P</damage>
+			<ap>-</ap>
+			<notes>Damage is impact damage.</notes>
+		</weapon>
+		<weapon>
+      		<name>Onotari Arms Ballista MML</name>
+			<damage>14P</damage>
+			<ap>-</ap>
+			<notes>Damage is impact damage.</notes>
+		</weapon>
+		<weapon>
+      		<name>Onotari Interceptor</name>
+			<damage>14P</damage>
+			<ap>-</ap>
+			<notes>Damage is impact damage.</notes>
+		</weapon>
+		<weapon>
+      		<name>Phalanx Systems Vogeljager II</name>
+			<damage>14P</damage>
+			<ap>-</ap>
+			<notes>Damage is impact damage.</notes>
+		</weapon>
+		<weapon>
+			<name>GE Vindicator Mini-Gun</name>
+      		<fullburst>15</fullburst>
+      		<suppressive>40</suppressive>
+			<notes>Requires a Simple action to spin up before firing. When spun up, -6 to dice and Limit for sneaking tests, and +2 to audio detection.</notes>
+		</weapon>
+		<weapon>
+			<name>Krime Triple-Dwarf Minigun</name>
+      		<fullburst>15</fullburst>
+      		<suppressive>40</suppressive>
+			<notes>Requires a Simple action to spin up before firing. When spun up, -6 to dice and Limit for sneaking tests, and +2 to audio detection.</notes>
+		</weapon>
+		<weapon>
+			<name>Krime Triple-Ork Minigun</name>
+      		<fullburst>15</fullburst>
+      		<suppressive>40</suppressive>
+			<notes>Requires a Simple action to spin up before firing. When spun up, -6 to dice and Limit for sneaking tests, and +2 to audio detection.</notes>
+		</weapon>
+		<weapon>
+      		<name>Krime Triple-Troll Minigun</name>
+      		<fullburst>15</fullburst>
+      		<suppressive>40</suppressive>
+			<notes>Requires a Simple action to spin up before firing. When spun up, -6 to dice and Limit for sneaking tests, and +2 to audio detection.</notes>
+		</weapon>
+		<weapon>
+		    <name>Ruhrmetall SFW-30</name>
+			<mode>BF</mode>
+			<accuracy>6</accuracy>
+		</weapon>
+		<weapon>
+		    <name>Ruhrmetall SFW-30 Tracker Weapon</name>
+			<mode>SS</mode>
+		</weapon>
 	</weapons>
 </chummer>
 

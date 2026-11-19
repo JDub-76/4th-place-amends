@@ -184,7 +184,12 @@
 				</oneof>
 			</required>
 			<doublecareer>False</doublecareer>
-			<bonus />
+			<bonus>
+			    <sprintbonus>
+					<category>Ground</category>
+					<val>200</val>
+				</sprintbonus>
+			</bonus>
 			<source>4PR</source>
 			<page>1</page>
 		</quality>
@@ -318,7 +323,7 @@
 		<quality> <!-- Panzer (Fear/Wound) -->
 			<id>f6b66e05-9143-461a-a663-adf41f6f55ee</id>
 			<name>Panzer (Fear/Wound)</name>
-			<karma>20</karma>
+			<karma>15</karma>
 			<category>Positive</category>
 			<doublecareer>False</doublecareer>
 			<forbidden>
@@ -1085,6 +1090,42 @@
 			<source>4PR</source>
 			<page>0</page>
 		</quality>
+
+        <quality> <!-- Spell Guardian-->
+			<id>51d802e7-f1e6-47a5-b3d6-b0c9cab48f41</id>
+			<name>Spell Guardian</name>
+			<karma>10</karma>
+			<category>Positive</category>
+			<doublecareer>False</doublecareer>
+			<required>
+				<oneof>
+					<skill>
+						<name>Counterspelling</name>
+						<val>1</val>
+					</skill>
+				</oneof>
+			</required>
+			<source>4PR</source>
+			<page>0</page>
+		</quality>
+        <quality> <!-- Remote Disjoiner-->
+			<id>b764189b-2389-4b60-a570-fec22d166281</id>
+			<name>Remote Disjoiner</name>
+			<karma>5</karma>
+			<category>Positive</category>
+			<doublecareer>False</doublecareer>
+			<required>
+				<oneof>
+					<skill>
+						<name>Disenchanting</name>
+						<val>6</val>
+					</skill>
+				</oneof>
+			</required>
+			<source>4PR</source>
+			<page>0</page>
+		</quality>
+
 		<quality> <!-- Resonance [Program] -->
 			<id>9784cb64-56e9-43ef-ab28-05559d3f213b</id>
 			<name>Resonance [Program]</name>
@@ -1178,12 +1219,20 @@
 			<name>Polymath</name>
 			<karma>8</karma>
 			<category>Positive</category>
-			<activeskillkarmacost>
-				<name />
-				<val>-2</val>
-				<min>6</min>
-				<condition>career</condition>
-			</activeskillkarmacost>
+			<bonus>
+				<activeskillkarmacost>
+					<name />
+					<val>-2</val>
+					<min>6</min>
+					<condition>career</condition>
+				</activeskillkarmacost>
+				<knowledgeskillkarmacost>
+					<name />
+					<val>-2</val>
+					<min>6</min>
+					<condition>career</condition>
+				</knowledgeskillkarmacost>
+			</bonus>
 			<forbidden>
 				<oneof>
 					<quality>Adept</quality>
@@ -1202,7 +1251,6 @@
 					<quality>Jack of All Trades Master of None</quality>
 				</oneof>
 			</required>
-			<bonus />
 			<source>4PR</source>
 			<page>0</page>
 		</quality>
@@ -1316,7 +1364,10 @@
 					<quality>Prototype Transhuman</quality>
 				</oneof>
 			</forbidden>
-			<bonus />
+			<bonus>
+			    <prototypetranshuman>1</prototypetranshuman>
+			</bonus>
+			<note>Only one piece of geneware may be taken.</note>
 			<source>4PR</source>
 			<page>0</page>
 		</quality>
@@ -1526,6 +1577,30 @@
 					</skill>
 				</oneof>
 			</required>
+		</quality>
+		<quality> <!-- Items of Power I -->
+			<id>968f115f-06b2-4ca0-bf52-c9981f5175ba</id>
+			<name>Items of Power I</name>
+			<karma>10</karma>
+			<category>Positive</category>
+			<canbuywithspellpoints>True</canbuywithspellpoints>
+			<doublecareer>False</doublecareer>
+			<bonus />
+			<required>
+				<oneof>
+					<quality>Adept</quality>
+					<quality>Magician</quality>
+					<quality>Mystic Adept</quality>
+				</oneof>
+				<allof>
+					<skilltotal>
+						<skills>Arcana+Artificing</skills>
+						<val>3</val>
+					</skilltotal>
+				</allof>
+			</required>
+			<source>FA</source>
+			<page>38</page>
 		</quality>
 		<quality> <!-- Items of Power II -->
 			<id>ea775156-f1ba-4298-ab39-c96ac16e1c67</id>
@@ -1756,6 +1831,13 @@
 					<grade>None</grade>
 					<type>Cyberware</type>
 				</addware>
+				<specificattribute>
+					<name>MAG</name>
+					<max>1</max>
+					<val>1</val>
+					<aug>1</aug>
+					<augmax>1</augmax>
+				</specificattribute>
 			</bonus>
 			<source>4PR</source>
 			<page>1</page>
@@ -2679,5 +2761,214 @@
 			<source>4PR</source>
 			<page>0</page>
 		</quality>
+		<quality>
+			<id>2cb90939-d966-461e-9d30-f147cd7dfc8d</id>
+			<name>Efficient Ritual</name>
+			<karma>15</karma>
+			<category>Positive</category>
+			<doublecareer>False</doublecareer>
+			<bonus />
+			<required>
+				<allof>
+					<skill>
+						<name>Ritual Spellcasting</name>
+						<val>6</val>
+					  </skill>
+				</allof>
+			</required>
+
+			<source>SG</source>
+			<page>153</page>
+		</quality>
+
+		<quality>
+      <id>7394016d-de2e-4526-9467-8fafec3e5bc8</id>
+      <name>Astral Envelopment</name>
+      <karma>5</karma>
+      <category>Positive</category>
+      <canbuywithspellpoints>True</canbuywithspellpoints>
+      <doublecareer>False</doublecareer>
+      <bonus />
+      <required>
+        <allof>
+          <magenabled />
+          <spell>Armor</spell>
+        </allof>
+
+      </required>
+      <source>4PR</source>
+      <page>1</page>
+			<notes>Requires armor and shape air, allows giving armor spell a chemseal that pops after hits/2 hours, on 1P or >hits Stun that would be P</notes>
+    </quality>
+
+	    <quality>
+      <id>434aa6de-1680-4800-add6-06ae0d2e0aaa</id>
+      <name>Magic as music</name>
+      <karma>5</karma>
+		<limit>8</limit>
+      <category>Positive</category>
+      <canbuywithspellpoints>True</canbuywithspellpoints>
+      <doublecareer>False</doublecareer>
+      <bonus />
+      <required>
+        <allof>
+          <magenabled />
+        </allof>
+        <oneof>
+          <group>
+            <skill>
+              <name>Arcana</name>
+              <val>6</val>
+            </skill>
+            <skill>
+              <name>Magical Traditions</name>
+              <val>6</val>
+              <type>Knowledge</type>
+            </skill>
+          </group>
+          <group>
+            <skill>
+              <name>Arcana</name>
+              <val>4</val>
+            </skill>
+            <skill>
+              <name>Magical Traditions</name>
+              <val>4</val>
+              <type>Knowledge</type>
+            </skill>
+            <tradition>Chaos Magic</tradition>
+          </group>
+        </oneof>
+      </required>
+      <source>4PR</source>
+      <page>1</page>
+			<notes>Each rank allows treating another tradition as if you were native</notes>
+    </quality>
+
+	<quality>
+      <id>4c2c7948-a203-4743-82bc-2b8339db7948</id>
+      <name>Spectral Bladesman</name>
+      <karma>3</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	      <required>
+        <allof>
+          <magenabled />
+          <spell>Powerblade</spell>
+        </allof>
+      </required>
+		<notes>Allows spending hits on reach or 2:1 for DV instead of ap, up to Magic/2 hits</notes>
+    </quality>
+	<quality>
+      <id>f77e876e-f6df-467c-b030-6c53e9b9bd5a</id>
+      <name>Bad Cop</name>
+      <karma>8</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	<notes>Allows assisting negotiation with Intimidation</notes>
+    </quality>
+
+		<quality>
+      <id>f671d017-355c-4809-ac67-dd91e0aefefd</id>
+      <name>Work it harder</name>
+      <karma>6</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	<notes>Allows Cha instead of Agi when using palming to hide items on yourself</notes>
+    </quality>
+
+		<quality>
+      <id>2d8141ec-86d0-4815-80d6-ec0b9039f28b</id>
+      <name>Quiz Show Contestant</name>
+      <karma>3</karma>
+      <category>Positive</category>
+      <bonus />
+		<required>
+        <oneof>
+          <quality>Photographic Memory</quality>
+        </oneof>
+      </required>
+
+      <source>4PR</source>
+      <page>1</page>
+	<notes>No penalty on defaulting on knowledge skills</notes>
+    </quality>
+
+		<quality>
+      <id>168bdae7-0845-4566-8274-ef4b1f099d91</id>
+      <name>Dogbrain Whisperer</name>
+      <karma>7</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	<notes>Your drone can spend edge for Push the limit and second chance and get +3 dice for understanding situations</notes>
+		<required>
+        <allof>
+
+          <skill>
+            <name>Software</name>
+            <val>3</val>
+          </skill>
+        </allof>
+      </required>
+    </quality>
+		<quality>
+      <id>99e15ed5-5f70-4569-8b85-caf9e906b3b1</id>
+      <name>Trust in chrome</name>
+      <karma>2</karma>
+      <category>Positive</category>
+			<limit>2</limit>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+		<notes>Reduces penalty on healing for lost essence to augmentations</notes>
+		<required>
+			<oneof>
+				<ess>5.999</ess>
+			</oneof>
+		</required>
+
+    </quality>
+    <quality>
+      <id>e09e9abb-3cd2-409f-a728-247947855447</id>
+      <name>Catlike Reflexes</name>
+      <karma>0</karma>
+      <category>Positive</category>
+      <bonus>
+        <specificattribute>
+          <name>AGI</name>
+          <val>1</val>
+        </specificattribute>
+        <specificattribute>
+          <name>REA</name>
+          <val>1</val>
+        </specificattribute>
+        <specificskill>
+          <name>Gymnastics</name>
+          <bonus>2</bonus>
+        </specificskill>
+      </bonus>
+      <source>4PR</source>
+      <page>1</page>
+      <hide />
+    </quality>
+	<quality>
+      <id>4c9603ac-81f1-4114-a66b-d663e63c9a44</id>
+      <name>Mobile Architect</name>
+      <karma>3</karma>
+      <category>Positive</category>
+      <bonus />
+      <source>4PR</source>
+      <page>1</page>
+	<notes>Allows To save some seats otherwise lost to the living space modification</notes>
+    </quality>
+
 	</qualities>
 </chummer>

@@ -518,6 +518,106 @@
       <allowed>Medium,High,Luxury</allowed>
       <source>4PR</source>
       <page>1</page>
-    </quality>	
+    </quality>
+    <quality>
+      <id>8e30194b-c843-4164-b073-b7c79391eb38</id>
+      <name>Chemistry Lab</name>
+      <category>Entertainment - Asset</category>
+      <lp>2</lp>
+      <cost>1000</cost>
+      <allowed>High,Luxury</allowed>
+      <source>4PR</source>
+      <page>1</page>
+    </quality>
+    <quality>
+      <id>9f2f1dca-c15d-46b3-8fe5-7521594407cc</id>
+      <name>Nanofabricator</name>
+      <category>Entertainment - Asset</category>
+      <lp>2</lp>
+      <cost>1000</cost>
+      <allowed>High,Luxury</allowed>
+      <source>4PR</source>
+      <page>1</page>
+    </quality>
+    <quality>
+      <id>db8ade8c-921f-4d9e-81c1-74ae53f68bef</id>
+      <name>Code Cave</name>
+      <category>Entertainment - Asset</category>
+      <lp>2</lp>
+      <cost>1000</cost>
+      <allowed>Medium,High,Luxury</allowed>
+      <source>4PR</source>
+      <page>1</page>
+    </quality>
+    <quality>
+      <id>ff43ab61-725b-4664-9332-2886036b9d7a</id>
+      <name>Lifestyle reduction (Luxury)</name>
+      <category>Positive</category>
+      <lp>0</lp>
+      <cost>0</cost>      
+	  <required>
+        <lifestyle>Luxury</lifestyle>
+      </required>
+      <multiplierbaseonly>-90</multiplierbaseonly>
+	  <notes>In case of using street cred, use Add street cred improvement with negative number</notes>
+      <source>BTB</source>
+      <page>164</page>
+    </quality>
+    <quality>
+      <id>d10d2664-4c3c-4574-b4e8-b09df8bb64e1</id>
+      <name>Lifestyle reduction (High)</name>
+      <category>Positive</category>
+      <lp>0</lp>
+      <cost>0</cost>
+      <required>
+        <lifestyle>High</lifestyle>
+      </required>
+      <multiplierbaseonly>-50</multiplierbaseonly>
+	  <notes>In case of using street cred, use Add street cred improvement with negative number</notes>
+      <source>BTB</source>
+      <page>164</page>
+    </quality>
+    <quality>
+      <id>99ec6b01-3199-4160-be98-f68e55acc8c4</id>
+      <name>Lifestyle reduction (Medium)</name>
+      <category>Positive</category>
+      <lp>0</lp>
+      <cost>0</cost>
+      <required>
+        <lifestyle>Medium</lifestyle>
+      </required>
+      <multiplierbaseonly>-60</multiplierbaseonly>
+	  <notes>In case of using street cred, use Add street cred improvement with negative number</notes>
+      <source>BTB</source>
+      <page>164</page>
+    </quality>
+    <quality>
+      <id>75dd76bb-1840-4242-a44f-6bfda6b2354a</id>
+      <name>Lifestyle reduction (Low)</name>
+      <category>Positive</category>
+      <lp>0</lp>
+      <cost>0</cost>
+      <required>
+        <lifestyle>Low</lifestyle>
+      </required>
+      <multiplierbaseonly>-75</multiplierbaseonly>
+	  <notes>In case of using street cred, use Add street cred improvement with negative number</notes>
+      <source>BTB</source>
+      <page>164</page>
+    </quality>
+    <quality>
+      <id>d50c7676-c12e-4a28-9df1-735d5ef3d78d</id>
+      <name>Lifestyle reduction (Squatter)</name>
+      <category>Positive</category>
+      <lp>0</lp>
+      <cost>0</cost>
+      <required>
+        <lifestyle>Squatter</lifestyle>
+      </required>
+      <multiplierbaseonly>-100</multiplierbaseonly>
+	  <notes>In case of using street cred, use Add street cred improvement with negative number</notes>
+      <source>BTB</source>
+      <page>164</page>
+    </quality>
  </qualities>
 </chummer>

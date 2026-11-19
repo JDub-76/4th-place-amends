@@ -18,6 +18,10 @@
     https://github.com/chummer5a/chummer5a
 -->
 <chummer>
+	<categories>
+	<category useskill="Alchemy">Compounds</category>
+	 </categories>
+
 	<spells>
 		<spell>
 			<id>ea4e1b82-4513-4b3c-9446-8f0d6ba63a1a</id>
@@ -321,5 +325,690 @@
 			<range>LOS (A)</range>
 			<type>P</type>
 		</spell>
+		    <spell>
+		  <id>27e20b21-4d4c-4631-9442-68592a198d64</id>
+		  <name>Astral Gateway</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor></descriptor>
+		  <duration>Special</duration>
+		  <dv>F</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Allows people within range to project, Threshold/Force requires is 3+ Distance (0: Astral Plane, 2: adjacent, 4: near, 6: intermediate, 8: distant, 10: deep,
+			and 12: very deep), The gateway stays open for 1+nethits days. This ritual takes 3 hours </notes>
+		</spell>
+		<spell>
+		  <id>803349d2-bd41-4127-9e96-6b950e16ed89</id>
+		  <name>Metaplanar Gateway</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>F</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Opens a physical portal to the destination, Threshold/Force requires is 6+ 2x Distance (0: Astral Plane, 2: adjacent, 4: near, 6: intermediate, 8: distant, 10: deep,
+			and 12: very deep), The gateway stays open for 1+nethits hours. This ritual takes 6 hours </notes>
+		</spell>
+		<spell>
+		  <id>9b147d4c-1070-4a7c-8085-26274dcedff4</id>
+		  <name>Exorcism Rites</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spotter</descriptor>
+		  <duration>Special</duration>
+		  <dv>F</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Banishes a spirit for nethits lunar months, needs to be cast at a Force equal to the spirits force and takes 10*Force minutes</notes>
+		</spell>
+		<spell>
+		  <id>8d2811c6-cf6c-4128-8cce-0edede58003c</id>
+		  <name>Hoist</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored, Spell</descriptor>
+		  <duration>Special</duration>
+		  <dv>5</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Lifts (Magic+Nethits)*100KG of material into the air for nethits+1 weeks and takes 10*Force minutes</notes>
+		</spell>
+		<spell>
+		  <id>14566870-c82a-4199-9450-03000ad96962</id>
+		  <name>Lost And Found</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored, Material Link</descriptor>
+		  <duration>special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Threshold is 3+OR/2 of object(material link) used as a compass, nethits add to tracking tests or search power
+				for target goal or person. This ritual takes 2 hours</notes>
+		</spell>
+		<spell>
+		  <id>42cdc97f-38ad-4eb7-9f80-42a5c4564b79</id>
+		  <name>Manifestion of desire</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored, Material Link</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special(6+)</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>GM Fiat to give Fate a bit of a nudge, more complex tasks require higher Threshold. Permanently sealing the ritual requires 30 minutes each day for
+			Threshold months. Efficient ritual changes this to weeks, Duration is 2 hours first and 30 minutes each further day</notes>
+		</spell>
+		<spell>
+		  <id>5d19aa26-a87e-460d-92e3-383149096677</id>
+		  <name>Realm of healing energy</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>7</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>For each participant of the ritual, one target gains the benefits of one day of natural recovery per nethit, doesn't work with portable rituals.
+				This ritual takes 2 hours</notes>
+
+		</spell>
+		<spell>
+		  <id>cd12841c-1572-4f4f-8f11-8a05fd54f3e9</id>
+		  <name>Sacrament of Changed Form</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Material Link</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>TH is Target Body/2+Unaugmented difference. This ritual takes 3 hours</notes>
+		</spell>
+		<spell>
+		  <id>76377739-cc88-4705-a631-3940f072d38d</id>
+		  <name>Sealing Ritual</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell</descriptor>
+		  <duration>Special</duration>
+		  <dv>4</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Breaking bond is a Wil+Log TH Nethits. This ritual takes 1 hour</notes>
+		</spell>
+		<spell>
+		  <id>4b435d77-4a9b-42ab-9d53-1d4080a5334c</id>
+		  <name>Stories of our ancestors</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell</descriptor>
+		  <duration>Special</duration>
+		  <dv>5</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Nethits bonus to Nethits memory tests or hours, can grant Knowledge skills target doesn't naturally have. This ritual takes 2 hours</notes>
+		</spell>
+		<spell>
+		  <id>d25e3675-aac6-4510-8fa9-027b916429a0</id>
+		  <name>Telling of Tales</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell</descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Nethits bonus to next Charisma Test within nethits days. This ritual takes 2 hours</notes>
+		</spell>
+		<spell>
+		  <id>0876a769-f939-490e-958b-ae5d604e8b25</id>
+		  <name>Circle of defense</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell</descriptor>
+		  <duration>Special</duration>
+		  <dv>8</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes>Participants may pool together Spell defense dice, Each nethit adds particpiants dice to total pool. This ritual takes 1 hour</notes>
+		</spell>
+		<spell>
+		  <id>496d4068-0e2d-43ea-b519-e9e3e40931f5</id>
+		  <name>Elemental Sentinel</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>35ec5af6-320d-4ce5-a522-3b398c868de5</id>
+		  <name>Spectral Custodians</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>3715c882-82d7-4dee-ba9e-895c4e3d6483</id>
+		  <name>Wild Allegiance</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>b7f91d64-c2f4-4706-978b-f053c6704594</id>
+		  <name>Bountiful Oasis</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Material Link</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>fb9646a7-c0e4-41f6-9dec-d5be0372ac2d</id>
+		  <name>Bacchanalia</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>c7dd1f1d-7da0-4e3e-a8de-368421d98887</id>
+		  <name>Fantastic Facade</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+
+		<spell>
+		  <id>c848eb96-b84c-415d-a14e-f581eb6ad11a</id>
+		  <name>Domain</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Spell, Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+		<spell>
+		  <id>a359a451-0c01-4e8c-a3c2-7c9a085f671b</id>
+		  <name>Pyrotechnics</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>Special</dv>
+		  <range>Special</range>
+		  <type>M</type>
+		</spell>
+
+		<spell>
+		  <id>10f75d3a-a9ea-4eba-a706-9be33840c843</id>
+		  <name>Multipresence</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Minion</descriptor>
+		  <duration>Special</duration>
+		  <dv>4</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+		<spell>
+		  <id>d63d6db9-2d25-43d0-a1ef-3c1805bffab3</id>
+		  <name>Living Bastion</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>0ca972b4-30d4-4dc5-8188-1fc08edf2694</id>
+		  <name>Unbalanced Fate</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Contractual</descriptor>
+		  <duration>Special</duration>
+		  <dv>4</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+		<spell>
+		  <id>e97f2938-9e82-457c-89b3-36730bfcabf3</id>
+		  <name>Concealment's Curtain</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor></descriptor>
+		  <duration>Special</duration>
+		  <dv>2</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>d5fa8356-28c8-46cf-894e-e0d42c100e2d</id>
+		  <name>Dread Ambiance</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Anchored</descriptor>
+		  <duration>Special</duration>
+		  <dv>2</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>76ac1748-ec62-4cab-9301-59801d12f723</id>
+		  <name>Crawling Blight</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor></descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+		  <id>c6a69b75-a676-4579-9568-2dbdd463fc9e</id>
+		  <name>Sky Write</name>
+		  <page>1</page>
+		  <source>4PR</source>
+		  <category>Rituals</category>
+		  <damage>0</damage>
+		  <descriptor>Contractual</descriptor>
+		  <duration>Special</duration>
+		  <dv>3</dv>
+		  <range>Special</range>
+		  <type>M</type>
+			<notes></notes>
+		</spell>
+
+		<spell>
+			<id>54f216cd-5d00-42fc-81de-e71437eeab39</id>
+			<name>Five Elements Blast</name>
+			<page>0</page>
+			<source>4PR</source>
+			<category>Combat</category>
+			<damage>P</damage>
+			<descriptor>Indirect, Elemental</descriptor>
+			<duration>I</duration>
+			<dv>F+3</dv>
+			<range>LOS</range>
+			<type>P</type>
+		</spell>
+		<spell>
+			<id>2b87f245-0f68-4d4b-bb0a-cf1be326ca52</id>
+			<name>Nature’s Bounty</name>
+			<page>0</page>
+			<source>4PR</source>
+			<category>Health</category>
+			<damage>0</damage>
+			<descriptor>Environmental, Area</descriptor>
+			<duration>P</duration>
+			<dv>F-2</dv>
+			<range>T (A)</range>
+			<type>P</type>
+		</spell>
+
+		<spell>
+			<id>7190a677-d495-43b4-a4d1-d653d2b732b7</id>
+			<name>Rainmaker</name>
+			<page>0</page>
+			<source>4PR</source>
+			<category>Manipulation</category>
+			<damage>0</damage>
+			<descriptor>Environmental, Area</descriptor>
+			<duration>P</duration>
+			<dv>F-1</dv>
+			<range>LOS (A)</range>
+			<type>P</type>
+		</spell>
+
+		<spell>
+			<id>031ec966-128a-4b18-b519-0bf4870f1d09</id>
+			<name>Sensory Projection</name>
+			<page>0</page>
+			<source>4PR</source>
+			<category>Illusion</category>
+			<damage>0</damage>
+			<descriptor>Environmental, Area</descriptor>
+			<duration>S</duration>
+			<dv>F-1</dv>
+			<range>T</range>
+			<type>P</type>
+		</spell>
+		<spell>
+			<id>7a66e73f-63c6-4ab1-9fae-98f780587425</id>
+			<name>Bridge Layer</name>
+			<page>0</page>
+			<source>4PR</source>
+			<category>Manipulation</category>
+			<damage>0</damage>
+			<descriptor>Environmental, Area</descriptor>
+			<duration>S</duration>
+			<dv>F</dv>
+			<range>LOS (A)</range>
+			<type>P</type>
+		</spell>
+
+
+
+		<spell>
+			<id>e3a4157f-9df7-4a87-b0de-08ed0637c363</id>
+			<name>Aghexhex</name>
+			<page>219</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>5567a94d-d0b6-4a93-84bb-f69debddc236</id>
+			<name>BDNB</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>c11feba6-cf52-443d-b84c-3af88cfd6daf</id>
+			<name>Lot's Curse</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>6a801253-ba72-4b98-904e-80168b9f87e7</id>
+			<name>Sage</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>cabb4431-d1e2-4cac-b04e-dda18295cf24</id>
+			<name>Spirit Strength</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>a47a567d-1ca0-400f-92dd-ab3ac1be35e7</id>
+			<name>Witch's Moss</name>
+			<page>220</page>
+			<source>SG</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>8706c62a-6143-455f-8fb7-50540aa52f30</id>
+			<name>Alchemical Duct Tape</name>
+			<page>194</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor>Spell</descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>b992b232-42df-46b9-8fa0-95d8d7812e14</id>
+			<name>Astral Increase</name>
+			<page>194</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>c1517223-2a40-4a99-880e-f2eba3e2ec5f</id>
+			<name>Astral Bond</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>fa2ee1a9-ef5b-40b7-b3e5-e11ce9a8eb91</id>
+			<name>Baobhan's Tears</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>7a8fabe3-cd83-4e85-a591-0de8d726996e</id>
+			<name>Dulled Edges</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+				<spell>
+			<id>ca4d5230-b6d1-45c9-a9c3-4e34e20a37e7</id>
+			<name>Feel No Paint</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>169362e1-335c-4def-a44d-6ec144012ca4</id>
+			<name>Force of Personality</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+		<spell>
+			<id>1cf78420-50c0-4ebd-ae50-46b77ff33b00</id>
+			<name>Laminate</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+				<spell>
+			<id>c2f6b45f-8a12-493e-846f-460e5dd1edfd</id>
+			<name>Perfect Sight</name>
+			<page>195</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
+
+		<spell>
+			<id>32342537-693a-41c6-ae30-ace912507052</id>
+			<name>Sharpshooter</name>
+			<page>197</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+		<spell>
+			<id>aa1d5cce-2402-40bc-b3e0-6abc926c01f9</id>
+			<name>Water Breathing</name>
+			<page>197</page>
+			<source>FA</source>
+			<category>Compounds</category>
+			<damage>-</damage>
+			<descriptor></descriptor>
+			<duration>I</duration>
+			<dv>F</dv>
+			<range>-</range>
+			<type>-</type>
+		</spell>
+
 	</spells>
 </chummer>

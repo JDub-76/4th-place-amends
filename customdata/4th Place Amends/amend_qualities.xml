@@ -153,6 +153,19 @@
 				<surprise>1</surprise>
 			</bonus>
 		</quality>
+
+		<quality>
+			<name>Apt Pupil</name>
+			<bonus>
+				<specificskill>
+					<name>Arcana</name>
+					<bonus>2</bonus>
+				</specificskill>
+			</bonus>
+
+		</quality>
+
+
 		<quality>
 			<!-- Natural Athlete -->
 			<name>Natural Athlete</name>
@@ -834,16 +847,6 @@
 			<hide />
 		</quality>
 		<quality>
-			<!-- Networker -->
-			<name>Networker</name>
-			<hide />
-		</quality>
-		<quality>
-			<!-- Massive Network -->
-			<name>Massive Network</name>
-			<hide />
-		</quality>
-		<quality>
 			<!-- The Twisted Way -->
 			<name>The Twisted Way</name>
 			<hide />
@@ -1474,11 +1477,7 @@
 			<name>Code of Honor: Black Hat</name>
 			<hide />
 		</quality>
-		<quality>
-			<!-- Consummate Professional -->
-			<name>Consummate Professional</name>
-			<hide />
-		</quality>
+
 		<quality>
 			<!-- Data Liberator -->
 			<name>Data Liberator</name>
@@ -1502,7 +1501,7 @@
 		<quality>
 			<!-- Echo Chamber -->
 			<name>Echo Chamber</name>
-			<karma>10</karma>
+			<karma>5</karma>
 			<category>Positive</category>
 			<notes>When Matrix Searching, the character benefits from a +2 dice pool bonus, but the number of rolls needed to get a glitch is decreased by 1.</notes>
 		</quality>
@@ -1588,7 +1587,12 @@
 		</quality>
 		<quality>
 			<!-- 'Ware Intolerance -->
-			<name>'Ware Intolerance</name>
+			<name>Ware Intolerance</name>
+			<hide />
+		</quality>
+		<quality>
+			<!-- Items of Power -->
+			<name>Items  of Power</name>
 			<hide />
 		</quality>
 		<!-- End Region -->
@@ -2905,6 +2909,7 @@
 		<quality>
 			<!-- Codeslinger -->
 			<name>Codeslinger</name>
+			<karma>5</karma>
 			<limit amendoperation="replace">True</limit>
 		</quality>
 		<quality>
@@ -3393,6 +3398,65 @@
 				</focusbindingkarmacost>
 			</bonus>
       		<notes>Warrior's Way also reduces the Attunement costs for weapons by 2.</notes>
+		</quality>
+		<quality>
+		<name>Prime Datahaven Membership</name>
+		<bonus>
+			<selecttext />
+		</bonus>
+		</quality>
+		<quality>
+			<name>Gearhead</name>
+			<karma>5</karma>
+		</quality>
+		<quality>
+			<name>Guts</name>
+			<karma>6</karma>
+		</quality>
+		<quality>
+			<name>High Pain Tolerance</name>
+			<karma>2</karma>
+		</quality>
+		<quality>
+			<name>Home Ground</name>
+			<karma>5</karma>
+			<limit amendoperation="replace">True</limit>
+		</quality>
+		<quality>
+			<name>Indomitable (Mental)</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Indomitable (Physical)</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Indomitable (Social)</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Juryrigger</name>
+			<karma>5</karma>
+		</quality>
+		<quality>
+			<name>Magic Resistance</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Natural Hardening</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Spike Resistance</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Poor Link</name>
+			<karma>4</karma>
+		</quality>
+		<quality>
+			<name>Toughness</name>
+			<karma>5</karma>
 		</quality>
 	</qualities>
 </chummer>

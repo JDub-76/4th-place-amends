@@ -255,6 +255,8 @@
 			<bonus>
 				<initiativepass precedence="0">Rating</initiativepass>
 				<initiative precedence="0">Rating</initiative>
+				<matrixinitiativediceadd precedence="0">Rating</matrixinitiativediceadd>
+				<matrixinitiative precedence="0">Rating</matrixinitiative>
 			</bonus>
 		</cyberware>
 		<cyberware>
@@ -992,11 +994,11 @@
 			<bonus>
 				<spellresistance>Rating</spellresistance>
 			</bonus>
-			<requires>
+			<required>
 				<oneof>
 					<cyberware>Dermal Plating</cyberware>
 				</oneof>
-			</requires>
+			</required>
 			<rating>6</rating>
 			<notes>Grey Mana Dermal Plating's rating and grade must match your Dermal Plating rating and grade.</notes>
 		</cyberware>
@@ -1013,13 +1015,11 @@
 			<bonus>
 				<spellresistance>Rating</spellresistance>
 			</bonus>
-			<requires>
+			<required>
 				<oneof>
-					<cyberware>Bone Lacing (Plastic)</cyberware>
-					<cyberware>Bone Lacing (Aluminum)</cyberware>
-					<cyberware>Bone Lacing (Titanium)</cyberware>
+					<cyberwarecontains>Bone Lacing</cyberwarecontains>
 				</oneof>
-			</requires>
+			</required>
 			<notes>Subtracts 1 hit from any Health, mana-based Illusion, or mental Manipulation spells that affect the character. Bare-handed unarmed attacks ignore ItNW. Must be of identical grade to the character's Bone Lacing.</notes>
 		</cyberware>
 		<cyberware>
@@ -1332,11 +1332,829 @@
 			<source>4PR</source>
 			<page>1</page>
 			<bonus>
-				<unarmedap>-Rating</unarmedap>
+				<weaponcategoryap>
+					<name>Unarmed</name>
+					<bonus>Rating</bonus>
+				</weaponcategoryap>
+				<weaponcategoryap>
+					<name>Blades</name>
+					<bonus>Rating</bonus>
+				</weaponcategoryap>
+				<weaponcategoryap>
+					<name>Clubs</name>
+					<bonus>Rating</bonus>
+				</weaponcategoryap>
 			</bonus>
 			<forcegrade>None</forcegrade>
 			<rating>3</rating>
-			<notes>The AP bonus actually applies to all melee attacks, but chummer doesn't support doing so.</notes>
+			<notes>-Rating to AP.</notes>
 		</cyberware>
+		<cyberware>
+			<id>3e642a97-5da2-4664-bd6a-28633ea22bf3</id>
+			<name>Eye Laser System</name>
+			<limit>False</limit>
+			<category>Eyeware</category>
+			<ess>0</ess>
+			<capacity>[4]</capacity>
+			<avail>6</avail>
+			<cost>6000</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<notes>Acts as a laser rangefinder and laser microphone. Can be used to transmit to other eye laser systems via eye contact. Can blind targets using the DEW skill.</notes>
+			<requireparent />
+		</cyberware>
+		<cyberware>
+			<id>90ecd22a-2403-47da-92c4-8a99ae0b8dba</id>
+			<name>Smartlink (Throwback)</name>
+			<category>Bodyware</category>
+			<ess>FixedValues(0.2,0.3,0.4,0.5)</ess>
+			<capacity>0</capacity>
+			<avail>8R</avail>
+			<cost>5000</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<bonus>
+				<smartlink>2</smartlink>
+			</bonus>
+			<minrating>1</minrating>
+			<rating>4</rating>
+			<notes>Provides the Smartlink wireless bonus of +2 dice even when wireless off. Base Essence cost is 0.5, -0.1 Essence for each of the following: Simrig, Image Link, and Induction Pad or Skinlink Echo.</notes>
+		</cyberware>
+		<cyberware>
+			<id>2c83b652-68f5-4071-ad2a-026e1fd0cf6c</id>
+			<name>Smartlink-2 Upgrade</name>
+			<category>Bodyware</category>
+			<ess>0</ess>
+			<capacity>0</capacity>
+			<avail>16R</avail>
+			<cost>25000</cost>
+			<required>
+				<allof>
+				<cyberware>Smartlink (Throwback)</cyberware>
+				</allof>
+			</required>
+			<source>4PR</source>
+			<page>1</page>
+			<notes>Halves called shot penalties (does not stack with Sharpshooter/Strive for Perfection). -1 Threshold for grenade/rocket attacks. Must be of the same grade as the Throwback Smartlink.</notes>
+		</cyberware>
+		<cyberware>
+		<id>91601bc8-04f0-4883-9698-82a3504385d2</id>
+		<name>Bone Lacing (Kevlar)</name>
+		<category>Bodyware</category>
+		<ess>0.6</ess>
+		<capacity>0</capacity>
+		<avail>10</avail>
+		<cost>15000</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<armor>2</armor>
+			<damageresistance>1</damageresistance>
+		</bonus>
+		<forbidden>
+			<oneof>
+			<cyberwarecontains>Bone Lacing</cyberwarecontains>
+			<bioware>Bone Density Augmentation</bioware>
+			</oneof>
+		</forbidden>
+		<notes>Kevlar Bone Lacing does not show up on cyberware scanners.</notes>
+		</cyberware>
+		<cyberware>
+		<id>dcd4e4e3-a868-4210-80fe-b48715cb905a</id>
+		<name>Bone Lacing (Ceramic)</name>
+		<category>Bodyware</category>
+		<ess>0.75</ess>
+		<capacity>0</capacity>
+		<avail>10</avail>
+		<cost>15000</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<armor>1</armor>
+			<damageresistance>2</damageresistance>
+			<unarmeddv>1</unarmeddv>
+			<unarmeddvphysical />
+		</bonus>
+		<forbidden>
+			<oneof>
+			<cyberwarecontains>Bone Lacing</cyberwarecontains>
+			<bioware>Bone Density Augmentation</bioware>
+			</oneof>
+		</forbidden>
+		<notes>Ceramic Bone Lacing does not show up on cyberware scanners.</notes>
+		</cyberware>
+			<cyberware>
+			<id>26381bb5-2755-4841-b8a3-5152d5c53e74</id>
+			<name>Smartlink Induction Pad</name>
+			<limit>{arm}</limit>
+			<category>Cyberlimb Enhancement</category>
+			<ess>0.1</ess>
+			<capacity>[1]</capacity>
+			<avail>8R</avail>
+			<cost>1000</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<blocksmounts>wrist,elbow,shoulder</blocksmounts>
+			<selectside />
+			<required>
+				<allof>
+				<cyberware>Smartlink (Throwback)</cyberware>
+				<parentdetails>
+				<OR>
+					<NONE />
+					<name operation="contains">Full Arm</name>
+					<name operation="contains">Lower Arm</name>
+					<name operation="contains">Hand</name>
+					<name operation="contains">Drone Arm</name>
+				</OR>
+				</parentdetails>
+				</allof>
+			</required>
+			<notes>At least one is required to use the Throwback Smartlink. The Throwback Smartlink comes with one by default. Installing the default induction pad into a cyberlimb reduces the smartlink essence cost by 0.1.</notes>
+		</cyberware>
+		<cyberware>
+      <id>de3e1719-2c7c-4ad1-8d1d-bd5447d1b05d</id>
+      <name>Surface Toner</name>
+      <limit>False</limit>
+      <category>Cosmetic Enhancement</category>
+      <capacity>[1]</capacity>
+      <avail>4</avail>
+      <cost>800</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <notes>Only covers the cyberlimb which it is installed. In other words, one is needed for each installed cyberlimb. Compatible with Skin Toner (which only applies to natural skin) and is a requirement for Chameleon Processor to have an effect.</notes>
+    </cyberware>
+		<cyberware>
+			<id>09b447b8-b6c7-42a6-a85a-0843d84c95fe</id>
+			<name>Integrity Enhancement</name>
+			<limit>False</limit>
+			<category>Cyberlimb Enhancement</category>
+			<ess>0</ess>
+			<capacity>[Rating]</capacity>
+			<avail>10</avail>
+			<cost>Rating * 3000</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<notes>Adds +Rating damage resistance against called shots which target the limb. Torso/Head Integrity Enhancement applies against CS: Vitals as well.</notes>
+			<rating>3</rating>
+			<requireparent />
+		</cyberware>
+		<cyberware>
+			<id>41771118-3fd6-46ed-bea3-5e932ae292f4</id>
+			<name>Move-by-Wire System (Throwback)</name>
+			<category>Bodyware</category>
+			<ess>FixedValues(5,7)</ess>
+			<capacity>0</capacity>
+			<avail>FixedValues(24F,36F)</avail>
+			<cost>Rating * 250000</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<bonus>
+				<initiative precedence="0">FixedValues(9,12)</initiative>
+				<initiativepass precedence="0">Rating</initiativepass>
+				<dodge>Rating</dodge>
+				<specificattribute>
+					<name>REA</name>
+					<val>FixedValues(4,6)</val>
+					<aug>FixedValues(0,2)</aug>
+				</specificattribute>
+				<skilllinkedattribute>
+					<name>AGI</name>
+					<bonus>Rating</bonus>
+				</skilllinkedattribute>
+				<skilllinkedattribute>
+					<name>REA</name>
+					<bonus>Rating</bonus>
+				</skilllinkedattribute>
+				<skilllinkedattribute>
+					<name>CHA</name>
+					<bonus>FixedValues(-3,-4)</bonus>
+				</skilllinkedattribute>
+				<sociallimit>FixedValues(-3,-4)</sociallimit>
+				<disablequality>Catlike Reflexes</disablequality>
+			</bonus>
+			<minrating>1</minrating>
+			<rating>2</rating>
+			<notes>
+				Uses (Rating + 2) Monthly Focus points for medical care. If the character lacks enough focus points, it costs 10,000 nuyen per missing point per month.
+
+				Taking (4-Rating) or more boxes of physical damage in a stressful situation requires a WIL test, threshold (Rating * 2). Failure causes seizures.
+
+				Seizures deal 3P + 3S damage. Both are resisted by Body only. R4+ Throwback MBW will immediately cause the character to go into seizures.
+
+				At the end of each run, make a WIL test, threshold (Rating * 2). Failure means the character gains the TLE-X negative quality.
+
+				Overrides all other initiative and reaction enhancements which do not explicitly stack with other init/reaction enhancements.
+			</notes>
+		</cyberware>
+		<cyberware>
+		  <id>6eb4d258-f94e-49c4-8582-f3ce27eec950</id>
+		  <name>CAPI</name>
+		  <category>Headware</category>
+		  <ess>Rating * 0.1</ess>
+		  <capacity>[Rating]</capacity>
+		  <avail>(Rating * 3)R</avail>
+		  <cost>Rating * 16000</cost>
+		  <source>4PR</source>
+		  <page>1</page>
+		  <bonus>
+			<judgeintentionsoffense>Rating</judgeintentionsoffense>
+		  	<sociallimit>Rating</sociallimit>
+		  </bonus>
+		  <rating>3</rating>
+		</cyberware>
+		<cyberware>
+		  <id>3304066a-af69-4813-998a-2434d0f99839</id>
+		  <name>RCC</name>
+		  <limit>False</limit>
+		  <category>Headware</category>
+		  <ess>0.4</ess>
+		  <capacity>[4]</capacity>
+		  <avail>8R</avail>
+		  <cost>10000</cost>
+		  <source>4PR</source>
+		  <page>1</page>
+		  <allowgear>
+			<gearcategory>Rigger Command Consoles</gearcategory>
+		  </allowgear>
+		  <bannedgrades>
+			<grade>Greyware</grade>
+			<grade>Greyware (Adapsin)</grade>
+		  </bannedgrades>
+		</cyberware>
+		<cyberware>
+			<id>41551e39-2f7a-4b5d-92c6-89d07c4dd7ba</id>
+			<name>Tissue Repair System</name>
+			<limit>False</limit>
+			<category>Hard Nanoware</category>
+			<ess>0</ess>
+			<capacity>0</capacity>
+			<avail>6R</avail>
+			<cost>Rating * 1200</cost>
+			<source>4PR</source>
+			<page>1</page>
+			<forcegrade>None</forcegrade>
+			<rating>6</rating>
+		</cyberware>
+		<cyberware>
+			<id>041bce16-2c0d-4809-aa71-4e7e6d6e57ba</id>
+			<name>Micro Manipulator</name>
+			<limit>False</limit>
+			<category>Bodyware</category>
+			<ess>0.05</ess>
+			<capacity>[1]</capacity>
+			<avail>10</avail>
+			<cost>4000</cost>
+			<source>4PR</source>
+			<page>1</page>
+		</cyberware>
+		<cyberware>
+		  <id>d391a8e8-a42e-42e4-8b2c-11dc1fcd873b</id>
+		  <name>Synthetic Features</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>3</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>5</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Foot</name>
+				<name operation="contains">Obvious Hand</name>
+			  	<name operation="contains">Obvious Lower Leg</name>
+				<name operation="contains">Obvious Lower Arm</name>
+				<name>Obvious Skull</name>
+				<name operation="contains">Obvious Full Leg</name>
+				<name operation="contains">Obvious Full Arm</name>
+			  	<name>Obvious Torso</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<notes>Rating 1 is synthetic, Rating 2-5 are equivalent of R-1 improved Synthskin</notes>
+		</cyberware>
+
+
+		<cyberware>
+		  <id>f74d2c60-5bf7-4dde-a12e-2f8af45e955b</id>
+		  <name>Component Miniaturization (Hand/Foot/Half-Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>1</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Foot</name>
+				<name operation="contains">Obvious Hand</name>
+				<name>Partial Cyberskull</name>
+				  <name operation="contains">Synthetic Hand</name>
+				  <name operation="contains">Synthetic Foot</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Throwback Component Miniaturization (Hand/Foot/Half-Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+		</cyberware>
+
+
+		<cyberware>
+		  <id>c4e75dde-aa64-49af-bd84-e348074dc6e5</id>
+		  <name>Throwback Component Miniaturization (Hand/Foot/Half-Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0.1</ess>
+			<addtoparentess />
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>1</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Foot</name>
+				<name operation="contains">Obvious Hand</name>
+				<name>Partial Cyberskull</name>
+				  <name operation="contains">Synthetic Hand</name>
+				  <name operation="contains">Synthetic Foot</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Component Miniaturization (Hand/Foot/Half-Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+		</cyberware>
+
+
+
+		<cyberware>
+		  <id>0db902b8-8b14-4183-8e5b-d4d60cbab72b</id>
+		  <name>Component Miniaturization (Lower Arm/Lower Leg/Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>2</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Lower Leg</name>
+				<name operation="contains">Obvious Lower Arm</name>
+				<name>Obvious Skull</name>
+				  <name operation="contains">Synthetic Lower Leg</name>
+				  <name operation="contains">Synthetic Lower Arm</name>
+				  <name>Synthetic Skull</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Throwback Component Miniaturization (Lower Arm/Lower Leg/Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+
+		</cyberware>
+
+
+		<cyberware>
+		  <id>14a0f46b-55ba-4ddf-8fb6-78c412334fd8</id>
+		  <name>Throwback Component Miniaturization (Lower Arm/Lower Leg/Skull)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>FixedValues(0.1,0.15)</ess>
+			<addtoparentess />
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>2</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name operation="contains">Obvious Lower Leg</name>
+				<name operation="contains">Obvious Lower Arm</name>
+				<name>Obvious Skull</name>
+				  <name operation="contains">Synthetic Lower Leg</name>
+				  <name operation="contains">Synthetic Lower Arm</name>
+				  <name>Synthetic Skull</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+			<forbidden>
+				<parentdetails>
+				<oneof>
+			  <cyberware sameparent="True">Component Miniaturization (Lower Arm/Lower Leg/Skull)</cyberware>
+				</oneof>
+				</parentdetails>
+			</forbidden>
+		</cyberware>
+		<cyberware>
+		  <id>4309456e-2bf3-467a-bc0c-f8a91a55d98d</id>
+		  <name>Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+		  <ess>0</ess>
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>4</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name>Centaur Front Leg</name>
+				<name>Centaur Rear Leg</name>
+				<name operation="contains">Obvious Full Leg</name>
+				<name>Drone Leg</name>
+				<name operation="contains">Obvious Full Arm</name>
+				<name>Drone Arm</name>
+				<name>Primitive Drone Arm</name>
+				<name>Primitive Drone Leg</name>
+			  	<name>Obvious Torso</name>
+				<name>Liminal Body, Tank (Full)</name>
+				<name>Liminal Body, Wheeled (Full)</name>
+			  	<name>Liminal Body, Centaur</name>
+				  <name operation="contains">Synthetic Full Leg</name>
+				  <name operation="contains">Synthetic Full Arm</name>
+				  <name>Synthetic Torso</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+		<forbidden>
+			<parentdetails>
+			<oneof>
+          <cyberware sameparent="True">Throwback Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
+        	</oneof>
+			</parentdetails>
+		</forbidden>
+		</cyberware>
+		<cyberware>
+		  <id>4aa09637-1052-417a-ae3e-92a45396a96f</id>
+		  <name>Throwback Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</name>
+		  <limit>False</limit>
+		  <category>Cyberlimb Enhancement</category>
+			<ess>FixedValues(0.1,0.15,0.2,0.25)</ess>
+			<addtoparentess />
+		  <capacity>[-Rating]</capacity>
+		  <avail>+Rating</avail>
+		  <cost>Rating * 5000</cost>
+		  <source>CF</source>
+		  <page>86</page>
+		  <rating>4</rating>
+		  <required>
+			<parentdetails>
+			  <OR>
+				<name>Centaur Front Leg</name>
+				<name>Centaur Rear Leg</name>
+				<name operation="contains">Obvious Full Leg</name>
+				<name>Drone Leg</name>
+				<name operation="contains">Obvious Full Arm</name>
+				<name>Drone Arm</name>
+				<name>Primitive Drone Arm</name>
+				<name>Primitive Drone Leg</name>
+			  	<name>Obvious Torso</name>
+				<name>Liminal Body, Tank (Full)</name>
+				<name>Liminal Body, Wheeled (Full)</name>
+			  	<name>Liminal Body, Centaur</name>
+				  <name operation="contains">Synthetic Full Leg</name>
+				  <name operation="contains">Synthetic Full Arm</name>
+				  <name>Synthetic Torso</name>
+			  </OR>
+			</parentdetails>
+		  </required>
+		<forbidden>
+			<parentdetails>
+			<oneof>
+          <cyberware sameparent="True">Component Miniaturization (Full Arm/Full Leg, Torso, Chassis)</cyberware>
+        	</oneof>
+			</parentdetails>
+		</forbidden>
+		</cyberware>
+	<cyberware>
+      <id>c27a0acd-8e51-4625-a256-c60314d27848</id>
+      <name>EVO Icepick</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[1]</capacity>
+      <avail>16F</avail>
+      <cost>10000</cost>
+      <source>4PR</source>
+      <page>1</page>
+    	<required>
+			<parentdetails>
+			<oneof>
+          	<cyberware sameparent="True">Spurs</cyberware>
+				<cyberware sameparent="True">Hand Blade</cyberware>
+				<cyberware sameparent="True">Hand Razors</cyberware>
+        	</oneof>
+			</parentdetails>
+		</required>
+    </cyberware>
+	<cyberware>
+      <id>ae8ff45f-0d4d-4fe6-b9b9-0e6d00392f23</id>
+      <name>Horizon Shellshock</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0.3</ess>
+      <capacity>0</capacity>
+      <avail>20F</avail>
+      <cost>20000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <required>
+			<oneof>
+          	<cyberware >Voice Modulator</cyberware>
+        	</oneof>
+		</required>
+    </cyberware>
+	<cyberware>
+      <id>6b62c51a-b71b-4035-84de-3468e5821657</id>
+      <name>Chemical Protection</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>71ebf987-2ea2-4e96-b365-945edd89211e</id>
+      <name>Fire Resistance</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>bfd39aae-8c87-4a36-8c80-4d88d890cc72</id>
+      <name>Insulation</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>17e78d2f-c69c-40a3-83be-522ecd7328de</id>
+      <name>Nonconductivity</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>5ba93a46-cae6-45a3-a357-ef603c8920d1</id>
+      <name>Radiation Shielding</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>6139f4ec-e362-4a54-9056-d66982952ec8</id>
+      <name>Thermal Damping</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+		<cyberware>
+      <id>120e5db0-2ed3-468b-a04c-d8f1fbf3d0e1</id>
+      <name>Universal Mirror Material</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>6</rating>
+      <requireparent />
+    </cyberware>
+	<cyberware>
+      <id>9f496feb-c390-41c2-94a4-23441c255796</id>
+      <name>Solar Scales</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[Rating]</capacity>
+      <avail>Rating * 6</avail>
+      <cost>Rating * 1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <rating>2</rating>
+      <requireparent />
+    </cyberware>
+    <cyberware>
+      <id>72799f39-f115-42ba-a01e-c16f96c731b5</id>
+      <name>Typhoon Cyberlimb Modification</name>
+      <limit>False</limit>
+      <category>Cyberlimb Enhancement</category>
+      <ess>0</ess>
+      <capacity>[3]</capacity>
+      <avail>18F</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <required>
+        <parentdetails>
+          <OR>
+            <name>Centaur Front Leg</name>
+            <name>Centaur Rear Leg</name>
+            <name operation="contains">Full Leg</name>
+            <name operation="contains">Full Arm</name>
+            <name operation="contains">Drone Leg</name>
+            <name operation="contains">Drone Arm</name>
+            <name operation="contains">Liminal Body</name>
+          </OR>
+        </parentdetails>
+      </required>
+	<note>A Typhoon user should have four of these augmentations - 2 in the arms, and 2 in the legs.
+	
+	The Typhoon itself will show up once this cyberware is installed.
+	</note>
+    </cyberware>
+    <cyberware>
+      <id>927f7847-3b39-454f-ba35-e33db3ac6a13</id>
+      <name>Ares Typhoon Defensive Explosive Projector</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>0</capacity>
+      <avail>18F</avail>
+      <cost>30000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Typhoon</addweapon>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+      <required>
+        <oneof>
+          <cyberware>Typhoon Cyberlimb Modification</cyberware>
+        </oneof>
+      </required>
+    </cyberware>
+    <cyberware>
+      <id>6a553313-ed35-46b0-85c8-879296ef81ea</id>
+      <name>Hammerhand</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[5]</capacity>
+      <avail>10R</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Hammerhand</addweapon>
+	  <requireparent />
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>1b9753a2-aaa4-40d4-96cc-7bec3703ac01</id>
+      <name>Chain Ripper</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Chain Ripper</addweapon>
+	  <requireparent />
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>195b9ef7-78e5-4de7-9635-abb7138c8378</id>
+      <name>Cyberdendrite</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0.5</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>12000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Cyberdendrite</addweapon>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+    </cyberware>
+    <cyberware>
+      <id>b900ea21-e483-420f-aab2-8f8e86541938</id>
+      <name>Hurt Locker</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>5000</cost>
+      <source>4PR</source>
+      <page>1</page>
+	  <requireparent />
+	  <notes>-2d and -2 Limit to all actions using the limb when off. Activation is a Complex action (Simple with Wireless).
+
+	  When on, the penalty doesn't apply to Unarmed tests, and the user takes a cumulative 1S fatigue damage per turn.
+
+	  Attacks with the limb or any implanted cyberweapons that deal STR-based damage gain +3 damage and -3 AP.
+
+	  The user must soak (limb STR/2 + 1)S damage with BOD only whenever an attack is made with a Hurt Locker-modified limb.
+
+	  A glitch makes the damage Physical; a critical glitch makes the damage unresisted Physical.
+	  </notes>
+    </cyberware>
+    <cyberware>
+      <id>61f5da9a-3221-478a-b6fe-2c9650287377</id>
+      <name>Electrocutioner</name>
+      <limit>False</limit>
+      <category>Cyber Implant Weapon</category>
+      <ess>0</ess>
+      <capacity>[6]</capacity>
+      <avail>12F</avail>
+      <cost>8000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <addweapon>Electrocutioner</addweapon>
+	  <requireparent />
+      <bonus>
+        <unarmedreach>1</unarmedreach>
+      </bonus>
+      <forbidden>
+        <oneof>
+          <bioware>Sharkskin</bioware>
+        </oneof>
+      </forbidden>
+      <allowsubsystems>
+        <category>Cyber Implant Weapon Accessory</category>
+      </allowsubsystems>
+	  <notes>Cannot be installed into a limb with cyberlimb armor. Maximum +2 unarmed Reach.</notes>
+    </cyberware>
 	</cyberwares>
 </chummer>

@@ -62,7 +62,7 @@
 			<points>0.5</points>
 			<adeptway>0.25</adeptway>
 			<adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 				<oneof>
 					<quality>The Burnout's Way</quality>
 					<quality>The Spiritual's Way</quality>
@@ -78,8 +78,8 @@
 			<name>Missile Parry</name>
 			<points>1</points>
 			<adeptway>0.5</adeptway>
-			<adeptwayrequires>
-				<required>
+			<adeptwayrequires amendoperation="replace">
+				<required amendoperation="replace">
 				<oneof>
 					<quality>The Warrior's Way</quality>
 					<quality>The Spiritual's Way</quality>
@@ -116,7 +116,7 @@
 			<points>0.5</points>
 			<adeptway>0.25</adeptway>
 			<adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 				<oneof>
 					<quality>The Athlete's Way</quality>
 					<quality>The Burnout's Way</quality>
@@ -166,7 +166,7 @@
 			<page>4</page>
 			<adeptway>0.25</adeptway>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Speaker's Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -177,7 +177,7 @@
 		<power>
 			<name>Improved Physical Attribute</name>
 			<adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 				<oneof>
 					<quality>The Athlete's Way</quality>
 					<quality>The Warrior's Way</quality>
@@ -189,7 +189,7 @@
 		<power>
 			<name>Improved Ability (skill)</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Artisan's Way</quality>
 						<quality>The Artist's Way</quality>
@@ -205,7 +205,7 @@
 		<power>
 			<name>Smashing Blow</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Burnout's Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -216,7 +216,7 @@
 		<power>
 			<name>Spell Resistance</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Burnout's Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -227,7 +227,7 @@
 		<power>
 			<name>Supernatural Toughness</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Burnout's Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -239,7 +239,7 @@
 		<power>
 			<name>Traceless Walk</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Beast's Way</quality>
 						<quality>The Burnout's Way</quality>
@@ -252,7 +252,7 @@
 		<power>
 			<name>Transmit Damage</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
 						<quality>The Burnout's Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -263,9 +263,9 @@
 		<power>
 			<name>Wall Running</name>
 		    <adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 					<oneof>
-						<quality>The Ahtlete's Way</quality>
+						<quality>The Athlete's Way</quality>
 						<quality>The Burnout's Way</quality>
 						<quality>The Invisible Way</quality>
 						<quality>The Spiritual Way</quality>
@@ -276,7 +276,7 @@
 		<power>
 			<name>State of Purity</name>
 			<adeptwayrequires>
-				<required>
+				<required amendoperation="replace">
 				<oneof>
 					<quality>The Warrior's Way</quality>
 					<quality>The Spiritual's Way</quality>

@@ -21,6 +21,96 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema critters.xsd">
 	<metatypes>
 		<metatype>
+			<name>Elephant</name>
+			<walk>2/1/0</walk>
+			<run>4/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Unicorn</name>
+			<walk>3/1/0</walk>
+			<run>9/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Domestic Cat</name>
+			<walk>2/1/0</walk>
+			<run>6/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Bastet (Domestic Cat)</name>
+			<walk>2/1/0</walk>
+			<run>6/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Dog</name>
+			<walk>2/1/0</walk>
+			<run>6/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Mongrel (Dog)</name>
+			<walk>2/1/0</walk>
+			<run>6/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Cockroach</name>
+			<walk>2/1/0</walk>
+			<run>3/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Digit (Cockroach)</name>
+			<walk>2/1/0</walk>
+			<run>3/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Digit (Spider)</name>
+			<walk>2/1/0</walk>
+			<run>3/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Spider</name>
+			<walk>2/1/0</walk>
+			<run>3/0/0</run>
+		</metatype>
+		<metatype>
+			<name>Eagle</name>
+			<walk>1/1/6</walk>
+			<run>2/0/14</run>
+		</metatype>
+		<metatype>
+			<name>Rook (Eagle)</name>
+			<walk>1/1/6</walk>
+			<run>2/0/14</run>
+		</metatype>
+		<metatype>
+			<name>Crow</name>
+			<walk>1/1/6</walk>
+			<run>2/0/12</run>
+		</metatype>
+		<metatype>
+			<name>Rook (Crow)</name>
+			<walk>1/1/6</walk>
+			<run>2/0/12</run>
+		</metatype>
+		<metatype>
+			<name>Thunderbird, Greater</name>
+			<walk>2/1/4</walk>
+			<run>4/0/8</run>
+		</metatype>
+		<metatype>
+			<name>Roc, Lesser</name>
+			<walk>1/1/4</walk>
+			<run>2/0/10</run>
+		</metatype>
+		<metatype>
+			<name>Phoenician Birds</name>
+			<walk>1/1/6</walk>
+			<run>2/0/12</run>
+		</metatype>
+		<metatype>
+			<name>Iridescent Owl</name>
+			<walk>1/1/6</walk>
+			<run>2/0/10</run>
+		</metatype>
+		<metatype>
 			<name>Raccoon</name>
 			<bodmin>2</bodmin>
 			<bodmax>3</bodmax>

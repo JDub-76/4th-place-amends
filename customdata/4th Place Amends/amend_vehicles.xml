@@ -68,14 +68,58 @@
       <slots>4</slots>
 		</mod>
 
-				<mod>
-			<!-- 6e Rocket Booster  -->
-			<id>95c6e249-c82f-4a9b-87ae-d438b4042990</id>
-      <cost>number(Body = 0) * 3000 + Body * 6000</cost>
-      <rating>0</rating>
-      <slots>6</slots>
+		<mod>
+				<!-- 6e Rocket Booster  -->
+				<id>95c6e249-c82f-4a9b-87ae-d438b4042990</id>
+		  <cost>number(Body = 0) * 3000 + Body * 6000</cost>
+		  <rating>0</rating>
+		  <slots>6</slots>
+		</mod>
+		<mod>
+			<!-- Anti Theft -->
+			<id>f2d9840c-22a7-4c70-943d-ffac88fe6120</id>
+			<mod>
+
+				<slots>FixedValues(0,0,2,4)</slots>
+			</mod>
+
 		</mod>
 
+		<mod>
+			<!-- Missile Defense -->
+      <id>ff06549c-fe90-427d-97cd-c1336a7ecb5a</id>
+			<slots>2</slots>
+		</mod>
+	<mod>
+		<!-- obvious armor -->
+		<id>4dcee44f-6222-4188-bcf9-09c3cde60f2a</id>
+		<slots>Rating</slots>
+		<rating>ceiling(Body*0.5)</rating>
+		<forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
+	</mod>
+    <mod>
+		<!-- Concealed armor -->
+      <id>85a85cfd-7703-48f6-9745-d0a2b64c8b9e</id>
+	  <slots>Rating * 2</slots>
+      <forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
+	</mod>
+    <mod>
+      <!-- Personal Armor -->
+	  <id>7dbf54b3-6921-4fb6-b0e8-2a2e5e5e84fe</id>
+      <forbidden>
+        <vehicledetails>
+            <name>Ares Shadowdancer Armor</name>
+        </vehicledetails>
+      </forbidden>
+    </mod>
 	</mods>
 	<vehicles>
 		<vehicle>
@@ -187,11 +231,71 @@
 			<cost>51000</cost>
 			<seats>4</seats>
 		</vehicle>
-	<vehicle>
-		 <!-- Municipal Ambulance (S-K LT-21) -->
-      <id>88724f5f-d51b-4d67-a18f-71c5262696e7</id>
-		<cost>93000</cost>
-		<seats>2</seats>
-	</vehicle>
+		<vehicle>
+			 <!-- Municipal Ambulance (S-K LT-21) -->
+		  <id>88724f5f-d51b-4d67-a18f-71c5262696e7</id>
+			<cost>93000</cost>
+			<seats>2</seats>
+		</vehicle>
+		<vehicle>
+			<id>bc21264d-527c-4066-b8c6-0aa24cff61cb</id>
+		  <name>Mitsuhama Malakim (Large)</name>
+		  <armor>14</armor>
+		</vehicle>
+		<vehicle>
+		  <id>73b7729b-89c1-44fb-950c-f8391376a6b8</id>
+		  <name>F-B Bumblebee</name>
+		  <armor>9</armor>
+		</vehicle>
+		<vehicle>
+		  <id>c2073528-54a5-45e0-b5f8-9c1ab74647aa</id>
+		  <name>Messerschmitt-Kawasaki Libelle</name>
+		  <weaponmounts>
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Small (Drone)</size>
+			  <visibility>Internal</visibility>
+			  <free>True</free>
+			</weaponmount>
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Small (Drone)</size>
+			  <visibility>Internal</visibility>
+			  <free>True</free>
+			</weaponmount>	
+		  </weaponmounts>
+		</vehicle>
+		<vehicle>
+		  <id>3a9eeaaa-56c2-4020-ba9f-e0f7c6f9e0eb</id>
+		  <name>Dodge Charger</name>
+		  <weaponmounts amendoperation="replace">
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Standard</size>
+			  <visibility>Internal</visibility>
+			</weaponmount>
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Standard</size>
+			  <visibility>Internal</visibility>
+			</weaponmount>
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Standard</size>
+			  <visibility>Internal</visibility>
+			</weaponmount>
+			<weaponmount>
+			  <control>Remote</control>
+			  <flexibility>Fixed</flexibility>
+			  <size>Standard</size>
+			  <visibility>Internal</visibility>
+			</weaponmount>
+		  </weaponmounts>
+		</vehicle>
 	</vehicles>
 </chummer>

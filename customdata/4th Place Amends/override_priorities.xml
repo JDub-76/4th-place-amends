@@ -193,6 +193,11 @@
 					<karma>15</karma>
 				</metatype>
 				<metatype>
+					<name>Technopixie</name>
+					<value>6</value>
+					<karma>15</karma>
+				</metatype>
+				<metatype>
 					<name>Sasquatch</name>
 					<value>5</value>
 					<karma>20</karma>
@@ -1657,6 +1662,11 @@
 					<karma>15</karma>
 				</metatype>
 				<metatype>
+                                        <name>Technopixie</name>
+					<value>3</value>
+					<karma>15</karma>
+				</metatype>
+				<metatype>
 					<name>Sasquatch</name>
 					<value>2</value>
 					<karma>20</karma>
@@ -3117,6 +3127,12 @@
 				</metatype>
 				<metatype>
 					<name>Pixie</name>
+					<value>0</value>
+					<karma>15</karma>
+					<hide />
+				</metatype>
+				<metatype>
+					<name>Technopixie</name>
 					<value>0</value>
 					<karma>15</karma>
 					<hide />
@@ -4598,6 +4614,7 @@
 					<skilltype>magic</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4615,6 +4632,7 @@
 					<skilltype>magic</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4639,6 +4657,7 @@
 					<skilltype xpath="not(attribute = 'RES' or attribute = 'DEP') and (not(category = 'Magical Active') or skillgroup = '' or not(skillgroup))">xpath</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4656,6 +4675,7 @@
 					<skilltype>magic</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4673,6 +4693,7 @@
 					<skilltype>magic</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4691,6 +4712,7 @@
 					<required>
 						<oneof>
 							<metatypecategory>Metahuman</metatypecategory>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</required>
@@ -4715,6 +4737,7 @@
 					<skilltype xpath="not(attribute = 'RES' or attribute = 'DEP') and (not(category = 'Magical Active') or skillgroup = '' or not(skillgroup))">xpath</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4729,6 +4752,7 @@
 					<spells>5</spells>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4743,6 +4767,7 @@
 					<spells>5</spells>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4765,6 +4790,7 @@
 					<skillgrouptype>grouped</skillgrouptype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4789,6 +4815,7 @@
 					<skilltype>specific</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4810,6 +4837,7 @@
 					<skillgrouptype>grouped</skillgrouptype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4828,6 +4856,7 @@
 					<required>
 						<oneof>
 							<metatypecategory>Metahuman</metatypecategory>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</required>
@@ -4849,6 +4878,7 @@
 					<magic>2</magic>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4871,6 +4901,7 @@
 					<skillgrouptype>grouped</skillgrouptype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4892,6 +4923,7 @@
 					<skilltype>specific</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4914,6 +4946,7 @@
 					<skillgrouptype>grouped</skillgrouptype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4938,6 +4971,7 @@
 					<skilltype>specific</skilltype>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4956,6 +4990,7 @@
 					<required>
 						<oneof>
 							<metatypecategory>Metahuman</metatypecategory>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</required>
@@ -4973,6 +5008,7 @@
 					<value>Mundane</value>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>
@@ -4983,6 +5019,7 @@
 					<depth>1</depth>
 					<required>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</required>
@@ -4996,6 +5033,7 @@
 					<magic>1</magic>
 					<forbidden>
 						<oneof>
+                                                        <metatype>Technopixie</metatype>
 							<metatype>A.I.</metatype>
 						</oneof>
 					</forbidden>

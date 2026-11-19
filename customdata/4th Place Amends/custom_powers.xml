@@ -4,9 +4,11 @@
   <powers>
     <power>
       <id>cef77276-0756-4763-8be6-07755f30f29e</id>
-      <name>Dash</name>
+      <name>Stride</name>
       <points>0.25</points>
       <levels>True</levels>
+      <maxlevels>4</maxlevels>
+      <limit>1</limit>
       <source>4PR</source>
       <page>1</page>
       <bonus>
@@ -14,6 +16,38 @@
           <category>Ground</category>
           <val>Rating * 100</val>
         </sprintbonus>
+        <sprintbonus>
+          <category>Swim</category>
+          <val>Rating * 100</val>
+        </sprintbonus>
+		    <sprintbonus>
+          <category>Fly</category>
+          <val>Rating * 100</val>
+        </sprintbonus>
+        <walkmultiplier>
+          <category>Ground</category>
+          <percent>Rating * 25</percent>
+        </walkmultiplier>
+        <runmultiplier>
+          <category>Ground</category>
+          <percent>Rating * 25</percent>
+        </runmultiplier>
+       <walkmultiplier>
+          <category>Swim</category>
+          <percent>Rating * 25</percent>
+        </walkmultiplier>
+        <runmultiplier>
+          <category>Swim</category>
+          <percent>Rating * 25</percent>
+        </runmultiplier>
+		    <walkmultiplier>
+          <category>Fly</category>
+          <percent>Rating * 25</percent>
+        </walkmultiplier>
+        <runmultiplier>
+          <category>Fly</category>
+          <percent>Rating * 25</percent>
+        </runmultiplier>
       </bonus>
     </power>
     <power>
@@ -30,6 +64,7 @@
           <oneof>
             <quality>The Artisan's Way</quality>
             <quality>The Artist's Way</quality>
+            <quality>The Athlete's Way</quality>
             <quality>The Speaker's Way</quality>
             <quality>The Spiritual Way</quality>
 			      <quality>The Warrior's Way</quality>
@@ -52,6 +87,62 @@
       LOG (Invisible, Artisan's)
       WIL (Athlete's, Beast's, Warrior's, Spiritual)
       </notes>
+    </power>
+    <power>
+      <id>9658890c-554b-43f4-983d-fec703e3eef4</id>
+      <name>Improved STR (Magic and Machine)</name>
+      <points>1</points>
+      <levels>True</levels>
+      <limit>1</limit>
+      <source>4PR</source>
+      <page>1</page>
+      <adeptway>0.5</adeptway>
+      <adeptwayrequires>
+      </adeptwayrequires>
+      <bonus>
+        <specificattribute>
+          <name>STR</name>
+          <val>Rating</val>
+        </specificattribute>
+        <cyberlimbattributebonus>
+          <name>STR</name>
+          <val>Rating</val>
+        </cyberlimbattributebonus>
+      </bonus>
+      <notes>
+      Magic and Machine's Improved Physical Attribute (STR) also improves cyberlimbs.
+      </notes>
+      <required>
+        <metamagic>Magic and Machine</metamagic>
+      </required>
+    </power>
+    <power>
+      <id>35a8a495-3718-418a-bb5c-27ff0deb9afd</id>
+      <name>Improved AGI (Magic and Machine)</name>
+      <points>1</points>
+      <levels>True</levels>
+      <limit>1</limit>
+      <source>4PR</source>
+      <page>1</page>
+      <adeptway>0.5</adeptway>
+      <adeptwayrequires>
+      </adeptwayrequires>
+      <bonus>
+        <specificattribute>
+          <name>AGI</name>
+          <val>Rating</val>
+        </specificattribute>
+        <cyberlimbattributebonus>
+          <name>AGI</name>
+          <val>Rating</val>
+        </cyberlimbattributebonus>
+      </bonus>
+      <notes>
+      Magic and Machine's Improved Physical Attribute (AGI) also improves cyberlimbs.
+      </notes>
+      <required>
+        <metamagic>Magic and Machine</metamagic>
+      </required>
     </power>
     <power>
       <id>a6306904-4615-4692-b079-eb418fefc928</id>
@@ -228,33 +319,45 @@
       <notes>Add 1 spell per level in this power via the Improvements tab.</notes>
     </power>
   </powers>
+
+      <power>
+      <id>da845261-abaf-416e-a286-923fec54e734</id>
+      <name>Ritual Aid</name>
+      <points>0.25</points>
+      <levels>True</levels>
+      <limit>1</limit>
+      <source>SG</source>
+      <page>173</page>
+      <maxlevels>6</maxlevels>
+    </power>
+
+
+
+
+
   <enhancements>
     <enhancement>
       <id>38fb6ca0-79c6-4fd7-9653-034dcd44c6f4</id>
-      <name>Stride</name>
-      <power>Dash</power>
+      <name>Dash</name>
+      <power>Stride</power>
       <source>4PR</source>
       <page>1</page>
-      <bonus>
-        <walkmultiplier>
-          <category>Ground</category>
-          <percent>100</percent>
-        </walkmultiplier>
-        <runmultiplier>
-          <category>Ground</category>
-          <percent>100</percent>
-        </runmultiplier>
-      </bonus>
       <required>
         <allof>
-          <power>Dash</power>
+          <power>Stride</power>
         </allof>
 				<oneof>
 					<quality>The Athlete's Way</quality>
 					<quality>Dilettante</quality>
 				</oneof>
       </required>
-      <notes>Incompatible with the Skimmers cyberware or the Movement power.</notes>
+      <notes>
+      Adds bonus dice equal to Stride's rating to the character's Sprint tests.
+
+      The character may Sprint as a Simple action or Sprint and make a melee attack as a single Complex action. 
+      
+      Only 1 Sprint action can be taken in an initiative pass.
+      </notes>
     </enhancement>
     <enhancement>
       <id>37a39439-c8cd-415a-8947-c4b2405b44ee</id>

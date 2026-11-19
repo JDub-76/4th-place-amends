@@ -39,5 +39,14 @@
       <name>Critter Body Armor</name>
       <hide />
     </armor>
+    <armor>
+      <name>Chameleon Suit</name>
+      <mods>
+        <name rating="4">Ruthenium Polymer Coating</name>
+      </mods>
+      <bonus>
+      </bonus>
+      <notes>Houseruled to no longer provide extra limit or dice pool to sneaking with Wireless. Instead, it has R4 RPC.</notes>
+    </armor>
   </armors>
 </chummer>

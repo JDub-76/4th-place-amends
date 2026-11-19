@@ -33,23 +33,23 @@
       <reamax>8</reamax>
       <reaaug>12</reaaug>
       <strmin>1</strmin>
-      <strmax>2</strmax>
-      <straug>6</straug>
-      <chamin>1</chamin>
-      <chamax>5</chamax>
-      <chaaug>9</chaaug>
+      <strmax>3</strmax>
+      <straug>7</straug>
+      <chamin>2</chamin>
+      <chamax>7</chamax>
+      <chaaug>11</chaaug>
       <intmin>2</intmin>
       <intmax>7</intmax>
       <intaug>11</intaug>
-      <logmin>1</logmin>
-      <logmax>4</logmax>
-      <logaug>8</logaug>
+      <logmin>2</logmin>
+      <logmax>7</logmax>
+      <logaug>11</logaug>
       <wilmin>1</wilmin>
       <wilmax>6</wilmax>
       <wilaug>10</wilaug>
       <edgmin>1</edgmin>
-      <edgmax>5</edgmax>
-      <edgaug>5</edgaug>
+      <edgmax>6</edgmax>
+      <edgaug>6</edgaug>
       <bonus>
         <disablebiowaregrade>Standard</disablebiowaregrade>
         <disablebiowaregrade>Standard (Burnout's Way)</disablebiowaregrade>
@@ -66,11 +66,23 @@
         <disablecyberwaregrade>Omegaware (Adapsin)</disablecyberwaregrade>
         <disablecyberwaregrade>Greyware (Adapsin)</disablecyberwaregrade>
       </bonus>
-      <qualities>
+          <qualities>
             <negative>
+              <quality amendoperation="addnode">Neoteny</quality>
               <quality amendoperation="addnode" removable="True">'Ware Intolerance</quality>
             </negative>
           </qualities>
+    </metatype>
+    <metatype>
+      <name>Naga</name>
+      <qualities>
+          <positive>
+            <quality>One Trick Pony</quality>
+          </positive>
+      </qualities>
+      <bonus>
+        <reach amendoperation="addnode">3</reach>
+      </bonus>
     </metatype>
     <!-- End Region -->
   </metatypes>

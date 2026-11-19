@@ -47,9 +47,101 @@
 	</grades>
 	<cyberwares>
 		<cyberware>
+			<name>Internal Router</name>
+			<rating>4</rating>
+			<ess>Rating * 0.2</ess>
+			<cost>Rating * 4000</cost>
+			<notes>All other cyberware installed in a user that has an Internal Router will appear as Wireless Off for as long as it functions, becoming untargetable by others.
+
+Internal Router may also grant +Rating extra Firewall to resist any Matrix or Resonance Actions of the user's choice targeting it.
+
+An implanted Commlink or Cyberdeck cannot benefit from an Internal Router.</notes>
+		</cyberware>
+		<cyberware>
+		<name>Bone Lacing (Plastic)</name>
+		<forbidden>
+			<oneof>
+			<cyberwarecontains>Bone Lacing</cyberwarecontains>
+			<bioware>Bone Density Augmentation</bioware>
+			</oneof>
+		</forbidden>
+		</cyberware>
+		<cyberware>
+		<name>Bone Lacing (Aluminum)</name>
+		<forbidden>
+			<oneof>
+			<cyberwarecontains>Bone Lacing</cyberwarecontains>
+			<bioware>Bone Density Augmentation</bioware>
+			</oneof>
+		</forbidden>
+		</cyberware>
+		<cyberware>
+		<name>Bone Lacing (Titanium)</name>
+		<forbidden>
+			<oneof>
+			<cyberwarecontains>Bone Lacing</cyberwarecontains>
+			<bioware>Bone Density Augmentation</bioware>
+			</oneof>
+		</forbidden>
+		</cyberware>
+		<cyberware>
+			<name>Reaction Enhancers</name>
+			<bonus amendoperation="replace">
+				<specificattribute>
+					<name>REA</name>
+					<val>Rating</val>
+				</specificattribute>
+				<disablequality>Catlike Reflexes</disablequality>
+			</bonus>
+		</cyberware>
+		<cyberware>
 			<name>Wired Reflexes</name>
 			<ess amendoperation="replace">FixedValues(2,3,4)</ess>
 			<cost amendoperation="replace">FixedValues(50000,100000,150000)</cost>
+			<bonus amendoperation="replace">
+				<initiativepass precedence="0">Rating</initiativepass>
+				<specificattribute>
+					<name>REA</name>
+					<val>Rating</val>
+				</specificattribute>
+				<disablequality>Catlike Reflexes</disablequality>
+			</bonus>
+		</cyberware>
+		<cyberware>
+		<name>Move-by-Wire System</name>
+		<bonus amendoperation="replace">
+			<initiative precedence="0">FixedValues(3,6,9)</initiative>
+			<initiativepass precedence="0">FixedValues(0,1,1)</initiativepass>
+			<skillwire precedence="0">Rating * 2</skillwire>
+			<sociallimit>-Rating</sociallimit>
+			<specificattribute>
+				<name>REA</name>
+				<val>Rating</val>
+			</specificattribute>
+			<disablequality>Catlike Reflexes</disablequality>
+		</bonus>
+		<minrating>1</minrating>
+		<rating>3</rating>
+		</cyberware>
+		<cyberware>
+			<name>Digigrade Legs</name>
+			<ess>0</ess>
+			<pairbonus>
+				<movementreplace>
+					<category>Ground</category>
+				<speed>run</speed>
+				<val>6</val>
+				</movementreplace>
+				<sprintbonus>
+					<category>Ground</category>
+				<val>100</val>
+				</sprintbonus>
+				<weaponaccuracy>
+				<name>Raptor Foot</name>
+				<value>1</value>
+				</weaponaccuracy>
+			</pairbonus>
+			<notes>Also adds +2 Strength to kicking attacks.</notes>
 		</cyberware>
 		<cyberware>
 			<name>Nanohive, Hard</name>
@@ -126,7 +218,6 @@
 			<id>1e511ad7-4806-4862-8685-a04887b1bec9</id>
 			<capacity>3</capacity>
 		</cyberware>
-		<!-- Splitter Temp - delete if you see this -->
 		<cyberware>
 			<!-- Modular Synthetic Full Arm  -->
 			<id>c0f408f6-31b2-4070-b972-832a5520d489</id>
@@ -166,10 +257,9 @@
 				<category>Skullware</category>
 			</allowsubsystems>
 		</cyberware>
-		<cyberware>
-			<!-- Partial Skull  -->
-			<id>4630313c-aca9-4aa3-8fce-ba064423b1c7</id>
-			<avail>6</avail>
+		<cyberware> <!-- Partial Cyberskull -->
+		  <name>Partial Cyberskull</name>
+		  <capacity amendoperation="replace">6</capacity>
 			<allowsubsystems amendoperation="append">
 				<category>Skullware</category>
 			</allowsubsystems>
@@ -325,6 +415,13 @@
 		<cyberware>
 			<name>Oxyrush</name>
       		<cost>Rating * 300</cost>
+		</cyberware>
+		<cyberware>
+		<name>Metatype Reduction (Troll)</name>
+		<bonus>
+			<armor>-1</armor>
+		</bonus>
+		<notes>Reduces social penalties from anti-troll prejudice by 2.</notes>
 		</cyberware>
 	</cyberwares>
 </chummer>

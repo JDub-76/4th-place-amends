@@ -95,5 +95,11 @@
 			</bonus>
 			<notes>Reduces the effective Background Count by IG/2 when taking magically-enhanced actions aligned with the Adept's Way.</notes>
 		</metamagic>
+		<metamagic>
+			<name>Efficient Ritual</name>
+			<hide />
+		</metamagic>
+
+
 	</metamagics>
 </chummer>

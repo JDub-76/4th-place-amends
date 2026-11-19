@@ -601,6 +601,136 @@
 			You may want to have an Improvement set to remove these improvements when not in dracoform.
 			</notes>
 		</power>
+
+        <power>
+          <id>e1523ffb-43da-4d4f-9852-f325afe97d11</id>
+          <name>Mystic Scales</name>
+          <category>Drake</category>
+          <type>M</type>
+          <action>Auto</action>
+          <range>Self</range>
+          <duration>Special</duration>
+          <bonus>
+            <critterpowerlevels>
+              <power>
+                <name>Hardened Mystic Armor</name>
+                <val>2</val>
+              </power>
+            </critterpowerlevels>
+          </bonus>
+          <required>
+            <oneof>
+              <quality>Dracoform (Eastern Drake)</quality>
+            </oneof>
+          </required>
+          <karma>6</karma>
+          <source>4PR</source>
+          <page>1</page>
+        </power>
+        <power>
+          <id>7bed782c-2dfc-4478-bce0-ae49b0ee1f65</id>
+          <name>Eminence</name>
+          <category>Drake</category>
+          <type>M</type>
+          <action>Auto</action>
+          <range>Self</range>
+          <duration>Special</duration>
+          <required>
+            <oneof>
+              <quality>Dracoform (Western Drake)</quality>
+            </oneof>
+          </required>
+          <karma>6</karma>
+          <source>4PR</source>
+          <page>1</page>
+            <notes> Depending on Form gives +1/+2/+3 to intimidation (Transcend, Drake, Monstrous)
+			</notes>
+        </power>
+        <power>
+          <id>4b0110ef-609e-401f-94cb-ca192a9b728d</id>
+          <name>Immunity (Toxins, Drake)</name>
+          <category>Drake</category>
+          <type>M</type>
+          <action>Auto</action>
+          <range>Self</range>
+          <duration>Special</duration>
+          <required>
+            <oneof>
+              <quality>Dracoform (Feathered Drake)</quality>
+            </oneof>
+          </required>
+          <karma>6</karma>
+          <source>4PR</source>
+          <page>1</page>
+        </power>
+        <power>
+          <id>0ff39ca2-953b-4522-804c-7b364b94bbf9</id>
+          <name>Resonant Flight</name>
+          <category>Emerged</category>
+          <type />
+          <action />
+          <range />
+          <duration />
+          <source>4PR</source>
+          <page>1</page>
+        </power>
+        <power>
+          <id>a8c515a5-334d-466f-a425-c58080b9060e</id>
+          <name>Echolocation</name>
+          <category>Drake</category>
+          <type>M</type>
+          <action>Auto</action>
+          <range>Self</range>
+          <duration>Special</duration>
+          <required>
+            <oneof>
+              <quality>Dracoform (Sea Drake)</quality>
+            </oneof>
+          </required>
+          <karma>6</karma>
+          <source>4PR</source>
+          <page>1</page>
+            <notes> This counts as a Sense and gives the equivalent of an implanted Ultrasound sensor of a rating equal to Magic.
+                Range is Magic*10 Meters on Land and Magic*100 Meters in water. The user suffers no penalties due to visibility in that
+                Range
+			</notes>
+        </power>
+
+		<power>
+          <id>0875c73a-2863-4fb9-ad2f-2b1861d925d9</id>
+          <name>Hydro Form</name>
+          <category>Drake</category>
+          <type>M</type>
+          <action>Auto</action>
+          <range>Self</range>
+          <duration>Special</duration>
+          <required>
+            <oneof>
+              <quality>Dracoform (Sea Drake)</quality>
+            </oneof>
+          </required>
+          <karma>14</karma>
+			<bonus>
+				<sprintbonus>
+				  <category>Swim</category>
+				  <val>400</val>
+				</sprintbonus>
+				<walkmultiplier>
+				  <category>Swim</category>
+				  <percent>200</percent>
+				</walkmultiplier>
+				<runmultiplier>
+				  <category>Swim</category>
+				  <percent>200</percent>
+				</runmultiplier>
+			  </bonus>
+
+          <source>4PR</source>
+          <page>1</page>
+            <notes> Tripples the swim speed and gives extra sprint dice
+			</notes>
+        </power>
+
 		<power>
       <id>a4dc241d-6cca-4fc2-a503-7f09b5b1bebe</id>
       <name>Attribute Enhancement</name>
@@ -612,9 +742,6 @@
       <bonus>
         <selectattributes>
           <selectattribute>
-            <excludeattribute>EDG</excludeattribute>
-			<excludeattribute>MAG</excludeattribute>
-			<excludeattribute>RES</excludeattribute>
             <max>2</max>
 			<min>2</min>
           </selectattribute>

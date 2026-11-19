@@ -41,6 +41,134 @@
 <chummer xmlns="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema armor.xsd">
     <armors>
       <armor>
+        <id>eb546024-a628-4c93-99cb-61a4314664e9</id>
+        <name>Iron Will</name>
+        <category>Specialty Armor</category>
+        <armor>+4</armor>
+        <armorcapacity>6</armorcapacity>
+        <avail>12</avail>
+        <cost>15000</cost>
+        <mods>
+          <name>Custom Fit</name>
+          <name>Rigger Interface</name>
+          <name>Restrictive</name>
+        </mods>
+        <bonus>
+          <specificattribute>
+            <name>STR</name>
+            <val>1</val>
+          </specificattribute>
+          <dodge>-2</dodge>
+          <specificattribute>
+            <name>AGI</name>
+            <val>-2</val>
+          </specificattribute>
+          <specificattribute>
+            <name>REA</name>
+            <val>-2</val>
+          </specificattribute>
+          <cyberlimbattributebonus>
+            <name>STR</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
+        </bonus>
+        <source>4PR</source>
+        <page>1</page>
+        <notes>Sets STR to 7 if lower. Cannot Run or Sprint without rigging in. Can be worn with any non-Restrictive armor that doesn't grant attribute bonuses.
+        
+        Requires an Edge (1) test if hit by a called shot to the arms or legs, an AoE attack, or an attack using the Choke rules.
+        
+        Failure inflicts a cumulative -1 penalty to STR, AGI, and REA. Glitch immobilizes the target limb. Critical glitch causes the exoskeleton to seize up.
+        </notes>
+      </armor>
+      <armor>
+        <id>1bfe62c5-4d53-453f-8ee2-09b49a46dbd3</id>
+        <name>JIM Diving Exoskeleton</name>
+        <category>Specialty Armor</category>
+        <armor>15</armor>
+        <armorcapacity>15</armorcapacity>
+        <avail>16</avail>
+        <cost>50000</cost>
+        <mods>
+          <name maxrating="8" rating="8">Chemical Protection</name>
+          <name maxrating="8" rating="8">Insulation</name>
+          <name>Chemical Seal</name>
+          <name>Custom Fit</name>
+          <name>Restrictive</name>
+        </mods>
+        <bonus>
+          <specificskill>
+            <name>Perception</name>
+            <bonus>-4</bonus>
+          </specificskill>
+          <dodge>-2</dodge>
+          <specificattribute>
+            <name>AGI</name>
+            <val>-2</val>
+          </specificattribute>
+          <specificattribute>
+            <name>REA</name>
+            <val>-2</val>
+          </specificattribute>
+        </bonus>
+        <source>4PR</source>
+        <page>1</page>
+        <notes>Base Strength 7. If hit by area of effect attack or arm/leg called shots that are anti-vehicle, deal physical damage, or have base 15P damage or higher, Edge (1) test.
+
+        Failure inflicts a cumulative -1 penalty to STR, AGI, and REA. Glitch immobilizes the target limb. Critical glitch causes the exoskeleton to seize up.
+
+        -4 to all tests involving physical movement (including defense tests) when prone.
+
+        Standing up is a STR + Gymnastics [Physical] (10, Simple Action) extended test.
+
+        Automatically succeeds tests to tread water. 20 hour air supply.
+        
+        </notes>
+      </armor>
+      <armor>
+        <id>1f00602f-53f9-44e4-892a-02a08ccc6619</id>
+        <name>Improvised Combat Exoskeleton</name>
+        <category>Specialty Armor</category>
+        <armor>27</armor>
+        <armorcapacity>7</armorcapacity>
+        <avail>18F</avail>
+        <cost>70000</cost>
+        <mods>
+          <name rating="3">Chemical Protection</name>
+          <name rating="3">Insulation</name>
+          <name>Rigger Interface</name>
+          <name>Custom Fit</name>
+          <name>Restrictive</name>
+        </mods>
+        <bonus>
+          <specificskill>
+            <name>Swimming</name>
+            <bonus>-99</bonus>
+          </specificskill>
+          <dodge>-2</dodge>
+          <specificattribute>
+            <name>AGI</name>
+            <val>-2</val>
+          </specificattribute>
+          <specificattribute>
+            <name>REA</name>
+            <val>-2</val>
+          </specificattribute>
+        </bonus>
+        <source>4PR</source>
+        <page>1</page>
+        <notes>Base Strength 8. If hit by area of effect attack or arm/leg called shots that are anti-vehicle, deal physical damage, or have base 15P damage or higher, Edge (1) test.
+
+        Failure inflicts a cumulative -1 penalty to STR, AGI, and REA. Glitch immobilizes the target limb. Critical glitch causes the exoskeleton to seize up.
+
+        -4 to all tests involving physical movement (including defense tests) when prone.
+
+        Standing up is a STR + Gymnastics [Physical] (15, Simple Action) extended test.
+
+        Automatically fails all Swimming tests. No benefit from helmets, gel packs, ballistic hoods, or YNT softweave.
+        </notes>
+      </armor>
+      <armor>
         <id>37bee87c-0ce1-4050-8293-9dd1bd2bb1ea</id>
         <name>Guardian Angel Protection System (Light)</name>
         <category>Specialty Armor</category>
@@ -242,10 +370,18 @@
             <name>AGI</name>
             <val>1</val>
           </specificattribute>
+		      <cyberlimbattributebonus>
+            <name>AGI</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
           <specificattribute>
             <name>STR</name>
             <val>1</val>
           </specificattribute>
+          <cyberlimbattributebonus>
+            <name>STR</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
         </bonus>
         <source>4PR</source>
         <page>1</page>
@@ -270,6 +406,10 @@
             <name>AGI</name>
             <val>1</val>
           </specificattribute>
+          <cyberlimbattributebonus>
+            <name>AGI</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
           <specificattribute>
             <name>REA</name>
             <val>1</val>
@@ -299,6 +439,10 @@
             <name>STR</name>
             <val>2</val>
           </specificattribute>
+          <cyberlimbattributebonus>
+            <name>STR</name>
+            <val>2</val>
+          </cyberlimbattributebonus>
         </bonus>
         <source>4PR</source>
         <page>1</page>
@@ -321,9 +465,21 @@
         </gears>
         <bonus>
           <specificattribute>
-            <name>STR</name>
-            <val>2</val>
+            <name>AGI</name>
+            <val>1</val>
           </specificattribute>
+		      <cyberlimbattributebonus>
+            <name>AGI</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
+          <specificattribute>
+            <name>STR</name>
+            <val>1</val>
+          </specificattribute>
+          <cyberlimbattributebonus>
+            <name>STR</name>
+            <val>1</val>
+          </cyberlimbattributebonus>
         </bonus>
         <source>4PR</source>
         <page>1</page>
@@ -403,18 +559,198 @@
       </armor>
       <armor>
         <id>67344c51-d389-4c91-92ed-ed9e2b7c62ac</id>
-        <name>Transforming Garment</name>
-        <category>Clothing</category>
-        <armor>0</armor>
-        <rating>6</rating>
-        <armorcapacity>0</armorcapacity>
-        <avail>6</avail>
-        <cost>Rating * 5000</cost>
+        <name>Smart Armor</name>
+        <category>Specialty Armor</category>
+        <armor>10</armor>
+        <armorcapacity>24</armorcapacity>
+        <bonus>
+          <limitmodifier>
+            <limit>Social</limit>
+            <value>2</value>
+            <condition>LimitCondition_Visible</condition>
+          </limitmodifier>
+        </bonus>
+        <wirelessbonus>
+          <skillcategory>
+            <name>Social Active</name>
+            <bonus>1</bonus>
+          </skillcategory>
+        </wirelessbonus>
+        <avail>14R</avail>
+        <cost>25000</cost>
         <source>4PR</source>
         <page>1</page>
+        <notes>
+        Social modifier requires the armor to be set to an appropriate appearance. 
+
+        Smart Armor can only have 12 total Capacity of Armor mods active at any time. 
+        
+        Requires 3 combat turns to change appearance or active mods.
+        </notes>
       </armor>
+
+      <armor>
+      <id>f0ffbbd8-c80a-40ff-add2-3be3747eddbc</id>
+      <name>AresSpace HEC Suit</name>
+      <category>Specialty Armor</category>
+      <armor>11</armor>
+        <armoroverride>+2</armoroverride>
+      <armorcapacity>9</armorcapacity>
+      <avail>20R</avail>
+      <cost>35000</cost>
+      <mods>
+        <name rating="6">Insulation</name>
+        <name rating="6">Fire Resistance</name>
+        <name rating="6">Radiation Shielding</name>
+        <name rating="4">Solar Power Cells</name>
+        <name>Custom Fit (Stack)</name>
+      </mods>
+      <gears>
+        <usegear>Gas Mask</usegear>
+      </gears>
+      <source>4PR</source>
+      <page>1</page>
+    </armor>
+
+          <armor>
+      <id>421850c0-e4cf-4765-9596-f3f739ff1cea</id>
+      <name>HEC Faceplate</name>
+      <category>Specialty Armor</category>
+      <armor>+2</armor>
+      <armorcapacity>7</armorcapacity>
+      <avail>20R</avail>
+      <cost>500</cost>
+            <mods>
+        <name>Custom Fit</name>
+      </mods>
+            <gears>
+        <usegear>Flare Compensation</usegear>
+      </gears>
+      <addmodcategory>Customized Ballistic Mask</addmodcategory>
+      <source>4PR</source>
+      <page>1</page>
+    </armor>
+
+      <armor>
+      <id>9eda3aa6-b2e3-45a0-8f02-2eb612722007</id>
+      <name>HEC Helmet</name>
+      <category>Specialty Armor</category>
+      <armor>+2</armor>
+         <cost>3000</cost>
+      <armorcapacity>6</armorcapacity>
+      <avail>20R</avail>
+        <mods>
+        <name>Custom Fit</name>
+      </mods>
+        <gears>
+        <usegear>Sound Link</usegear>
+      </gears>
+
+      <source>4PR</source>
+      <page>1</page>
+    </armor>
+
+            <armor>
+      <id>949af9db-fcc1-475a-82bf-11691584f41a</id>
+      <name>Adaptive Garments HEC Suit</name>
+      <category>Specialty Armor</category>
+      <armor>11</armor>
+        <armoroverride>+2</armoroverride>
+      <armorcapacity>11</armorcapacity>
+      <avail>20R</avail>
+      <cost>130000</cost>
+      <mods>
+        <name rating="6">Insulation</name>
+        <name rating="6">Fire Resistance</name>
+        <name rating="6">Radiation Shielding</name>
+        <name rating="4">Thermal Damping</name>
+        <name rating="5">Cooling</name>
+        <name rating="4">Solar Power Cells</name>
+        <name>Chemical Seal</name>
+        <name>Responsive Interface Gear: Armor</name>
+
+        <name>Custom Fit (Stack)</name>
+        <name>Custom Fit (Stack)</name>
+        <name>Custom Fit (Stack)</name>
+        <name>YNT Softweave Armor</name>
+        <name>Padded</name>
+        <name>Feedback Clothing</name>
+        <name>Adaptive Garments</name>
+      </mods>
+      <gears>
+        <usegear>Gas Mask</usegear>
+      </gears>
+      <wirelessbonus>
+        <specificskill>
+          <name>Survival</name>
+          <bonus>2</bonus>
+        </specificskill>
+      </wirelessbonus>
+              <notes></notes>
+      <source>4PR</source>
+      <page>1</page>
+    </armor>
+
+          <armor>
+      <id>37adfbaf-cdee-41d3-81f9-ed91e49b7e4b</id>
+      <name>AresSpace Myrmidon Aerospace Suit</name>
+      <category>Specialty Armor</category>
+      <armor>20</armor>
+      <armorcapacity>14</armorcapacity>
+      <avail>28F</avail>
+      <cost>85000</cost>
+      <mods>
+        <name>Chemical Seal</name>
+        <name rating="6">Insulation</name>
+        <name rating="6">Fire Resistance</name>
+        <name rating="6">Thermal Damping</name>
+        <name rating="6">Radiation Shielding</name>
+        <name rating="4">Thermal Damping</name>
+        <name rating="6">Solar Power Cells</name>
+        <name>Custom Fit</name>
+        <name>Gear Access</name>
+      </mods>
+      <gears>
+       <name>Quick-Draw Holster</name>
+        <usegear>Biomonitor</usegear>
+        <usegear>Flare Compensation</usegear>
+      </gears>
+
+      <source>RG</source>
+      <page>82</page>
+    </armor>
+
+
+
     </armors>
 	<mods>
+          <mod>
+      <id>7c659ed5-190a-4016-9c2f-6922264fc533</id>
+      <name>Cooling</name>
+      <category>General</category>
+      <armor>0</armor>
+      <maxrating>6</maxrating>
+      <armorcapacity>FixedValues([1],[2],[3],[4],[5],[6])</armorcapacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 500</cost>
+      <source>4PR</source>
+      <page>1</page>
+    </mod>
+
+          <mod>
+      <id>6539fe5a-3d49-46a3-9b7a-d86e96399755</id>
+      <name>Solar Power Cells</name>
+      <category>General</category>
+      <armor>0</armor>
+      <maxrating>6</maxrating>
+      <armorcapacity>FixedValues([1],[2],[3],[4],[5],[6])</armorcapacity>
+      <avail>Rating * 2</avail>
+      <cost>Rating * 1000</cost>
+      <source>RG</source>
+      <page>84</page>
+    </mod>
+
+
     <mod>
       <id>5fc2cd8c-559d-475f-8cbb-bc82447dd036</id>
       <name>Ballistic Hood</name>
@@ -428,6 +764,49 @@
       <page>1</page>
       <notes>Availability is equal to the armor being upgraded. Cannot be used along with a helmet or ballistic mask.</notes>
     </mod>
+          <mod>
+      <id>9750dcd9-9491-43fc-afc7-08ad3e25f060</id>
+      <name>Ballistic Hood (HEC)</name>
+      <category>General</category>
+      <armor>+1</armor>
+      <maxrating>1</maxrating>
+      <armorcapacity>0</armorcapacity>
+      <avail>0</avail>
+      <cost>0</cost>
+            <required>
+              <oneof>
+        <parentdetails>
+          <name>AresSpace HEC Suit</name>
+        </parentdetails>
+                <parentdetails>
+          <name>Adaptive Garments HEC Suit</name>
+        </parentdetails>
+              </oneof>
+      </required>
+      <source>4PR</source>
+      <page>1</page>
+      <notes>Can be added manually for free to the HEC suit(separated because technical chummer issue)</notes>
+    </mod>
+
+      <mod>
+      <id>03719dda-bc41-4ddf-8267-7002628163f7</id>
+      <name>Adaptive Garments</name>
+      <category>General</category>
+      <maxrating>1</maxrating>
+      <armorcapacity>[0]</armorcapacity>
+      <avail>0</avail>
+      <cost>0</cost>
+      <source>4PR</source>
+      <page>1</page>
+        <required>
+          <parentdetails>
+          <name>Adaptive Garments HEC Suit</name>
+        </parentdetails>
+      </required>
+        <notes>Includes the base functionality of Transforming garments</notes>
+    </mod>
+
+
     <mod>
       <id>4b1fbe09-3dfd-4a0d-a344-e2856bb07748</id>
       <name>Quick Release</name>
@@ -442,29 +821,35 @@
     </mod>
     <mod>
       <id>fdeb207a-39a9-4abd-b4eb-0ab67ae39229</id>
-      <name>Transforming Garment (Armor)</name>
+      <name>Transforming Garment (mod)</name>
       <category>General</category>
       <armor>-2</armor>
       <maxrating>1</maxrating>
       <armorcapacity>[0]</armorcapacity>
-      <avail>0</avail>
-      <cost>0</cost>
+      <avail>10</avail>
+      <cost>2500</cost>
       <source>4PR</source>
       <page>1</page>
-      <notes>Equip on transforming armor to represent the armor reduction.</notes>
+      <notes>
+      Allows the modified armor to shift in looks or size to anything of the same total size and bulk.
+
+      Changing form takes 3 combat turns.
+
+      Negates the Custom Fit armor quality.
+      </notes>
     </mod>
     <mod>
       <id>8571ccda-b095-4fa9-9662-abdd992530b1</id>
-      <name>Transforming Garment (Clothing)</name>
-      <category>Clothing</category>
+      <name>Drake/Shifter Adapted</name>
+      <category>General</category>
       <armor>0</armor>
       <maxrating>1</maxrating>
       <armorcapacity>[0]</armorcapacity>
       <avail>0</avail>
-      <cost>0</cost>
+      <cost>Armor Cost * 0.1</cost>
       <source>4PR</source>
       <page>1</page>
-      <notes>Equip on transforming non-armor clothing.</notes>
+      <notes>The armor is adapted for use for a drake or shifter and can transform with them.</notes>
     </mod>
     <mod>
       <id>3abae997-bef8-4fe1-887c-aeeb2191cf62</id>
@@ -504,9 +889,92 @@
       <armorcapacity>[0]</armorcapacity>
       <avail>0</avail>
       <cost>0</cost>
+			<bonus>
+				<movementreplace>
+					<category>Fly</category>
+					<speed>walk</speed>
+					<val>2</val>
+				</movementreplace>
+				<movementreplace>
+					<category>Fly</category>
+					<speed>run</speed>
+					<val>8</val>
+				</movementreplace>
+				<movementreplace>
+					<category>Fly</category>
+					<speed>sprint</speed>
+					<val>300</val>
+				</movementreplace>
+			</bonus>
       <source>4PR</source>
       <page>1</page>
       <notes>Identical effects to Cyberwings. Flight speed is x2/x8/+3.</notes>
+    </mod>
+    <mod>
+      <id>d5c99878-76ec-491a-865a-02a54c375035</id>
+      <name>Rigger Interface</name>
+      <category>General</category>
+      <maxrating>1</maxrating>
+      <armorcapacity>[0]</armorcapacity>
+      <required>
+        <parentdetails>
+          <name>JIM Diving Exoskeleton</name>
+        </parentdetails>
+      </required>
+        <bonus>
+          <specificattribute>
+            <name>AGI</name>
+            <val>2</val>
+          </specificattribute>
+          <specificattribute>
+            <name>REA</name>
+            <val>2</val>
+          </specificattribute>
+        </bonus>
+      <avail>16</avail>
+      <cost>1000</cost>
+      <source>4PR</source>
+      <page>1</page>
+    </mod>
+    <mod>
+      <id>651fe2b2-4d68-4d73-97dc-cec5c1d1bd64</id>
+      <name>JIM Heavy Equipment Mount</name>
+      <category>General</category>
+      <maxrating>1</maxrating>
+      <armorcapacity>[4]</armorcapacity>
+      <required>
+        <parentdetails>
+          <OR>
+            <name>JIM Diving Exoskeleton</name>
+            <name>Improvised Combat Exoskeleton</name>
+          </OR>
+        </parentdetails>
+      </required>
+      <avail>16</avail>
+      <cost>4000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <notes>Allows the one-handed use of any tool or weapon up to a Medium MG or Sniper Rifle.</notes>
+    </mod>
+    <mod>
+      <id>2f00dbc9-4c3a-4965-9c16-212f4b266aad</id>
+      <name>JIM Strength Upgrade</name>
+      <category>General</category>
+      <maxrating>4</maxrating>
+      <armorcapacity>[0]</armorcapacity>
+      <required>
+        <parentdetails>
+          <OR>
+            <name>JIM Diving Exoskeleton</name>
+            <name>Improvised Combat Exoskeleton</name>
+          </OR>
+        </parentdetails>
+      </required>
+      <avail>16</avail>
+      <cost>Rating * 10000</cost>
+      <source>4PR</source>
+      <page>1</page>
+      <notes>+Rating to Strength when wearing the suit.</notes>
     </mod>
 	</mods>
 </chummer>
