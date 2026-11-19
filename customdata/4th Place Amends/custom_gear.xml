@@ -23,6 +23,7 @@
 		<category blackmarket="Ammunition">Ammunition (Hand Load)</category>
 		<category>Programmable ASIST Biofeedback</category>
 		<category>Grenade Mods</category>
+		<category blackmarket="BTLs">BTL Grades</category>
 	</categories>
 	<gears>
 		<!-- More Ammo Stuff -->
@@ -1439,9 +1440,27 @@
 			<page>1</page>
 			<avail>12F</avail>
 			<cost>3000</cost>
+			<wirelessbonus>	
+				<specificattribute>
+					<name>BOD</name>
+					<val>1</val>
+				</specificattribute>
+				<specificattribute>
+					<name>WIL</name>
+					<val>1</val>
+				</specificattribute>
+				<specificattribute>
+					<name>AGL</name>
+					<val>1</val>
+				</specificattribute>
+				<initiativepass>2</initiativepass>
+				<addqualities>
+				<addquality>High Pain Tolerance 3</addquality>
+				</addqualities>
+			</wirelessbonus>
 			<notes>Addiction Rating 11, Threshold 4 (Both), Injection Vector. +1 BOD/AGI/WIL, +2d6 Init, High Pain Tolerance 3 for duration.</notes>
 		</gear>
-		<gear>
+		<drug>
 			<id>0f8fae53-5bce-4102-a362-6f88735c8647</id>
 			<name>Eel</name>
 			<category>Drugs</category>
@@ -1453,22 +1472,14 @@
 			<avail>16F</avail>
 			<cost>900</cost>
 			<ammoforweapontype noextra="True">spraypen</ammoforweapontype>
+			<bonus>
+			<specificattribute>
+				<name>INT</name>
+				<val>3</val>
+			</specificattribute>
+			</bonus>
 			<notes>Addiction Rating 11, Threshold 3 (Both), Injection + Inhalation Vector. -3 STR, +4 REA, +3 INT, +1 WIL for duration.</notes>
-		</gear>
-		<gear>
-			<id>ef2a767f-1616-4723-aca7-12618bc7e76b</id>
-			<name>Eel</name>
-			<category>Drugs</category>
-			<addoncategory>Drug Grades</addoncategory>
-			<addoncategory>Custom</addoncategory>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>16F</avail>
-			<cost>900</cost>
-			<ammoforweapontype noextra="True">spraypen</ammoforweapontype>
-			<notes>Addiction Rating 11, Threshold 3 (Both), Injection + Inhalation Vector. -3 STR, +4 REA, +3 INT, +1 WIL for duration.</notes>
-		</gear>
+		</drug>
 		<gear>
 			<id>30b25115-7817-4d05-b4bd-730a259764b5</id>
 			<name>Grey's Resistor</name>
@@ -1520,28 +1531,6 @@
 			<notes>Power 11. Inhalation + Injection. Unresisted Power is added to Drain (no more than double drain).</notes>
 		</gear>
 		<gear>
-			<id>32c56e1e-7395-40f3-9fb8-b51593ee0fa7</id>
-			<name>God Chip BTL</name>
-			<category>BTLs</category>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>15F</avail>
-			<cost>1250</cost>
-			<notes>+1 to all physical attributes, -2 WIL.</notes>
-		</gear>
-		<gear>
-			<id>a1d06d92-2431-4a81-aa5d-ce2ca6b57f07</id>
-			<name>Vulcan BTL</name>
-			<category>BTLs</category>
-			<rating>0</rating>
-			<source>4PR</source>
-			<page>1</page>
-			<avail>8R</avail>
-			<cost>300</cost>
-			<notes>+1 LOG/WIL, -1 CHA/INT.</notes>
-		</gear>
-		<gear>
 		  <id>40723763-5989-4d3f-9dde-610cfbcb57f0</id>
 		  <name>Shadow Cloak</name>
 		  <category>Foci</category>
@@ -1552,6 +1541,6 @@
 		  <avail>(Rating * 4)R</avail>
 		  <cost>Rating * 3000</cost>
 		</gear>
-		
+    <!-- End Region -->
 	</gears>
 </chummer>

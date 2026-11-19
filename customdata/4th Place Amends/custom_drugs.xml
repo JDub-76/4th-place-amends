@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This file is part of Chummer5a.
+  Chummer5a is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+  You should have received a copy of the GNU General Public License
+  along with Chummer5a.  If not, see <http://www.gnu.org/licenses/>.
+  You can obtain the full source code for Chummer5a at
+  https://github.com/chummer5a/chummer5a
+-->
+<chummer>
+	<categories>
+		<category blackmarket="BTLs">BTL Grades</category>
+	</categories>
+<!-- Adds BTL grades as a plugin for BTLs. -->
+    <grades>
+	<grade>
+      <id>82a55107-084d-4119-85b6-2159c4911b6a</id>
+      <name>Bootleg</name>
+      <category>BTL Grades</category>
+      <rating>0</rating>
+      <source>4PR</source>
+      <page>1</page>
+      <avail>0</avail>
+      <capacity>0</capacity>
+      <requireparent />
+      <cost>Parent Cost * -0.5</cost>
+      <required>
+        <geardetails>
+          <category>BTLs</category>
+        </geardetails>
+      </required>
+	  <notes> 
+		These are the low-end chips a local ganger duplicates in a basement somewhere, on improvised 		equipment - maintaining signal quality and clarity aren’t priorities.
+		Bootleg chips are half the cost of standard, but the strain they place on a user’s neural system means that for every hour or part thereof they’re used, the user must resist 2S with WIL+LOG, and cannot heal this damage until the chip is removed.
+	</notes>
+    </grade>
+    <grade>
+      <id>37ae4064-708d-41b1-b165-894cfb4a51d8</id>
+      <name>Categorised</name>
+      <category>BTL Grades</category>
+      <rating>0</rating>
+      <source>4PR</source>
+      <page>1</page>
+      <avail>0</avail>
+      <capacity>0</capacity>
+      <requireparent />
+      <cost>Parent Cost</cost>
+      <required>
+        <geardetails>
+          <category>BTLs</category>
+        </geardetails>
+      </required>
+	  <notes>
+	   Chips that are modified to better match a particular demographic – human male, troll female etc - used to minimize incompatibility and smooth the neural impact. Costs are doubled.  The Addiction Threshold is reduced by 1.  The user gains +1DP to any rolls against negative effects caused by the chip.
+	  </notes>
+    </grade>
+    <grade>
+      <id>0166e122-5174-4f79-a033-67a65cf77903</id>
+      <name>Tailored</name>
+      <category>BTL Grades</category>
+      <rating>0</rating>
+      <source>4PR</source>
+      <page>1</page>
+      <avail>0</avail>
+      <capacity>0</capacity>
+      <requireparent />
+      <cost>Parent Cost * 5</cost>
+		<required>
+        <geardetails>
+          <category>BTLs</category>
+        </geardetails>
+		</required>
+		<notes>
+		 A chip made specifically for one person, further reducing side effects and optimizing benefits. Cost is triple that of a Categorised grade of the same chip (making it six times the Standard cost), and the manufacturer making the chip must keep a sample of the user’s engram scan on file.  The user gains +4DP to any rolls against negative effects caused by the chip.
+		 If someone tries to slot a Tailored chip intended for some-one other than themselves, treat it as Bootleg.
+		</notes>
+    </grade>
+	<grade>
+      <id>0166e122-5174-4f79-a033-67a65cf77903</id>
+      <name>Perpetual</name>
+      <category>BTL Grades</category>
+      <rating>0</rating>
+      <source>4PR</source>
+      <page>1</page>
+      <avail>0</avail>
+      <capacity>0</capacity>
+      <requireparent />
+      <cost>Parent Cost * 10</cost>
+		<required>
+        <geardetails>
+        <category>BTLs</category>
+        </geardetails>
+		</required>
+		<notes>
+		A chip on a more durable substrate, and which will better preserve the programming for long term replay.  They cost ten times the normal price (on top of quality grade) and add +2 to Avail.
+		Jailbreaking a non Perpetual BTL results in it becoming Bootleg quality
+		</notes>
+    </grade>
+	</grades>
+  <drugs>
+	<!-- NEW CUSTOM BTL CHIPS -->
+	<drug>
+		<id>f5667118-dd8c-4739-9be2-5300cea38d6a</id>
+		<name>John Whack Personafix BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<hardwires select="Pistols">2</hardwires>
+			<hardwires select="Unarmed">1</hardwires>
+			<addskillspecialization>
+                <skill>Pistols</skill>
+                <spec>Semi-Automatics</spec>
+            </addskillspecialization>
+			<attribute>
+				<name>AGI</name>
+				<val>1</val>
+			</attribute>	
+			<attribute>
+				<name>REA</name>
+				<val>1</val>
+				</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>-1</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>-1</val>
+			</attribute>
+			<quality>Poor Self Control (Vindictive)</quality>
+			<quality>Social Appearance Anxiety</quality>
+			<quality>Impassive</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+			<notes>
+			A signal-juiced version chip of the stoic but sharply-dressed gunslinging Adept avenger character from the long running series.
+			Effect: +1 AGI, +1 REA, -1 WIL, -1 LOG Unarmed 1, Pistols 2, SemiAuto Specialisation
+            User gains Impassive, Social Appearance Anxiety (1), and Poor Self Control (Vendetta) Negative Qualities while using the chip.
+			Also provides the Close Quarter Firearms (Pistols)Martial Arts technique whilst slotted.
+			</notes>
+	</drug>
+	<drug>
+		<id>338d709b-b260-4563-89e4-e2e12ebd8ba5</id>
+		<name>Brainstorm Moodchip BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<attribute>
+				<name>LOG</name>
+				<val>1</val>
+			</attribute>	
+			<attribute>
+				<name>INT</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>-2</val>
+			</attribute>
+			<quality>Lack of Focus</quality>
+		</bonus>
+		<required>
+            <oneof>
+				<cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +1 LOG, +1 INT, -2 WIL. The user gains the Lack of Focus quality while using the chip.
+		Intended to throw the user's brain "out of gear" to inspire creativity.
+		</notes>
+	</drug>	
+	<drug>
+		<id>f5c740c0-a448-4500-badf-11b2b73ff985</id>
+		<name>Crunch Moodchip BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>		
+		Effect: Alleviates the need for sleep, take 2S (unresisted) every 24 hours while the chip is active, cannot be healed until 24 hours after deactivation.
+		A common crutch for hard-pressed wage slaves under pressure of deadlines.
+		</notes>
+	</drug>
+	<drug>
+		<id>87220e67-204b-4982-8333-4d5712abc5b2</id>
+		<name>Kung Fury Personafix BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<hardwires select="Unarmed">3</hardwires>
+			<attribute>
+				<name>AGI</name>
+				<val>2</val>
+			</attribute>	
+			<attribute>
+				<name>STR</name>
+				<val>2</val>
+			</attribute>
+			<attribute>
+				<name>CHA</name>
+				<val>-1</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>-2</val>
+			</attribute>
+			<quality>Uncouth</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +2 AGI, +2 STR, -1 CHA, -2 LOG, Unarmed 3, Flying Kick 
+		There Can Be Only One: The user must make a Willpower (3) test to back down from a fight. 
+		The user gains the Uncouth quality while the program is running.
+		The user can also utilise the Flying Kick MA technique whilst slotted.
+		A personafix built around the nameless main character of the eponymous trid, a hard drinking, hard fighting martial artist roaming a post apocalyptic wasteland dispensing koans and flying kicks.
+		</notes>
+	</drug>
+	<drug>
+		<id>5b397b28-57d8-4fa6-8b01-f296940017b3</id>
+		<name>Bunraku Personafix BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<hardwires select="Con">3</hardwires>
+			<addskillspecialization>
+                <skill>Con</skill>
+                <spec>Seduction</spec>
+            </addskillspecialization>
+			<attribute>
+				<name>CHA</name>
+				<val>2</val>
+			</attribute>	
+			<attribute>
+				<name>BOD</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>-2</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>-1</val>
+			</attribute>
+			<judgeintentions>2</judgeintentions>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +2 CHA, +1 BOD, -2 WIL, -1 LOG, Con 3, Seduction Spec
+		When slotted, the user is assigned a target, to whom the user is made to feel attraction. The user gains a +2 dice bonus for JI against their target. 
+		The user must make a Composure (3) Test or the user gains Favoured (Outspoken) towards their assigned target while the chip is running.
+		A chip common in the realms of prostitution, often forced upon users by those controlling them.
+		</notes>
+	</drug>
+	<drug>
+		<id>9c048265-a296-4203-a341-85c4ac2fa78d</id>
+		<name>Dodger: The Legend Personafix BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>
+			<hardwires select="Cybercombat">3</hardwires>
+			<hardwires select="Electronic Warfare">1</hardwires>
+			<hardwires select="Hacking">2</hardwires>
+			<attribute>
+				<name>INT</name>
+				<val>-1</val>
+			</attribute>	
+			<attribute>
+				<name>LOG</name>
+				<val>1</val>
+			</attribute>
+			<quality>Data Hog</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: Cybercombat 3, Hacking 2, Electronic Warfare 1, +1 LOG, -1 INT, Decryption 		cyberprogram. 
+		Nova-hotness: The user must make a Willpower (2) test to use Jack Out or Reboot Device on their persona or the device on which their persona is running in the middle of a run.
+		Poor Self Control (Compulsion) Shakespearean Affect - whilst under the effects of the chip, the user has a Compulsion (2) to use archaic English terminology, and an English accent.   
+		The user also gains Data Hog whilst using the chip, as despite the persona, the programming underneath is not at all able to code efficiently.
+		From the hit trid "based on a true story" of the legendary Matrix jockey.
+		</notes>
+	</drug>
+	<drug>
+		<id>2414111e-2a24-46b8-8674-7d5e73cc6517</id>
+		<name>Twitchy Moodchip BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>	
+			<specificskill>
+				<name>Perception</name>
+				<bonus>2</bonus>
+			</specificskill>
+			<attribute>
+				<name>INT</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>CHA</name>
+				<val>-1</val>
+			</attribute>
+			<quality>Insomnia (Full)</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +2 Perception, +1 INT, -1 CHA. The user is always allowed a Perception test before a possible surprise situation. The user gains the Insomnia (Full) Negative Quality while the program is running.
+		This chip cranks up the user's sense of threat detection to a pathological level, making it hard to surprise them, but also making them exceedingly jumpy and unable to relax whilst using it.
+		</notes>
+	</drug>
+	<drug>
+		<id>acff0d84-57a2-4708-9b29-3e7f4a3df1d4</id>
+		<name>Neil the Ork Barbarian Personafix BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>	
+			<hardwires select="Blades">2</hardwires>
+			<addskillspecialization>
+                <skill>Blades</skill>
+                <spec>Swords</spec>
+            </addskillspecialization>
+			<attribute>
+				<name>STR</name>
+				<val>2</val>
+			</attribute>
+			<attribute>
+				<name>BOD</name>
+				<val>2</val>
+			</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>-1</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>-2</val>
+			</attribute>
+			<quality>Combat Junkie</quality>
+			<quality>Poor Self Control (Braggart)</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +2 STR, +2 BOD, -1 WIL, -2 LOG Blades 2, Swords Specialisation
+		While using the chip, the user gains the Poor Self Control (Braggart) Negative Quality, and the Combat Junkie Negative Quality
+		Based on the popular sword swinging, damsel-chasing media franchise character, this is a juiced up hacked version of the legal product, with the signal strength cranked.
+		</notes>
+	</drug>
+	<drug>
+		<id>9d735eef-a505-4127-9f64-3385e8c5b337</id>
+		<name>Wageslave Warrior BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>	
+			<hardwires select="Automatics">2</hardwires>
+			<hardwires knowledgeskill="true" select="Small Unit Tactics">2</hardwires>
+			<attribute>
+				<name>AGI</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>-1</val>
+			</attribute>
+			<quality>Poor Self Control (Combat Monster)</quality>
+			<quality rating="1">High Pain Tolerance</quality>
+		</bonus>
+		<required>
+            <oneof>
+            <cyberware>Skilljack</cyberware>
+			<cyberware>Datajack</cyberware>
+			<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: +1 AGI, -1 LOG, Automatics 2, SmUT 2, High Pain Tolerance 1 
+		User gains Combat Monster
+		From the depths of a Budget Efficiency Committee came this BTL.  It was pointed out that many wageslaves already had jacks of various sorts, and having mass security at facilities was expensive.  So why not quickly and easily make the workers over into corporate soldiers?
+		Oddly, the office workers themselves weren't keen on the idea, and the chip is rarely used except in extremis, or having an exec right there to force it. Many have found their way out into the shadows, however.
+		</notes>
+	</drug>
+	<drug>
+		<id>53260443-3f1b-4d0d-af89-2151c21e23fb</id>
+		<name>Overclocker BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<avail>12F</avail>
+		<cost>500</cost>
+		<source>4PR</source>
+		<page>1</page>
+		<bonus>	
+			<attribute>
+				<name>AGI</name>
+				<val>-1</val>
+			</attribute>
+			<attribute>
+				<name>REA</name>
+				<val>1</val>
+			</attribute>
+			<initiativedice>2</initiativedice>
+			<quality>TLE-X</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>	
+		Effect: -1 AGI, +1 REA, +2D6 Init (Init boost does not stack with other magical, chemical or ware enhancements to Init)
+		Whilst having the chip slotted, the user gains the effects of TLE-X Negative Quality.
+		An experimental chip which attempts to enhance a user's response time via a process similar to, but far more limited than, the Move By Wire system.  However, like the MBW, the alterations it makes to the brain have severe side effects.
+		</notes>
+	</drug>
+		<!-- EXISTING 4PR CUSTOM CHIPS ALTERED -->
+	<drug>
+		<id>a1d06d92-2431-4a81-aa5d-ce2ca6b57f07</id>
+		<name>Vulcan BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<source>4PR</source>
+		<page>1</page>
+		<avail>8R</avail>
+		<cost>300</cost>
+		<bonus>
+			<attribute>
+				<name>CHA</name>
+				<val>-1</val>
+			</attribute>	
+			<attribute>
+				<name>INT</name>
+				<val>-1</val>
+			</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>LOG</name>
+				<val>1</val>
+			</attribute>
+			<quality>Impassive</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>
+		Effect: By damping emotions, this BTL grants the user +1 LOG/WIL, -1 CHA/INT.  User gains Impassive whilst active.
+		</notes>
+	</drug>	
+	<drug>
+		<id>32c56e1e-7395-40f3-9fb8-b51593ee0fa7</id>
+		<name>God Chip BTL</name>
+		<category>BTLs</category>
+		<addoncategory>BTL Grades</addoncategory>
+		<rating>0</rating>
+		<source>4PR</source>
+		<page>1</page>
+		<avail>15F</avail>
+		<cost>1250</cost>
+		<bonus>
+			<attribute>
+				<name>BOD</name>
+				<val>1</val>
+			</attribute>	
+			<attribute>
+				<name>AGI</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>REA</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>STR</name>
+				<val>1</val>
+			</attribute>
+			<attribute>
+				<name>WIL</name>
+				<val>-2</val>
+			</attribute>			
+			<quality>Superhuman Psychosis</quality>
+		</bonus>
+		<required>
+            <oneof>
+                <cyberware>Skilljack</cyberware>
+				<cyberware>Datajack</cyberware>
+				<cyberware>Datajack Plus</cyberware>
+            </oneof>
+        </required>
+		<notes>
+		Effect: +1 to all physical attributes, -2 WIL.  Upon deactivation, the user suffers -2 to all actions, initiative, and defense tests due to confusion for 10 minutes.
+		It also induces the Superhuman Psychosis quality.
+		</notes>
+	</drug>
+	<!-- END REGION -->
+    <!-- Region Stolen Souls -->
+    <!-- End Region -->
+    <!-- Region Chrome Flesh -->
+  </drugs>
+</chummer>

@@ -239,24 +239,44 @@
 				</oneof>
 				<oneof>
 					<skill>
-						<name>Pistols</name>
-						<val>5</val>
+					<name>Archery</name>
+					<val>5</val>
 					</skill>
 					<skill>
-						<name>Throwing Weapons</name>
-						<val>5</val>
+					<name>Automatics</name>
+					<val>5</val>
 					</skill>
 					<skill>
-						<name>Blades</name>
-						<val>5</val>
+					<name>Blades</name>
+					<val>5</val>
 					</skill>
 					<skill>
-						<name>Clubs</name>
-						<val>5</val>
+					<name>Clubs</name>
+					<val>5</val>
 					</skill>
 					<skill>
-						<name>Unarmed Combat</name>
-						<val>5</val>
+					<name>Directed Energy Weapons</name>
+					<val>5</val>
+					</skill>
+					<skill>
+					<name>Longarms</name>
+					<val>5</val>
+					</skill>
+					<skill>
+					<name>Monofilament Weapons</name>
+					<val>5</val>
+					</skill>
+					<skill>
+					<name>Pistols</name>
+					<val>5</val>
+					</skill>
+					<skill>
+					<name>Throwing Weapons</name>
+					<val>5</val>
+					</skill>
+					<skill>
+					<name>Unarmed</name>
+					<val>5</val>
 					</skill>
 				</oneof>
 			</required>
@@ -1330,6 +1350,14 @@
 			<karma>5</karma>
 			<category>Positive</category>
 			<chargenonly />
+				<bonus>
+				<addware>
+					<name>Essence Antihole</name>
+					<rating>40</rating>
+					<grade>None</grade>
+					<type>Cyberware</type>
+				</addware>
+				</bonus>
 			<forbidden>
 				<oneof>
 					<quality>Designer Baby</quality>

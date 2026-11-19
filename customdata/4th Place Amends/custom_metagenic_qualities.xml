@@ -1538,7 +1538,7 @@ The character leaves slime wherever they go. Not a lot, but just enough to be no
 		<quality>
 			<id>00fec4ec-5684-48ab-8f20-c00fce82ef19</id>
 			<name>Brachycephalic Syndrome</name>
-			<karma>4</karma>
+			<karma>-15</karma>
 			<category>Negative</category>
 			<metagenic>True</metagenic>
 			<source>4PR</source>
@@ -1740,7 +1740,7 @@ The character suffers a -2 dice pool modifier to summon or bind spirits. If the 
 		<quality>
 			<id>50aed18d-7b56-4849-95ae-c2217101b476</id>
 			<name>Stubby Legs</name>
-			<karma>4</karma>
+			<karma>-10</karma>
 			<category>Negative</category>
 			<metagenic>True</metagenic>
 			<source>4PR</source>
